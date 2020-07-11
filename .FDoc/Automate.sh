@@ -1,4 +1,7 @@
 #!/bin/bash
+
+sudo apt install -y doxygen #I hope GitHub Actions supports sudo
+
 pip3 install jinja2
 pip3 install pygments
 git clone https://github.com/BlockProject3D/Framework
