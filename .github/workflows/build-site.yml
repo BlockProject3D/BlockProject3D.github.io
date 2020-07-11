@@ -13,7 +13,9 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
     - name: Run auto build
-      run: .FDoc/Automate.sh
+      run: |
+        chmod 755 .FDoc/Automate.sh
+        .FDoc/Automate.sh
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

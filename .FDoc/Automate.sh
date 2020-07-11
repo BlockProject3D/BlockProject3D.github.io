@@ -1,3 +1,4 @@
+#!/bin/bash
 git clone https://github.com/BlockProject3D/Framework
 
 #Prepare Framework
