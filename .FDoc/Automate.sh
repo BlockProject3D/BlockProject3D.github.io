@@ -1,5 +1,6 @@
 #!/bin/bash
 pip3 install jinja2
+pip3 install pygments
 git clone https://github.com/BlockProject3D/Framework
 
 #Prepare Framework
