@@ -1,0 +1,19 @@
+name: Build Site
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: 'BlockProject3D/Framework'
+        path: 'Framework'
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+    - name: Run auto build
+      run: .FDoc/Automate.sh
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
