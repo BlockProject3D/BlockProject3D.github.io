@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::collection::PriorityQueue class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_priority_queue_8hpp.html">&lt;Base/include/Framework/Collection/PriorityQueue.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc = <a href="namespacebpf_1_1collection.html#aa613655ebf3eb54c5968f1155533288a" class="m-doc">MaxHeap</a>&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1collection.html">collection</a>::<wbr/></span>PriorityQueue <span class="m-thin">class</span>
+        </h1>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">K</td>
+              <td>the key type</td>
+            </tr>
+            <tr>
+              <td>V</td>
+              <td>the value type</td>
+            </tr>
+            <tr>
+              <td>HeapFunc</td>
+              <td>heap comparision operator usually set to either MaxHeap or MinHeap</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Priority queue implemented using min/max heap</p>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt>
+              struct <a href="structbpf_1_1collection_1_1_priority_queue_1_1_entry.html" class="m-doc">Entry</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ae0991c050cf51f12100ce55521b42d2c" class="m-doc">PriorityQueue</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> maxsize = 0) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a911b556221444446ce2ae77eb0617908" class="m-doc">PriorityQueue</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;<a href="structbpf_1_1collection_1_1_priority_queue_1_1_entry.html" class="m-doc">Entry</a>&gt;&amp; lst)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a49495cb091c6110b59d81e624da3dbcb" class="m-doc">PriorityQueue</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a66ed6b686cb2e8930a4e455fd554202b" class="m-doc">PriorityQueue</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a35867fdf4bf52c95eaaad4886ed16e2c" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp; other) -&gt; <a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a65c4e0a2d7208f1db6fea8b8c4fcb2dc" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp;&amp; other) -&gt; <a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a224128c3a2b189635bd05ccb2328c99f" class="m-doc">Clear</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a1f3c58fbdb6e72d7d07c31969e453632" class="m-doc">Push</a>(</span><span class="m-doc-wrap">const K&amp; key,
+              const V&amp; value)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a20c506200fcd09fd8b46273ee573dcee" class="m-doc">Push</a>(</span><span class="m-doc-wrap">const K&amp; key,
+              V&amp;&amp; value)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af822017a6b532466b88acc5b797fad60" class="m-doc">Pop</a>(</span><span class="m-doc-wrap">) -&gt; V</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a14b75eec7ad22845510a9f9ef9d76f17" class="m-doc">Top</a>(</span><span class="m-doc-wrap">) -&gt; V&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad7f7f26548997cd5b8a79f4a5f00f2d9" class="m-doc">Top</a>(</span><span class="m-doc-wrap">) const -&gt; const V&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aef001cf6122211c19ba1e0f85f622233" class="m-doc">Size</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="ae0991c050cf51f12100ce55521b42d2c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae0991c050cf51f12100ce55521b42d2c" class="m-doc-self">PriorityQueue</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> maxsize = 0) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">maxsize</td>
+                  <td>maximum size of queue (0 = infinity/unlimited)</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs an empty <a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a911b556221444446ce2ae77eb0617908"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a911b556221444446ce2ae77eb0617908" class="m-doc-self">PriorityQueue</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;<a href="structbpf_1_1collection_1_1_priority_queue_1_1_entry.html" class="m-doc">Entry</a>&gt;&amp; lst)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">lst</td>
+                  <td>the initial list of items to push to this new queue</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a> from an existing initializer list</p>
+          </div></section>
+          <section class="m-doc-details" id="a49495cb091c6110b59d81e624da3dbcb"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a49495cb091c6110b59d81e624da3dbcb" class="m-doc-self">PriorityQueue</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp; other)</span></span>
+            </h3>
+<p>Copy constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a66ed6b686cb2e8930a4e455fd554202b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a66ed6b686cb2e8930a4e455fd554202b" class="m-doc-self">PriorityQueue</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a35867fdf4bf52c95eaaad4886ed16e2c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp; bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a35867fdf4bf52c95eaaad4886ed16e2c" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp; other)</span></span>
+            </h3>
+<p>Copy assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a65c4e0a2d7208f1db6fea8b8c4fcb2dc"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp; bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a65c4e0a2d7208f1db6fea8b8c4fcb2dc" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_priority_queue.html" class="m-doc">PriorityQueue</a>&lt;K, V, HeapFunc&gt;&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a224128c3a2b189635bd05ccb2328c99f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a224128c3a2b189635bd05ccb2328c99f" class="m-doc-self">Clear</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Clears this queue</p>
+          </div></section>
+          <section class="m-doc-details" id="a1f3c58fbdb6e72d7d07c31969e453632"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1f3c58fbdb6e72d7d07c31969e453632" class="m-doc-self">Push</a>(</span><span class="m-doc-wrap">const K&amp; key,
+              const V&amp; value)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key for that element</td>
+                </tr>
+                <tr>
+                  <td>value</td>
+                  <td>the value for that element</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Pushes an element on the queue</p>
+          </div></section>
+          <section class="m-doc-details" id="a20c506200fcd09fd8b46273ee573dcee"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a20c506200fcd09fd8b46273ee573dcee" class="m-doc-self">Push</a>(</span><span class="m-doc-wrap">const K&amp; key,
+              V&amp;&amp; value)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key for that element</td>
+                </tr>
+                <tr>
+                  <td>value</td>
+                  <td>the value for that element</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Pushes an element on the queue</p>
+          </div></section>
+          <section class="m-doc-details" id="af822017a6b532466b88acc5b797fad60"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">V bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af822017a6b532466b88acc5b797fad60" class="m-doc-self">Pop</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the extracted/removed item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if the queue is empty</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Extracts the top of the queue</p>
+          </div></section>
+          <section class="m-doc-details" id="a14b75eec7ad22845510a9f9ef9d76f17"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">V&amp; bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a14b75eec7ad22845510a9f9ef9d76f17" class="m-doc-self">Top</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>mutable item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if the queue is empty</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns the top of the queue</p>
+          </div></section>
+          <section class="m-doc-details" id="ad7f7f26548997cd5b8a79f4a5f00f2d9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">const V&amp; bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad7f7f26548997cd5b8a79f4a5f00f2d9" class="m-doc-self">Top</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if the queue is empty</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns the top of the queue</p>
+          </div></section>
+          <section class="m-doc-details" id="aef001cf6122211c19ba1e0f85f622233"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename&gt; class HeapFunc&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr />collection::<wbr />PriorityQueue&lt;K, V, HeapFunc&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aef001cf6122211c19ba1e0f85f622233" class="m-doc-self">Size</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number of items as unsigned</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the number of items in this queue</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

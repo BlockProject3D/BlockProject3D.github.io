@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::collection::ArrayList class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_array_list_8hpp.html">&lt;Base/include/Framework/Collection/ArrayList.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename T&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1collection.html">collection</a>::<wbr/></span>ArrayList <span class="m-thin">class</span>
+        </h1>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">T</td>
+              <td>the type of element to store</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Simple array-list class, automatically doubles it&#x27;s size</p>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt id="a1a1eefeeba0cbd6afbb8769b6932ca15">
+              using <a href="#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc-self">Iterator</a> = typename <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;::<a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="afe669b242d25a2b1ac469ab7217bffbf">
+              using <a href="#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc-self">ReverseIterator</a> = typename <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;::<a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aed25373672d9bc5f21aecf3b81096f29" class="m-doc">ArrayList</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> preallocsize = 8)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a8d51c4f542b14f7d2dab09e3c08a70bd" class="m-doc">ArrayList</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;T&gt;&amp; lst)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a8d01cc92b152f34a38569522dac4c879" class="m-doc">ArrayList</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aa0e6e8ebf39f2413856a5409903de7a2" class="m-doc">ArrayList</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad26624377046f58644a5ba86f9e345c0" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5b232e70ee46a32891f8b5514ff5db1c" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp;&amp; other) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8aa5f6ab630db4e0d292bc382d68bf3a" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af8e77f88794b3c88062c9f6e027d305f" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abcdce36e63b87d9dbf1609fb19c9267a" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a039f0ba6f56bce00a41139ca2ad2dcd8" class="m-doc">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7e7c9cef8ded678a680fb97135b7f592" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;&amp; other) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ae2b569bad68da895707536a85d446494" class="m-doc">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a754b4b0d3dfbbe40e52eb5e204a8228a" class="m-doc">First</a>(</span><span class="m-doc-wrap">) -&gt; T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#afefbcd773f01f0be19935b08d13aedb8" class="m-doc">Last</a>(</span><span class="m-doc-wrap">) -&gt; T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7aed1ba7f95523be796bbb933e94a83b" class="m-doc">First</a>(</span><span class="m-doc-wrap">) const -&gt; const T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8a6faee5eb64d8827bb213163bd5a0c7" class="m-doc">Last</a>(</span><span class="m-doc-wrap">) const -&gt; const T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ada25aa3dc70082cf0bab772ae08e82c0" class="m-doc">operator[]</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> id) -&gt; T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a08ec46d33fc32b5606dcfa5df8fb4b66" class="m-doc">operator[]</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> id) const -&gt; const T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#afccd87c5c07cea2b29038d38d187e867" class="m-doc">Add</a>(</span><span class="m-doc-wrap">const T&amp; elem)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a70c7b6d876a4cbea0733b631e81a1a17" class="m-doc">Add</a>(</span><span class="m-doc-wrap">T&amp;&amp; elem)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a629788a5059f7aac3c3a944dab541e82" class="m-doc">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; a,
+              const <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; b)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a1c11b805227452e06e122d230bc9ddda" class="m-doc">Insert</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos,
+              const T&amp; elem)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a3b764b4ba0cac0b76c6d91a6a73fd65b" class="m-doc">Insert</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos,
+              T&amp;&amp; elem)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ad5b01b1b5ed1355ea9b40f30cb180921" class="m-doc">Insert</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; pos,
+              const T&amp; elem)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a8bc6d16671b52fdaff9f0cb51ec0cef7" class="m-doc">Insert</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; pos,
+              T&amp;&amp; elem)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a9abe53bbb876cb09c7d2fec0ed914317" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ac29572cee18fab5e81a17f0a1846cdd4" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; pos)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a142d3ea01e8b2742b18c77ae5942537a" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp;&amp; pos)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;</div>
+              <span class="m-doc-wrap-bumper">void <a href="#a0aed86e236df82975ea69e8636927bce" class="m-doc">Remove</a>(</span><span class="m-doc-wrap">const T&amp; elem,
+              bool all = true)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab346706165f4b60af7120bcd9a961bb6" class="m-doc">FindByKey</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#aec6fc8e86881165b3e776fc5a6dd3400" class="m-doc">FindByValue</a>(</span><span class="m-doc-wrap">const T&amp; val) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aedee9c39e2b860dd28ba323d0c989a7a" class="m-doc">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;bool(const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos, const T&amp;val)&gt;&amp; comparator) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a36f5d4d208e2b4a0bf36022f163356d5" class="m-doc">Clear</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ad679f635b238d79fc77f4b2fd4636a09" class="m-doc">RemoveLast</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9599dc4a77efc5ce57d13bfcda738d59" class="m-doc">Size</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0d2f7829b9b080f4b1b1ff262378375f" class="m-doc">ToArray</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_less.html" class="m-doc">ops::<wbr />Less</a>&gt;</div>
+              <span class="m-doc-wrap-bumper">void <a href="#a1ca1802827975a0980be94136fb6e1c0" class="m-doc">Sort</a>(</span><span class="m-doc-wrap">bool stable = false)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa01acb0ed7e3ec17408919c90a15d44e" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc">end</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab7b6c57d7699b480f3f6199df206f8f8" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a40599b1725ec06f1c96af8dcca19d59e" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="aed25373672d9bc5f21aecf3b81096f29"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aed25373672d9bc5f21aecf3b81096f29" class="m-doc-self">ArrayList</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> preallocsize = 8)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">preallocsize</td>
+                  <td>initial number of items to pre-allocate</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a new <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a8d51c4f542b14f7d2dab09e3c08a70bd"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8d51c4f542b14f7d2dab09e3c08a70bd" class="m-doc-self">ArrayList</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;T&gt;&amp; lst)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">lst</td>
+                  <td>the initial list of items to add to this new <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a></td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs an <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a> from an existing initializer list</p>
+          </div></section>
+          <section class="m-doc-details" id="a8d01cc92b152f34a38569522dac4c879"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8d01cc92b152f34a38569522dac4c879" class="m-doc-self">ArrayList</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span></span>
+            </h3>
+<p>Copy constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="aa0e6e8ebf39f2413856a5409903de7a2"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa0e6e8ebf39f2413856a5409903de7a2" class="m-doc-self">ArrayList</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="ad26624377046f58644a5ba86f9e345c0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad26624377046f58644a5ba86f9e345c0" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span></span>
+            </h3>
+<p>Copy assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a5b232e70ee46a32891f8b5514ff5db1c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5b232e70ee46a32891f8b5514ff5db1c" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a8aa5f6ab630db4e0d292bc382d68bf3a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8aa5f6ab630db4e0d292bc382d68bf3a" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a> to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the two lists are equal, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a> by performing a per-element check</p>
+          </div></section>
+          <section class="m-doc-details" id="af8e77f88794b3c88062c9f6e027d305f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af8e77f88794b3c88062c9f6e027d305f" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a> to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>false if the two lists are equal, true otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a> by performing a per-element check</p>
+          </div></section>
+          <section class="m-doc-details" id="abcdce36e63b87d9dbf1609fb19c9267a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abcdce36e63b87d9dbf1609fb19c9267a" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>list to concatenate with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new list</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Create a new list from concatenation of two lists</p>
+          </div></section>
+          <section class="m-doc-details" id="a039f0ba6f56bce00a41139ca2ad2dcd8"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a039f0ba6f56bce00a41139ca2ad2dcd8" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>list to append</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Appends the content of a list at the end of this list</p>
+          </div></section>
+          <section class="m-doc-details" id="a7e7c9cef8ded678a680fb97135b7f592"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7e7c9cef8ded678a680fb97135b7f592" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>array to concatenate with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new list</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Create a new list from concatenation of a list and an array</p>
+          </div></section>
+          <section class="m-doc-details" id="ae2b569bad68da895707536a85d446494"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae2b569bad68da895707536a85d446494" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>array to append</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Appends the content of an array at the end of this list</p>
+          </div></section>
+          <section class="m-doc-details" id="a754b4b0d3dfbbe40e52eb5e204a8228a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T&amp; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a754b4b0d3dfbbe40e52eb5e204a8228a" class="m-doc-self">First</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>mutable item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if none</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns the first element in this <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a></p>
+          </div></section>
+          <section class="m-doc-details" id="afefbcd773f01f0be19935b08d13aedb8"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T&amp; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afefbcd773f01f0be19935b08d13aedb8" class="m-doc-self">Last</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>mutable item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if none</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns the last element in this <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a7aed1ba7f95523be796bbb933e94a83b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">const T&amp; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7aed1ba7f95523be796bbb933e94a83b" class="m-doc-self">First</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if none</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns the first element in this <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a8a6faee5eb64d8827bb213163bd5a0c7"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">const T&amp; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8a6faee5eb64d8827bb213163bd5a0c7" class="m-doc-self">Last</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if none</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns the last element in this <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a></p>
+          </div></section>
+          <section class="m-doc-details" id="ada25aa3dc70082cf0bab772ae08e82c0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T&amp; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ada25aa3dc70082cf0bab772ae08e82c0" class="m-doc-self">operator[]</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> id)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">id</td>
+                  <td>the index of the element, in case of out of bounds, throws</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>mutable item at index id</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if id is out of bounds</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns an element non-const mode</p>
+          </div></section>
+          <section class="m-doc-details" id="a08ec46d33fc32b5606dcfa5df8fb4b66"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">const T&amp; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a08ec46d33fc32b5606dcfa5df8fb4b66" class="m-doc-self">operator[]</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> id) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">id</td>
+                  <td>the index of the element, in case of out of bounds, throws</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>immutable item at index id</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if id is out of bounds</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns an element const mode</p>
+          </div></section>
+          <section class="m-doc-details" id="afccd87c5c07cea2b29038d38d187e867"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afccd87c5c07cea2b29038d38d187e867" class="m-doc-self">Add</a>(</span><span class="m-doc-wrap">const T&amp; elem)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">elem</td>
+                  <td>the element to add</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Adds an item at the end of this list</p>
+          </div></section>
+          <section class="m-doc-details" id="a70c7b6d876a4cbea0733b631e81a1a17"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a70c7b6d876a4cbea0733b631e81a1a17" class="m-doc-self">Add</a>(</span><span class="m-doc-wrap">T&amp;&amp; elem)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">elem</td>
+                  <td>the element to add</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Adds an item at the end of this list</p>
+          </div></section>
+          <section class="m-doc-details" id="a629788a5059f7aac3c3a944dab541e82"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a629788a5059f7aac3c3a944dab541e82" class="m-doc-self">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; a,
+              const <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; b)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">a</td>
+                  <td>first element</td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>second element</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Swap two elements by iterator in the <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a1c11b805227452e06e122d230bc9ddda"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1c11b805227452e06e122d230bc9ddda" class="m-doc-self">Insert</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos,
+              const T&amp; elem)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>insert position</td>
+                </tr>
+                <tr>
+                  <td>elem</td>
+                  <td>element to insert</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Inserts an item at an arbitary position in the list</p>
+          </div></section>
+          <section class="m-doc-details" id="a3b764b4ba0cac0b76c6d91a6a73fd65b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3b764b4ba0cac0b76c6d91a6a73fd65b" class="m-doc-self">Insert</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos,
+              T&amp;&amp; elem)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>insert position</td>
+                </tr>
+                <tr>
+                  <td>elem</td>
+                  <td>element to insert</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Inserts an item at an arbitary position in the list</p>
+          </div></section>
+          <section class="m-doc-details" id="ad5b01b1b5ed1355ea9b40f30cb180921"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad5b01b1b5ed1355ea9b40f30cb180921" class="m-doc-self">Insert</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; pos,
+              const T&amp; elem)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>insert position</td>
+                </tr>
+                <tr>
+                  <td>elem</td>
+                  <td>element to insert</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Inserts an item at an arbitary position in the list</p>
+          </div></section>
+          <section class="m-doc-details" id="a8bc6d16671b52fdaff9f0cb51ec0cef7"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8bc6d16671b52fdaff9f0cb51ec0cef7" class="m-doc-self">Insert</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; pos,
+              T&amp;&amp; elem)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>insert position</td>
+                </tr>
+                <tr>
+                  <td>elem</td>
+                  <td>element to insert</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Inserts an item at an arbitary position in the list</p>
+          </div></section>
+          <section class="m-doc-details" id="a9abe53bbb876cb09c7d2fec0ed914317"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9abe53bbb876cb09c7d2fec0ed914317" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>item position</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes an item at an arbitary position in the list</p>
+          </div></section>
+          <section class="m-doc-details" id="ac29572cee18fab5e81a17f0a1846cdd4"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac29572cee18fab5e81a17f0a1846cdd4" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp; pos)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>item position</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes an item at an arbitary position in the list</p>
+          </div></section>
+          <section class="m-doc-details" id="a142d3ea01e8b2742b18c77ae5942537a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a142d3ea01e8b2742b18c77ae5942537a" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a>&amp;&amp; pos)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>item position</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes an item at an arbitary position in the list</p>
+          </div></section>
+          <section class="m-doc-details" id="a0aed86e236df82975ea69e8636927bce"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+                template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0aed86e236df82975ea69e8636927bce" class="m-doc-self">Remove</a>(</span><span class="m-doc-wrap">const T&amp; elem,
+              bool all = true)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Comparator</td>
+                  <td>the comparision operator to use for comparing values</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>elem</td>
+                  <td>the element to search for</td>
+                </tr>
+                <tr>
+                  <td>all</td>
+                  <td>wether or not to remove all occurences or just the first one</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes occurences of an element fron the list</p>
+          </div></section>
+          <section class="m-doc-details" id="ab346706165f4b60af7120bcd9a961bb6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab346706165f4b60af7120bcd9a961bb6" class="m-doc-self">FindByKey</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>the index of the item to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc">end()</a> if none</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Locate an item by index inside this list</p>
+          </div></section>
+          <section class="m-doc-details" id="aec6fc8e86881165b3e776fc5a6dd3400"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+                template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aec6fc8e86881165b3e776fc5a6dd3400" class="m-doc-self">FindByValue</a>(</span><span class="m-doc-wrap">const T&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Comparator</td>
+                  <td>comparision operator to use</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>val</td>
+                  <td>the value to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc">end()</a> if none</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Locate an item by performing per-element check</p>
+          </div></section>
+          <section class="m-doc-details" id="aedee9c39e2b860dd28ba323d0c989a7a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aedee9c39e2b860dd28ba323d0c989a7a" class="m-doc-self">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;bool(const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> pos, const T&amp;val)&gt;&amp; comparator)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">comparator</td>
+                  <td>the comparision function to use</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc">end()</a> if none</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Locate an item by performing per-element check</p>
+          </div></section>
+          <section class="m-doc-details" id="a36f5d4d208e2b4a0bf36022f163356d5"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a36f5d4d208e2b4a0bf36022f163356d5" class="m-doc-self">Clear</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Clears the content of this <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a> WARNING: Does not automatically deallocate existing items in this list</p>
+          </div></section>
+          <section class="m-doc-details" id="ad679f635b238d79fc77f4b2fd4636a09"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad679f635b238d79fc77f4b2fd4636a09" class="m-doc-self">RemoveLast</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Removes the last item in this list</p>
+          </div></section>
+          <section class="m-doc-details" id="a9599dc4a77efc5ce57d13bfcda738d59"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9599dc4a77efc5ce57d13bfcda738d59" class="m-doc-self">Size</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number of items as unsigned</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the number of items in this list</p>
+          </div></section>
+          <section class="m-doc-details" id="a0d2f7829b9b080f4b1b1ff262378375f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt; bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0d2f7829b9b080f4b1b1ff262378375f" class="m-doc-self">ToArray</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a> containing all the items in this collection at the time of this function call</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts this <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a> to a raw <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a> WARNING: This function rquires deep-copy of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a1ca1802827975a0980be94136fb6e1c0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+                template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_less.html" class="m-doc">ops::<wbr />Less</a>&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1ca1802827975a0980be94136fb6e1c0" class="m-doc-self">Sort</a>(</span><span class="m-doc-wrap">bool stable = false)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Comparator</td>
+                  <td>comparision operator</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>stable</td>
+                  <td>if true this function will apply a Merge-Sort algorithm, otherwise this function uses the Quick-Sort algorithm</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Sorts this collection in place</p>
+          </div></section>
+          <section class="m-doc-details" id="aa01acb0ed7e3ec17408919c90a15d44e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa01acb0ed7e3ec17408919c90a15d44e" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a86c8f3b5b7f48adbd4b0a63e2954830f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the end of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="ab7b6c57d7699b480f3f6199df206f8f8"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab7b6c57d7699b480f3f6199df206f8f8" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a40599b1725ec06f1c96af8dcca19d59e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a40599b1725ec06f1c96af8dcca19d59e" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the end of the collection</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

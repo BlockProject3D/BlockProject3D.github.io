@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>BlockProject 3D</title>
+  <title>Base/include/Framework/Api.hpp file | BlockProject 3D</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
@@ -44,52 +44,70 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          BlockProject 3D Framework
+          <span class="m-breadcrumb"><a href="dir_628593db0cdce5a76fb85526ae5aa762.html">Base</a>/</span><span class="m-breadcrumb"><a href="dir_5dfa3565e1c95d6979dbaaa44fff2d0e.html">include</a>/</span><span class="m-breadcrumb"><a href="dir_5a83906b826f065adb0a5d4183ab2d58.html">Framework</a>/</span>Api.hpp <span class="m-thin">file</span>
         </h1>
-      </div>
-    </div>
-	<div class="m-row">
-		<div class="m-col-l-10 m-push-l-1">
-			<p><strong>High level C++ Framework</strong></p>
-		</div>
-	</div>
-    <div class="m-row">
-      <div class="m-col-l-10 m-push-l-1">
-        <h2>
-          Links
-        </h2>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Github Group</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D">https://github.com/BlockProject3D</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Github</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework">https://github.com/BlockProject3D/Framework</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Releases</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework/releases">https://github.com/BlockProject3D/Framework/releases</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Wiki</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework/wiki">https://github.com/BlockProject3D/Framework/wiki</a>
+        <p><span></span></p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#define-members">Defines</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="define-members">
+          <h2><a href="#define-members">Defines</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">#define <a href="#ad9f2b9952413269fcae02908a7fa234c" class="m-doc">BP_DEPRECATED</a>(</span><span class="m-doc-wrap">message)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">#define <a href="#a96332db635673c1fbc926ca0a44e7203" class="m-doc">BP_IGNORE</a>(</span><span class="m-doc-wrap">v)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Define documentation</h2>
+          <section class="m-doc-details" id="ad9f2b9952413269fcae02908a7fa234c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">#define <a href="#ad9f2b9952413269fcae02908a7fa234c" class="m-doc-self">BP_DEPRECATED</a>(</span><span class="m-doc-wrap">message)</span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">message</td>
+                  <td>the deprecation message</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Use this macro to define a declaration as deprecated</p>
+          </div></section>
+          <section class="m-doc-details" id="a96332db635673c1fbc926ca0a44e7203"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">#define <a href="#a96332db635673c1fbc926ca0a44e7203" class="m-doc-self">BP_IGNORE</a>(</span><span class="m-doc-wrap">v)</span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">v</td>
+                  <td>the function cal to ignore the return value</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Forces ignore of a function return value</p>
+          </div></section>
+        </section>
       </div>
     </div>
   </div>
@@ -134,9 +152,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>Copyright (c) 2020, BlockProject 3D.
-		<br />
-		Created with <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>

@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::math::Vector&lt;T, 4&gt; class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_vector4_8hpp.html">&lt;Base/include/Framework/Math/Vector4.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename T&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1math.html">math</a>::<wbr/></span>Vector&lt;T, 4&gt; <span class="m-thin">class</span>
+        </h1>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">T</td>
+              <td>the number type</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pub-attribs">Public variables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Static 4D vector class</p>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> <a href="#a62cc502ee567bce79c7e0075b892aa23" class="m-doc">Zero</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> <a href="#ac669a6ee1582e2fc9770e21015d9b5a3" class="m-doc">Identity</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a15bd7788e855cd490464dd360e7a8e9d" class="m-doc">Lerp</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; v,
+              const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; v1,
+              const T t) -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a6bca82e21de7d50d3c39284b0c6709f0" class="m-doc">Vector</a>(</span><span class="m-doc-wrap">T x,
+              T y,
+              T z,
+              T w)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#addbea6f3984759620ffe87a9a3ce4744" class="m-doc">Vector</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; other,
+              const T val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a99df48238d57d50e0f20dfc2e4f17bc2" class="m-doc">Vector</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aaf4756a74166ba04c30ccf70282d5730" class="m-doc">Vector</a>(</span><span class="m-doc-wrap">const T val) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a7751c01832880dfc9b6e016b5105f0ef" class="m-doc">Vector</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;T&gt;&amp; lst)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a505e5632c8e5d114b977e368bd35d9ae" class="m-doc">Vector</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aa7cc733d31698ce38a1d29841e68d24f" class="m-doc">Vector</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af6dd2f395d8da2954a437cfdf959a3cb" class="m-doc">Dim</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> <span class="m-label m-flat m-primary">constexpr</span> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad601ebb9e0ecff15b24bc8a3e2992b8b" class="m-doc">operator()</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> l) -&gt; T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1adc5c2b6cc03523bdb89ee46e8e3e1d" class="m-doc">operator()</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> l) const -&gt; const T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac0fec1f027a4863948142e65f8b4b590" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">) const -&gt; const T* <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aedcec969d4713838106c7976d26c4f6a" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">) -&gt; T* <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a462994df1715cc3f9037fed6052b5d7b" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a87ac2cafe75d6da44f666058cda86f84" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0f5ac62dc538d1a6a7a6372f1727ec31" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a61468ef84d999b25b5c086b7734fe431" class="m-doc">operator-</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a41bb671e250a7d5d6d6eff63c04b69dd" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a61819844699f989e5a68078d4ee6fcc7" class="m-doc">operator/</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7258681d86e5bd350c0820b445ad3c38" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">const T other) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a592e5f8ea3d2a30f84e01c812b6d5fe8" class="m-doc">operator/</a>(</span><span class="m-doc-wrap">const T other) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a934179df9e4abae794572503ead19a9a" class="m-doc">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#af912ed8a2ed67197e9910dab50945ebc" class="m-doc">operator-=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a10a692195067f6880ee779a13d34b5fa" class="m-doc">operator*=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#af5fa4b75bfc3f66dfffef83d7eafb5b5" class="m-doc">operator/=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a126c7e81631a744bb5152f533bea1a7e" class="m-doc">operator*=</a>(</span><span class="m-doc-wrap">const T other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#adce05d215623b3950f23379e9df42837" class="m-doc">operator/=</a>(</span><span class="m-doc-wrap">const T other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a224abc6f30173fd8ee5fcf262eb3d6ea" class="m-doc">operator-</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2b797250e690da532c00bcdae271359b" class="m-doc">Dot</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a58ef18a345bdcd31fe1bef6a43b91ef9" class="m-doc">Distance</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a693e7e63590943db2872c384327aa95d" class="m-doc">DistanceSquared</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab5a8b7dcf3cb7b85d2e9ae7db4a74da8" class="m-doc">Norm</a>(</span><span class="m-doc-wrap">) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7d168cc87a9ca6c81ff3abdc5d2981a3" class="m-doc">NormSquared</a>(</span><span class="m-doc-wrap">) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5b925239abcccbf23ba8fd96c4081667" class="m-doc">Normalize</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a65ceecb1db58671a35f770369384ddc4" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1111e9ce8b1133cc2967c4b09f1f50e9" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a25577e3d530d06409ba6193c3b7f673a" class="m-doc">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3143bd9797646a8be1f33ac91e758631" class="m-doc">operator&gt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8ad611aba3f122e882abbbd25d2426c4" class="m-doc">operator&lt;=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0de4883d440ab42c85e60c66e33a88c0" class="m-doc">operator&gt;=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-attribs">
+          <h2><a href="#pub-attribs">Public variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              T <a href="#a58430513be27330d12c4aaf5de620163" class="m-doc">X</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              T <a href="#a80f48f03ad73524bb474e3382f98625c" class="m-doc">Y</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              T <a href="#ae48039876a8d2e671d9c9f37b3205ff0" class="m-doc">Z</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              T <a href="#ad3205a7405f60467bc17de962ee51ff0" class="m-doc">W</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a15bd7788e855cd490464dd360e7a8e9d"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a15bd7788e855cd490464dd360e7a8e9d" class="m-doc-self">Lerp</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; v,
+              const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; v1,
+              const T t)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">v</td>
+                  <td>first vector</td>
+                </tr>
+                <tr>
+                  <td>v1</td>
+                  <td>second vector</td>
+                </tr>
+                <tr>
+                  <td>t</td>
+                  <td>interpolation factor</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new interpolated vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs linear interpolation</p>
+          </div></section>
+          <section class="m-doc-details" id="a6bca82e21de7d50d3c39284b0c6709f0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6bca82e21de7d50d3c39284b0c6709f0" class="m-doc-self">Vector</a>(</span><span class="m-doc-wrap">T x,
+              T y,
+              T z,
+              T w)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">x</td>
+                  <td>coordinate</td>
+                </tr>
+                <tr>
+                  <td>y</td>
+                  <td>coordinate</td>
+                </tr>
+                <tr>
+                  <td>z</td>
+                  <td>coordinate</td>
+                </tr>
+                <tr>
+                  <td>w</td>
+                  <td>coordinate</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a vector by individual coordinates</p>
+          </div></section>
+          <section class="m-doc-details" id="addbea6f3984759620ffe87a9a3ce4744"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#addbea6f3984759620ffe87a9a3ce4744" class="m-doc-self">Vector</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; other,
+              const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the lower dimension vector</td>
+                </tr>
+                <tr>
+                  <td>val</td>
+                  <td>the additional scalar</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a vector by extension of a lower-dimension vector</p>
+          </div></section>
+          <section class="m-doc-details" id="a99df48238d57d50e0f20dfc2e4f17bc2"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a99df48238d57d50e0f20dfc2e4f17bc2" class="m-doc-self">Vector</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs a empty vector</p>
+          </div></section>
+          <section class="m-doc-details" id="aaf4756a74166ba04c30ccf70282d5730"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aaf4756a74166ba04c30ccf70282d5730" class="m-doc-self">Vector</a>(</span><span class="m-doc-wrap">const T val) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number to copy from</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a vector from a scalar</p>
+          </div></section>
+          <section class="m-doc-details" id="a7751c01832880dfc9b6e016b5105f0ef"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7751c01832880dfc9b6e016b5105f0ef" class="m-doc-self">Vector</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;T&gt;&amp; lst)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">lst</td>
+                  <td>the list to copy values from</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a vector from an initializer list</p>
+          </div></section>
+          <section class="m-doc-details" id="a505e5632c8e5d114b977e368bd35d9ae"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a505e5632c8e5d114b977e368bd35d9ae" class="m-doc-self">Vector</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span></span>
+            </h3>
+<p>Copy constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="aa7cc733d31698ce38a1d29841e68d24f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa7cc733d31698ce38a1d29841e68d24f" class="m-doc-self">Vector</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="af6dd2f395d8da2954a437cfdf959a3cb"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af6dd2f395d8da2954a437cfdf959a3cb" class="m-doc-self">Dim</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-primary">constexpr</span> <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>unsigned constant expression</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the dimension of this vector</p>
+          </div></section>
+          <section class="m-doc-details" id="ad601ebb9e0ecff15b24bc8a3e2992b8b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T&amp; bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad601ebb9e0ecff15b24bc8a3e2992b8b" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> l)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">l</td>
+                  <td>the row number</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>mutable cell value</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if out of bounds</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Obtains the value of a cell for modification</p>
+          </div></section>
+          <section class="m-doc-details" id="a1adc5c2b6cc03523bdb89ee46e8e3e1d"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">const T&amp; bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1adc5c2b6cc03523bdb89ee46e8e3e1d" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> l) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">l</td>
+                  <td>the row number</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>immutable cell value</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if out of bounds</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Obtains the value of a cell for reading</p>
+          </div></section>
+          <section class="m-doc-details" id="ac0fec1f027a4863948142e65f8b4b590"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">const T* bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac0fec1f027a4863948142e65f8b4b590" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable low-level C array</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a low-level C array, used to transfer to lower-level APIs</p>
+          </div></section>
+          <section class="m-doc-details" id="aedcec969d4713838106c7976d26c4f6a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T* bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aedcec969d4713838106c7976d26c4f6a" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>mutable low-level C array</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a low-level C array, used to transfer to lower-level APIs</p>
+          </div></section>
+          <section class="m-doc-details" id="a462994df1715cc3f9037fed6052b5d7b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a462994df1715cc3f9037fed6052b5d7b" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span></span>
+            </h3>
+<p>Copy assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a87ac2cafe75d6da44f666058cda86f84"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a87ac2cafe75d6da44f666058cda86f84" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a0f5ac62dc538d1a6a7a6372f1727ec31"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0f5ac62dc538d1a6a7a6372f1727ec31" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs element-wise addition</p>
+          </div></section>
+          <section class="m-doc-details" id="a61468ef84d999b25b5c086b7734fe431"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a61468ef84d999b25b5c086b7734fe431" class="m-doc-self">operator-</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs element-wise subtraction</p>
+          </div></section>
+          <section class="m-doc-details" id="a41bb671e250a7d5d6d6eff63c04b69dd"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a41bb671e250a7d5d6d6eff63c04b69dd" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs element-wise multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="a61819844699f989e5a68078d4ee6fcc7"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a61819844699f989e5a68078d4ee6fcc7" class="m-doc-self">operator/</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs element-wise division</p>
+          </div></section>
+          <section class="m-doc-details" id="a7258681d86e5bd350c0820b445ad3c38"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7258681d86e5bd350c0820b445ad3c38" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const T other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs vector-scalar multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="a592e5f8ea3d2a30f84e01c812b6d5fe8"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a592e5f8ea3d2a30f84e01c812b6d5fe8" class="m-doc-self">operator/</a>(</span><span class="m-doc-wrap">const T other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs vector-scalar division</p>
+          </div></section>
+          <section class="m-doc-details" id="a934179df9e4abae794572503ead19a9a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a934179df9e4abae794572503ead19a9a" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Performs element-wise addition</p>
+          </div></section>
+          <section class="m-doc-details" id="af912ed8a2ed67197e9910dab50945ebc"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af912ed8a2ed67197e9910dab50945ebc" class="m-doc-self">operator-=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Performs element-wise subtraction</p>
+          </div></section>
+          <section class="m-doc-details" id="a10a692195067f6880ee779a13d34b5fa"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a10a692195067f6880ee779a13d34b5fa" class="m-doc-self">operator*=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Performs element-wise multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="af5fa4b75bfc3f66dfffef83d7eafb5b5"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af5fa4b75bfc3f66dfffef83d7eafb5b5" class="m-doc-self">operator/=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Performs element-wise division</p>
+          </div></section>
+          <section class="m-doc-details" id="a126c7e81631a744bb5152f533bea1a7e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a126c7e81631a744bb5152f533bea1a7e" class="m-doc-self">operator*=</a>(</span><span class="m-doc-wrap">const T other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Performs vector-scalar multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="adce05d215623b3950f23379e9df42837"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adce05d215623b3950f23379e9df42837" class="m-doc-self">operator/=</a>(</span><span class="m-doc-wrap">const T other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Performs vector-scalar division</p>
+          </div></section>
+          <section class="m-doc-details" id="a224abc6f30173fd8ee5fcf262eb3d6ea"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a224abc6f30173fd8ee5fcf262eb3d6ea" class="m-doc-self">operator-</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>negated vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Negates this vector</p>
+          </div></section>
+          <section class="m-doc-details" id="a2b797250e690da532c00bcdae271359b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2b797250e690da532c00bcdae271359b" class="m-doc-self">Dot</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the dot product</p>
+          </div></section>
+          <section class="m-doc-details" id="a58ef18a345bdcd31fe1bef6a43b91ef9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a58ef18a345bdcd31fe1bef6a43b91ef9" class="m-doc-self">Distance</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the distance between two vectors</p>
+          </div></section>
+          <section class="m-doc-details" id="a693e7e63590943db2872c384327aa95d"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a693e7e63590943db2872c384327aa95d" class="m-doc-self">DistanceSquared</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the squared distance between two vectors</p>
+          </div></section>
+          <section class="m-doc-details" id="ab5a8b7dcf3cb7b85d2e9ae7db4a74da8"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab5a8b7dcf3cb7b85d2e9ae7db4a74da8" class="m-doc-self">Norm</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the norm of this vector</p>
+          </div></section>
+          <section class="m-doc-details" id="a7d168cc87a9ca6c81ff3abdc5d2981a3"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7d168cc87a9ca6c81ff3abdc5d2981a3" class="m-doc-self">NormSquared</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the squared norm of this vector</p>
+          </div></section>
+          <section class="m-doc-details" id="a5b925239abcccbf23ba8fd96c4081667"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5b925239abcccbf23ba8fd96c4081667" class="m-doc-self">Normalize</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>normalized vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Normalizes this vector (by dividing each component by <a href="classbpf_1_1math_1_1_vector_3_01_t_00_014_01_4.html#ab5a8b7dcf3cb7b85d2e9ae7db4a74da8" class="m-doc">Norm()</a>)</p>
+          </div></section>
+          <section class="m-doc-details" id="a65ceecb1db58671a35f770369384ddc4"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a65ceecb1db58671a35f770369384ddc4" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>vector to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the two vectors are equal, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two vectors</p>
+          </div></section>
+          <section class="m-doc-details" id="a1111e9ce8b1133cc2967c4b09f1f50e9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1111e9ce8b1133cc2967c4b09f1f50e9" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>vector to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>false if the two vectors are equal, true otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two vectors</p>
+          </div></section>
+          <section class="m-doc-details" id="a25577e3d530d06409ba6193c3b7f673a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a25577e3d530d06409ba6193c3b7f673a" class="m-doc-self">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>vector to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is less than other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two vectors</p>
+          </div></section>
+          <section class="m-doc-details" id="a3143bd9797646a8be1f33ac91e758631"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3143bd9797646a8be1f33ac91e758631" class="m-doc-self">operator&gt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>vector to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is greater than other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two vectors</p>
+          </div></section>
+          <section class="m-doc-details" id="a8ad611aba3f122e882abbbd25d2426c4"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8ad611aba3f122e882abbbd25d2426c4" class="m-doc-self">operator&lt;=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>vector to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is less or equal than other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two vectors</p>
+          </div></section>
+          <section class="m-doc-details" id="a0de4883d440ab42c85e60c66e33a88c0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0de4883d440ab42c85e60c66e33a88c0" class="m-doc-self">operator&gt;=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>vector to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is greater or equal than other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two vectors</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a62cc502ee567bce79c7e0075b892aa23"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /><a href="#a62cc502ee567bce79c7e0075b892aa23" class="m-doc-self">Zero</a>
+            </h3>
+<p>Zero vector constant</p>
+          </div></section>
+          <section class="m-doc-details" id="ac669a6ee1582e2fc9770e21015d9b5a3"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a> bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /><a href="#ac669a6ee1582e2fc9770e21015d9b5a3" class="m-doc-self">Identity</a>
+            </h3>
+<p>Identity vector constant (1, 1, 1, 1)</p>
+          </div></section>
+          <section class="m-doc-details" id="a58430513be27330d12c4aaf5de620163"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /><a href="#a58430513be27330d12c4aaf5de620163" class="m-doc-self">X</a>
+            </h3>
+<p>X coordinate</p>
+          </div></section>
+          <section class="m-doc-details" id="a80f48f03ad73524bb474e3382f98625c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /><a href="#a80f48f03ad73524bb474e3382f98625c" class="m-doc-self">Y</a>
+            </h3>
+<p>Y coordinate</p>
+          </div></section>
+          <section class="m-doc-details" id="ae48039876a8d2e671d9c9f37b3205ff0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /><a href="#ae48039876a8d2e671d9c9f37b3205ff0" class="m-doc-self">Z</a>
+            </h3>
+<p>Z coordinate</p>
+          </div></section>
+          <section class="m-doc-details" id="ad3205a7405f60467bc17de962ee51ff0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />math::<wbr />Vector&lt;T, 4&gt;&lt;T&gt;::<wbr /><a href="#ad3205a7405f60467bc17de962ee51ff0" class="m-doc-self">W</a>
+            </h3>
+<p>W coordinate</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::io::BinaryReader class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1io.html">io</a>::<wbr/></span>BinaryReader <span class="m-thin">class</span> <span class="m-label m-flat m-warning">final</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_binary_reader_8hpp.html">&lt;Base/include/Framework/IO/BinaryReader.hpp&gt;</a></div>
+        </h1>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Binary deserializer</p>
+        <section id="base-classes">
+          <h2><a href="#base-classes">Base classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ac50b12244fa165783af1eb15f93c0278" class="m-doc">BinaryReader</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_i_input_stream.html" class="m-doc">IInputStream</a>&amp; stream,
+              <a href="namespacebpf_1_1system.html#aff606c5e1808e6d29cc01c30d14e6388" class="m-doc">system::<wbr />EPlatformEndianess</a> order = <a href="namespacebpf_1_1system.html#aff606c5e1808e6d29cc01c30d14e6388a5a9deb54624bf0bc8fa263cd8c4c577d" class="m-doc">system::<wbr />PLATFORM_LITTLEENDIAN</a>,
+              bool buffered = true) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#af78e0bafc7af32e7f43b03bac2a37b67" class="m-doc">SetStringSerializer</a>(</span><span class="m-doc-wrap"><a href="namespacebpf_1_1io.html#a33780f7eacb308676ec07172ae8077e8" class="m-doc">EStringSerializer</a> ser)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad977fc67073810de60bdce26adb93dd9" class="m-doc">Read</a>(</span><span class="m-doc-wrap">void* buf,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bufsize) -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7672f1fac73eb0a176b363c50cb8c29a" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a>&amp; u) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a56104413afb45b32290095800d5a4af3" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a091559d2ef61167f0deb64f99ec4875a" class="m-doc">uint16</a>&amp; u) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0bedf2f60ed0a15dae885589055565ef" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a>&amp; u) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aea6c7add35f026212278d8b80c260033" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a>&amp; u) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad09cf9fae2c9fbbf42e9f7921f56e664" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a585dd1c104d05cca2a39fb7e0b8433ce" class="m-doc">int8</a>&amp; i) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8410b25e1d403b81743be09a9a5baffc" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a4f402f887604fa9805eaf4aacb659223" class="m-doc">int16</a>&amp; i) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6ca972a8c630805fdd67655b78a499ad" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a>&amp; i) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a65247cbe2dbcdf4a2dd4d93b3daca3c6" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a>&amp; i) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5b2ed4e267e91c8e57984dbf96681c4f" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap">float&amp; f) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a329bd3c8175e50651e95355558737a29" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap">double&amp; d) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abd50be385b5dd36cdaf0d0ada21c1583" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap">bool&amp; b) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae617bfc63d64d23cc4cb8a43b192341a" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">bpf::<wbr />String</a>&amp; str) -&gt; <a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; <span class="m-label m-flat m-warning">final</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="ac50b12244fa165783af1eb15f93c0278"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac50b12244fa165783af1eb15f93c0278" class="m-doc-self">BinaryReader</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_i_input_stream.html" class="m-doc">IInputStream</a>&amp; stream,
+              <a href="namespacebpf_1_1system.html#aff606c5e1808e6d29cc01c30d14e6388" class="m-doc">system::<wbr />EPlatformEndianess</a> order = <a href="namespacebpf_1_1system.html#aff606c5e1808e6d29cc01c30d14e6388a5a9deb54624bf0bc8fa263cd8c4c577d" class="m-doc">system::<wbr />PLATFORM_LITTLEENDIAN</a>,
+              bool buffered = true) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">stream</td>
+                  <td>the stream to read from</td>
+                </tr>
+                <tr>
+                  <td>order</td>
+                  <td>what byte order to use when reading data from this stream</td>
+                </tr>
+                <tr>
+                  <td>buffered</td>
+                  <td>true to allow buffering, false otherwise</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Creates a <a href="classbpf_1_1io_1_1_binary_reader.html" class="m-doc">BinaryReader</a></p>
+          </div></section>
+          <section class="m-doc-details" id="af78e0bafc7af32e7f43b03bac2a37b67"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af78e0bafc7af32e7f43b03bac2a37b67" class="m-doc-self">SetStringSerializer</a>(</span><span class="m-doc-wrap"><a href="namespacebpf_1_1io.html#a33780f7eacb308676ec07172ae8077e8" class="m-doc">EStringSerializer</a> ser)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">ser</td>
+                  <td>the new string serializing function</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Sets the string serializing function to use for reading strings</p>
+          </div></section>
+          <section class="m-doc-details" id="ad977fc67073810de60bdce26adb93dd9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad977fc67073810de60bdce26adb93dd9" class="m-doc-self">Read</a>(</span><span class="m-doc-wrap">void* buf,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bufsize) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">buf</td>
+                  <td>buffer to receive the read bytes</td>
+                </tr>
+                <tr>
+                  <td>bufsize</td>
+                  <td>the size of the receiving buffer</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>fsize number of bytes read</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Reads reaw bytes from the stream, taking into account buffering</p>
+          </div></section>
+          <section class="m-doc-details" id="a7672f1fac73eb0a176b363c50cb8c29a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7672f1fac73eb0a176b363c50cb8c29a" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a>&amp; u) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">u</td>
+                  <td>deserialized uint8</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a56104413afb45b32290095800d5a4af3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a56104413afb45b32290095800d5a4af3" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a091559d2ef61167f0deb64f99ec4875a" class="m-doc">uint16</a>&amp; u) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">u</td>
+                  <td>deserialized uint16</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a0bedf2f60ed0a15dae885589055565ef"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0bedf2f60ed0a15dae885589055565ef" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a>&amp; u) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">u</td>
+                  <td>deserialized uint21</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="aea6c7add35f026212278d8b80c260033"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aea6c7add35f026212278d8b80c260033" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a>&amp; u) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">u</td>
+                  <td>deserialized uint64</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="ad09cf9fae2c9fbbf42e9f7921f56e664"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad09cf9fae2c9fbbf42e9f7921f56e664" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a585dd1c104d05cca2a39fb7e0b8433ce" class="m-doc">int8</a>&amp; i) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>deserialized int8</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a8410b25e1d403b81743be09a9a5baffc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8410b25e1d403b81743be09a9a5baffc" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a4f402f887604fa9805eaf4aacb659223" class="m-doc">int16</a>&amp; i) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>deserialized int16</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a6ca972a8c630805fdd67655b78a499ad"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6ca972a8c630805fdd67655b78a499ad" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a>&amp; i) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>deserialized int32</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a65247cbe2dbcdf4a2dd4d93b3daca3c6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a65247cbe2dbcdf4a2dd4d93b3daca3c6" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a>&amp; i) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>deserialized int64</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a5b2ed4e267e91c8e57984dbf96681c4f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5b2ed4e267e91c8e57984dbf96681c4f" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap">float&amp; f) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">f</td>
+                  <td>deserialized float</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a329bd3c8175e50651e95355558737a29"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a329bd3c8175e50651e95355558737a29" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap">double&amp; d) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">d</td>
+                  <td>deserialized double</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a number</p>
+          </div></section>
+          <section class="m-doc-details" id="abd50be385b5dd36cdaf0d0ada21c1583"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd50be385b5dd36cdaf0d0ada21c1583" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap">bool&amp; b) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">b</td>
+                  <td>deserialized bool</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a boolean</p>
+          </div></section>
+          <section class="m-doc-details" id="ae617bfc63d64d23cc4cb8a43b192341a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp; bpf::<wbr />io::<wbr />BinaryReader::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae617bfc63d64d23cc4cb8a43b192341a" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">bpf::<wbr />String</a>&amp; str) <span class="m-label m-warning">final</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>deserialized high-level string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1io_1_1_i_data_input_stream.html" class="m-doc">IDataInputStream</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deserialize a string</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>BlockProject 3D</title>
+  <title>bpf::memory::Object class | BlockProject 3D</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
@@ -44,52 +44,91 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          BlockProject 3D Framework
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1memory.html">memory</a>::<wbr/></span>Object <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_object_8hpp.html">&lt;Base/include/Framework/Memory/Object.hpp&gt;</a></div>
         </h1>
-      </div>
-    </div>
-	<div class="m-row">
-		<div class="m-col-l-10 m-push-l-1">
-			<p><strong>High level C++ Framework</strong></p>
-		</div>
-	</div>
-    <div class="m-row">
-      <div class="m-col-l-10 m-push-l-1">
-        <h2>
-          Links
-        </h2>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Github Group</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D">https://github.com/BlockProject3D</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Github</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework">https://github.com/BlockProject3D/Framework</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Releases</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework/releases">https://github.com/BlockProject3D/Framework/releases</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Wiki</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework/wiki">https://github.com/BlockProject3D/Framework/wiki</a>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Base class to allow <a href="classbpf_1_1memory_1_1_object_ptr.html" class="m-doc">ObjectPtr</a> automatic pointer garbage collector to work</p>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aabfec07369eb9e49270e940786606adf" class="m-doc">Object</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt id="a7fad89f7c3512824d8379aa85d22c7e4">
+              <span class="m-doc-wrap-bumper"><a href="#a7fad89f7c3512824d8379aa85d22c7e4" class="m-doc-self">~Object</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a4297f7ac99e6b1ee91530e15154fa751" class="m-doc">AddRef</a>(</span><span class="m-doc-wrap">void** ref)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ac378a498bbd3bc29a946faeaea4390e6" class="m-doc">RemoveRef</a>(</span><span class="m-doc-wrap">void** ref)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="aabfec07369eb9e49270e940786606adf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />memory::<wbr />Object::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aabfec07369eb9e49270e940786606adf" class="m-doc-self">Object</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs an object</p>
+          </div></section>
+          <section class="m-doc-details" id="a4297f7ac99e6b1ee91530e15154fa751"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />memory::<wbr />Object::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4297f7ac99e6b1ee91530e15154fa751" class="m-doc-self">AddRef</a>(</span><span class="m-doc-wrap">void** ref)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">ref</td>
+                  <td>pointer to the member</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Adds a member reference to this object</p>
+          </div></section>
+          <section class="m-doc-details" id="ac378a498bbd3bc29a946faeaea4390e6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />memory::<wbr />Object::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac378a498bbd3bc29a946faeaea4390e6" class="m-doc-self">RemoveRef</a>(</span><span class="m-doc-wrap">void** ref)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">ref</td>
+                  <td>pointer to member</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes a reference from this object</p>
+          </div></section>
+        </section>
       </div>
     </div>
   </div>
@@ -134,9 +173,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>Copyright (c) 2020, BlockProject 3D.
-		<br />
-		Created with <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>

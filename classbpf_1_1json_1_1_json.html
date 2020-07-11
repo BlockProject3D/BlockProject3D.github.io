@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::json::Json class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1json.html">json</a>::<wbr/></span>Json <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_json_8hpp.html">&lt;Base/include/Framework/Json/Json.hpp&gt;</a></div>
+        </h1>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Represents an arbitary <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value</p>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              class <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>
+            </dt>
+            <dd></dd>
+            <dt id="a40f19be43f6f3a35200f06bac3ece956">
+              <span class="m-doc-wrap-bumper">enum <a href="#a40f19be43f6f3a35200f06bac3ece956" class="m-doc-self">EType</a> { </span><span class="m-doc-wrap"><a href="#a40f19be43f6f3a35200f06bac3ece956a25f14edcfdfe8a94b8fa533d69fa1ac7" class="m-doc">NUMBER</a>,
+              <a href="#a40f19be43f6f3a35200f06bac3ece956a0eef6990847de6f0bd470bd13f48dffe" class="m-doc">BOOLEAN</a>,
+              <a href="#a40f19be43f6f3a35200f06bac3ece956a510865e536d7b72172ba5909f31e6dfe" class="m-doc">STRING</a>,
+              <a href="#a40f19be43f6f3a35200f06bac3ece956ab952a0d23abbd903bb799e92d65e001c" class="m-doc">ARRAY</a>,
+              <a href="#a40f19be43f6f3a35200f06bac3ece956ab9a147346cac379feb27e6a5ffe58709" class="m-doc">OBJECT</a>,
+              <a href="#a40f19be43f6f3a35200f06bac3ece956a7e38f7b06c9558e3f580276b8e468f66" class="m-doc">NONE</a> }</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#afa57c0a882bcdd514ca93ac784e068e2" class="m-doc">Json</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a3741cded023d9bc3d81ca97e6dc23777" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ac34074286f492feda12098f79b4196a5" class="m-doc">Json</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a242e4ba1ad2cc1d8719280b5d057bf67" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const double val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a4ca13e9d653e6a0bac4dfc7c3097a624" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const bool val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a6f73730fcdb1e266054a3a250fb2b14d" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a58affb856c239beb62d83fedc7e6b937" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const char* val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ac9da0f17e6eec137d0faccfab4b489ce" class="m-doc">Json</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;&amp; val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a8bad73c92e6a1669e5bffaf9ea8d6567" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>&amp; val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aea5e399333d5975108bb81892a2f3895" class="m-doc">Json</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>&amp;&amp; val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a9c4e65cadc7bc99c0959744bdb72b1c7" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>&amp; arr)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a965c58fa4847ae7044ffd6f4698cc7bf" class="m-doc">Json</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>&amp;&amp; arr)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a1b04a693b702e2552617b1a845444743" class="m-doc">operator double</a>(</span><span class="m-doc-wrap">) const</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a5beeb7316124e75a20a628c8fa341d6c" class="m-doc">operator bool</a>(</span><span class="m-doc-wrap">) const</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#af96563cd235636c6dac13afc176c6465" class="m-doc">operator const String&amp;</a>(</span><span class="m-doc-wrap">) const</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ad52edd7808dcc20534681f3e187375a7" class="m-doc">operator const Array&amp;</a>(</span><span class="m-doc-wrap">) const</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a7431afc12002f513fe96371aba596c74" class="m-doc">operator const Object&amp;</a>(</span><span class="m-doc-wrap">) const</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a9f7a84fa527b88ebff15d17d661efc68" class="m-doc">operator Array&amp;</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ac0158283279322417f75599736aef00d" class="m-doc">operator Object&amp;</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aff66fcc82acaa6b2df11dec5c58a7d47" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; other) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a38f41aff5f15860690076157eebf7ecb" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae469ad1168b3a61249d85d2c4a8adfe1" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const double val) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8b3745c64fa85340f28b2237522c8b46" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const bool val) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad0366b638d4371098da204be5fd0c60f" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; val) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3095f5e2c2f9ddfe1522c8dc1c24ba27" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const char* val) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a389887c714e73bd3059411a5723fc2ae" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>&amp; val) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a910aef9fa845fd97987bab0d5f48ec8b" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>&amp; val) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a72fa93f217bf01ca8e90d9106554dfb4" class="m-doc">Type</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1json_1_1_json.html#a40f19be43f6f3a35200f06bac3ece956" class="m-doc">EType</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a987729048cd5d6c7d287d5969157bd4e" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">double other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abce35f10bbadf2986120395e27726dcf" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">bool other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a53779a726e018ae24e56d9c92b4355e8" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a467c20b7e0833546b5c1665b2ddc422a" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const char* other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0f58b78302eb104a8c7bf512a4268ce2" class="m-doc">ToNumber</a>(</span><span class="m-doc-wrap">) const -&gt; double</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a064aea076e55ef43ad5341e75678a18f" class="m-doc">ToBoolean</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab4b3b1fcd12fec2113ef49c2e5232a5c" class="m-doc">ToString</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aee998f1954881246db6458a8e988782a" class="m-doc">ToArray</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4ebe8d26bb1b916b068802ae6280e480" class="m-doc">ToObject</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>&amp;</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="afa57c0a882bcdd514ca93ac784e068e2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afa57c0a882bcdd514ca93ac784e068e2" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs a null <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value</p>
+          </div></section>
+          <section class="m-doc-details" id="a3741cded023d9bc3d81ca97e6dc23777"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3741cded023d9bc3d81ca97e6dc23777" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; other)</span></span>
+            </h3>
+<p>Copy constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="ac34074286f492feda12098f79b4196a5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac34074286f492feda12098f79b4196a5" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a242e4ba1ad2cc1d8719280b5d057bf67"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a242e4ba1ad2cc1d8719280b5d057bf67" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const double val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the number to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> number value</p>
+          </div></section>
+          <section class="m-doc-details" id="a4ca13e9d653e6a0bac4dfc7c3097a624"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4ca13e9d653e6a0bac4dfc7c3097a624" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const bool val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the boolean to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> boolean value</p>
+          </div></section>
+          <section class="m-doc-details" id="a6f73730fcdb1e266054a3a250fb2b14d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6f73730fcdb1e266054a3a250fb2b14d" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the string to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> string value</p>
+          </div></section>
+          <section class="m-doc-details" id="a58affb856c239beb62d83fedc7e6b937"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a58affb856c239beb62d83fedc7e6b937" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const char* val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the string to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> string value</p>
+          </div></section>
+          <section class="m-doc-details" id="ac9da0f17e6eec137d0faccfab4b489ce"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac9da0f17e6eec137d0faccfab4b489ce" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the string to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> string value</p>
+          </div></section>
+          <section class="m-doc-details" id="a8bad73c92e6a1669e5bffaf9ea8d6567"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8bad73c92e6a1669e5bffaf9ea8d6567" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the object to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> object value</p>
+          </div></section>
+          <section class="m-doc-details" id="aea5e399333d5975108bb81892a2f3895"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aea5e399333d5975108bb81892a2f3895" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>&amp;&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the object to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> object value</p>
+          </div></section>
+          <section class="m-doc-details" id="a9c4e65cadc7bc99c0959744bdb72b1c7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9c4e65cadc7bc99c0959744bdb72b1c7" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>&amp; arr)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">arr</td>
+                  <td>the array to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> array value</p>
+          </div></section>
+          <section class="m-doc-details" id="a965c58fa4847ae7044ffd6f4698cc7bf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a965c58fa4847ae7044ffd6f4698cc7bf" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>&amp;&amp; arr)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">arr</td>
+                  <td>the array to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> array value</p>
+          </div></section>
+          <section class="m-doc-details" id="a1b04a693b702e2552617b1a845444743"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1b04a693b702e2552617b1a845444743" class="m-doc-self">operator double</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>double</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a5beeb7316124e75a20a628c8fa341d6c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5beeb7316124e75a20a628c8fa341d6c" class="m-doc-self">operator bool</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>bool</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a boolean</p>
+          </div></section>
+          <section class="m-doc-details" id="af96563cd235636c6dac13afc176c6465"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af96563cd235636c6dac13afc176c6465" class="m-doc-self">operator const String&amp;</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable high-level string reference</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a string</p>
+          </div></section>
+          <section class="m-doc-details" id="ad52edd7808dcc20534681f3e187375a7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad52edd7808dcc20534681f3e187375a7" class="m-doc-self">operator const Array&amp;</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a> reference</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a7431afc12002f513fe96371aba596c74"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7431afc12002f513fe96371aba596c74" class="m-doc-self">operator const Object&amp;</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a> reference</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a9f7a84fa527b88ebff15d17d661efc68"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9f7a84fa527b88ebff15d17d661efc68" class="m-doc-self">operator Array&amp;</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>mutable <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a> reference</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a></p>
+          </div></section>
+          <section class="m-doc-details" id="ac0158283279322417f75599736aef00d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac0158283279322417f75599736aef00d" class="m-doc-self">operator Object&amp;</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>mutable <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a> reference</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a></p>
+          </div></section>
+          <section class="m-doc-details" id="aff66fcc82acaa6b2df11dec5c58a7d47"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aff66fcc82acaa6b2df11dec5c58a7d47" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; other)</span></span>
+            </h3>
+<p>Copy assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a38f41aff5f15860690076157eebf7ecb"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a38f41aff5f15860690076157eebf7ecb" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="ae469ad1168b3a61249d85d2c4a8adfe1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae469ad1168b3a61249d85d2c4a8adfe1" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const double val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>new value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a8b3745c64fa85340f28b2237522c8b46"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8b3745c64fa85340f28b2237522c8b46" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const bool val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>new value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to a boolean</p>
+          </div></section>
+          <section class="m-doc-details" id="ad0366b638d4371098da204be5fd0c60f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad0366b638d4371098da204be5fd0c60f" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>new value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to a string</p>
+          </div></section>
+          <section class="m-doc-details" id="a3095f5e2c2f9ddfe1522c8dc1c24ba27"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3095f5e2c2f9ddfe1522c8dc1c24ba27" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const char* val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>new value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to a string</p>
+          </div></section>
+          <section class="m-doc-details" id="a389887c714e73bd3059411a5723fc2ae"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a389887c714e73bd3059411a5723fc2ae" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>new value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to an object</p>
+          </div></section>
+          <section class="m-doc-details" id="a910aef9fa845fd97987bab0d5f48ec8b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a910aef9fa845fd97987bab0d5f48ec8b" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>new value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to an array</p>
+          </div></section>
+          <section class="m-doc-details" id="a72fa93f217bf01ca8e90d9106554dfb4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html#a40f19be43f6f3a35200f06bac3ece956" class="m-doc">EType</a> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a72fa93f217bf01ca8e90d9106554dfb4" class="m-doc-self">Type</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>type enumeration</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the type of this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value</p>
+          </div></section>
+          <section class="m-doc-details" id="a987729048cd5d6c7d287d5969157bd4e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a987729048cd5d6c7d287d5969157bd4e" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">double other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>value to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compares a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value with a number</p>
+          </div></section>
+          <section class="m-doc-details" id="abce35f10bbadf2986120395e27726dcf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abce35f10bbadf2986120395e27726dcf" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">bool other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>value to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compares a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value with a boolean</p>
+          </div></section>
+          <section class="m-doc-details" id="a53779a726e018ae24e56d9c92b4355e8"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a53779a726e018ae24e56d9c92b4355e8" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>value to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compares a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value with a string</p>
+          </div></section>
+          <section class="m-doc-details" id="a467c20b7e0833546b5c1665b2ddc422a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a467c20b7e0833546b5c1665b2ddc422a" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const char* other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>value to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compares a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value with a string</p>
+          </div></section>
+          <section class="m-doc-details" id="a0f58b78302eb104a8c7bf512a4268ce2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">double bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0f58b78302eb104a8c7bf512a4268ce2" class="m-doc-self">ToNumber</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>double</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a number</p>
+          </div></section>
+          <section class="m-doc-details" id="a064aea076e55ef43ad5341e75678a18f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a064aea076e55ef43ad5341e75678a18f" class="m-doc-self">ToBoolean</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>bool</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a boolean</p>
+          </div></section>
+          <section class="m-doc-details" id="ab4b3b1fcd12fec2113ef49c2e5232a5c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab4b3b1fcd12fec2113ef49c2e5232a5c" class="m-doc-self">ToString</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable high-level string reference</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a string</p>
+          </div></section>
+          <section class="m-doc-details" id="aee998f1954881246db6458a8e988782a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aee998f1954881246db6458a8e988782a" class="m-doc-self">ToArray</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a> reference</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> <a href="classbpf_1_1json_1_1_json_1_1_array.html" class="m-doc">Array</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a4ebe8d26bb1b916b068802ae6280e480"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4ebe8d26bb1b916b068802ae6280e480" class="m-doc-self">ToObject</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a> reference</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a></p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

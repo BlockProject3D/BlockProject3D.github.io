@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::math::Color class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1math.html">math</a>::<wbr/></span>Color <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_color_8hpp.html">&lt;Base/include/Framework/Math/Color.hpp&gt;</a></div>
+        </h1>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pub-attribs">Public variables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Represents a color</p>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> <a href="#ae1d791425fecbdc104ee116201d6eb72" class="m-doc">Red</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> <a href="#ac5fdda9ef207bf41ed7df9f7674ab46f" class="m-doc">Green</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> <a href="#a07e5e2889b53f83a1cd9adb168e6f0f7" class="m-doc">Blue</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> <a href="#a6af3162cdd896848dff6c2225b58db63" class="m-doc">White</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> <a href="#a38d5d859bbfc782fcb96e78e3d302b02" class="m-doc">Black</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> <a href="#a322c7c29b2a8bf217e4fbd032f3c1b6b" class="m-doc">Yellow</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> <a href="#a08e1ff212a5849c3a657fd9474655918" class="m-doc">Cyan</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a618f7311bf48da2cc803a85b63e2c0e0" class="m-doc">Color</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a7a1bf3e887bf2a734f01e2f30dee3520" class="m-doc">Color</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> r,
+              const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> g,
+              const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> b,
+              const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> a = 255)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#af291bcb9dd40e342e4879fc93b797a48" class="m-doc">Color</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other,
+              const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> a)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aafa443d319b142f9158638672b09a50b" class="m-doc">Color</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> grey) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aa18b7e6c149ee9b9b5417ff2e4d472e4" class="m-doc">Color</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> rgb) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa2e3cf235436c1a3923db1280b3743fd" class="m-doc">Pack</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac5a629b648f5aea4bbb569a7b577fe96" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a15c0afd693a661f13291cff3846e3528" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a34459856d8bb20c847de4ddc9d808ba0" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2edcd6c1085f4bf48d656b6afb3ceada" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4ba00d642585c5c43db6a4dfaa5567c6" class="m-doc">Normalize</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf_1_1math.html#a057c20eb870634cb4895434024b3de4a" class="m-doc">Vector3f</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a37d3f2fd305eb562ffe1352381f768f4" class="m-doc">NormalizeAlpha</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf_1_1math.html#a8963748a00e124b2d021a3f19e57aab2" class="m-doc">Vector4f</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-attribs">
+          <h2><a href="#pub-attribs">Public variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> <a href="#a1aceeea84c2ba8bdbe0b2a0942b3e11b" class="m-doc">R</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> <a href="#a315ad90840b335bc9f120639c713db2f" class="m-doc">G</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> <a href="#a45aa9b32843645c83056626327e44598" class="m-doc">B</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> <a href="#aa3cbacf250b0c6424b627a0ff5a1ec2c" class="m-doc">A</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a618f7311bf48da2cc803a85b63e2c0e0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a618f7311bf48da2cc803a85b63e2c0e0" class="m-doc-self">Color</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs a Black <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a7a1bf3e887bf2a734f01e2f30dee3520"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7a1bf3e887bf2a734f01e2f30dee3520" class="m-doc-self">Color</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> r,
+              const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> g,
+              const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> b,
+              const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> a = 255)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">r</td>
+                  <td>the red component</td>
+                </tr>
+                <tr>
+                  <td>g</td>
+                  <td>the green component</td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>the blue component</td>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>the alpha component</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> from individual RGBA components</p>
+          </div></section>
+          <section class="m-doc-details" id="af291bcb9dd40e342e4879fc93b797a48"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af291bcb9dd40e342e4879fc93b797a48" class="m-doc-self">Color</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other,
+              const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> a)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the other <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> to copy RGB components from</td>
+                </tr>
+                <tr>
+                  <td>a</td>
+                  <td>the new alpha value</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a></p>
+          </div></section>
+          <section class="m-doc-details" id="aafa443d319b142f9158638672b09a50b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aafa443d319b142f9158638672b09a50b" class="m-doc-self">Color</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> grey) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">grey</td>
+                  <td>the grey scale value</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a grey scale <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a></p>
+          </div></section>
+          <section class="m-doc-details" id="aa18b7e6c149ee9b9b5417ff2e4d472e4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa18b7e6c149ee9b9b5417ff2e4d472e4" class="m-doc-self">Color</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> rgb) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">rgb</td>
+                  <td>the packed rgb integer</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> from a packed rgb int</p>
+          </div></section>
+          <section class="m-doc-details" id="aa2e3cf235436c1a3923db1280b3743fd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa2e3cf235436c1a3923db1280b3743fd" class="m-doc-self">Pack</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>the packed color as integer</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Pack this color into a single integer</p>
+          </div></section>
+          <section class="m-doc-details" id="ac5a629b648f5aea4bbb569a7b577fe96"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac5a629b648f5aea4bbb569a7b577fe96" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the color to blend with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Blends two colors by addition</p>
+          </div></section>
+          <section class="m-doc-details" id="a15c0afd693a661f13291cff3846e3528"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a15c0afd693a661f13291cff3846e3528" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the color to blend with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Blends two colors by multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="a34459856d8bb20c847de4ddc9d808ba0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a34459856d8bb20c847de4ddc9d808ba0" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the color to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the two colors are equal, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two colors</p>
+          </div></section>
+          <section class="m-doc-details" id="a2edcd6c1085f4bf48d656b6afb3ceada"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2edcd6c1085f4bf48d656b6afb3ceada" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the color to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>false if the two colors are equal, true otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two colors</p>
+          </div></section>
+          <section class="m-doc-details" id="a4ba00d642585c5c43db6a4dfaa5567c6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf_1_1math.html#a057c20eb870634cb4895434024b3de4a" class="m-doc">Vector3f</a> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4ba00d642585c5c43db6a4dfaa5567c6" class="m-doc-self">Normalize</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>normalized RGB color as an order 3 float vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Normalizes this color taking only R, G and B channels</p>
+          </div></section>
+          <section class="m-doc-details" id="a37d3f2fd305eb562ffe1352381f768f4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf_1_1math.html#a8963748a00e124b2d021a3f19e57aab2" class="m-doc">Vector4f</a> bpf::<wbr />math::<wbr />Color::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a37d3f2fd305eb562ffe1352381f768f4" class="m-doc-self">NormalizeAlpha</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>normalized RGBA color as an order 4 float vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Normalizes this color taking all channels (supports alpha)</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="ae1d791425fecbdc104ee116201d6eb72"><div>
+            <h3>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#ae1d791425fecbdc104ee116201d6eb72" class="m-doc-self">Red</a>
+            </h3>
+<p>The Red color</p>
+          </div></section>
+          <section class="m-doc-details" id="ac5fdda9ef207bf41ed7df9f7674ab46f"><div>
+            <h3>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#ac5fdda9ef207bf41ed7df9f7674ab46f" class="m-doc-self">Green</a>
+            </h3>
+<p>The Green color</p>
+          </div></section>
+          <section class="m-doc-details" id="a07e5e2889b53f83a1cd9adb168e6f0f7"><div>
+            <h3>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#a07e5e2889b53f83a1cd9adb168e6f0f7" class="m-doc-self">Blue</a>
+            </h3>
+<p>The Blue color</p>
+          </div></section>
+          <section class="m-doc-details" id="a6af3162cdd896848dff6c2225b58db63"><div>
+            <h3>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#a6af3162cdd896848dff6c2225b58db63" class="m-doc-self">White</a>
+            </h3>
+<p>The White color</p>
+          </div></section>
+          <section class="m-doc-details" id="a38d5d859bbfc782fcb96e78e3d302b02"><div>
+            <h3>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#a38d5d859bbfc782fcb96e78e3d302b02" class="m-doc-self">Black</a>
+            </h3>
+<p>The Black color</p>
+          </div></section>
+          <section class="m-doc-details" id="a322c7c29b2a8bf217e4fbd032f3c1b6b"><div>
+            <h3>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#a322c7c29b2a8bf217e4fbd032f3c1b6b" class="m-doc-self">Yellow</a>
+            </h3>
+<p>The Yellow color</p>
+          </div></section>
+          <section class="m-doc-details" id="a08e1ff212a5849c3a657fd9474655918"><div>
+            <h3>
+              static const <a href="classbpf_1_1math_1_1_color.html" class="m-doc">Color</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#a08e1ff212a5849c3a657fd9474655918" class="m-doc-self">Cyan</a>
+            </h3>
+<p>The Cyan color</p>
+          </div></section>
+          <section class="m-doc-details" id="a1aceeea84c2ba8bdbe0b2a0942b3e11b"><div>
+            <h3>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#a1aceeea84c2ba8bdbe0b2a0942b3e11b" class="m-doc-self">R</a>
+            </h3>
+<p>R component</p>
+          </div></section>
+          <section class="m-doc-details" id="a315ad90840b335bc9f120639c713db2f"><div>
+            <h3>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#a315ad90840b335bc9f120639c713db2f" class="m-doc-self">G</a>
+            </h3>
+<p>G component</p>
+          </div></section>
+          <section class="m-doc-details" id="a45aa9b32843645c83056626327e44598"><div>
+            <h3>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#a45aa9b32843645c83056626327e44598" class="m-doc-self">B</a>
+            </h3>
+<p>B component</p>
+          </div></section>
+          <section class="m-doc-details" id="aa3cbacf250b0c6424b627a0ff5a1ec2c"><div>
+            <h3>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> bpf::<wbr />math::<wbr />Color::<wbr /><a href="#aa3cbacf250b0c6424b627a0ff5a1ec2c" class="m-doc-self">A</a>
+            </h3>
+<p>A component</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

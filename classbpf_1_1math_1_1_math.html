@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::math::Math class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_math_8hpp.html">&lt;Base/include/Framework/Math/Math.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename T&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1math.html">math</a>::<wbr/></span>Math <span class="m-thin">class</span>
+        </h1>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">T</td>
+              <td>type of number to perform operations on</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Core math functions</p>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              static T <a href="#a314a4894fb9d28e96dc2f02323c1d456" class="m-doc">RadToDeg</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              static T <a href="#acd8eb88bae413085655b74515d6193c4" class="m-doc">DegToRad</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              static T <a href="#a377af3206dc4ec1af5a4eff1949d0b57" class="m-doc">Pi</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              static T <a href="#a2306d62614751641eaf976c54142d852" class="m-doc">TwoPi</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              static T <a href="#a95110cee574febf2792b91bc3fce9c72" class="m-doc">Epsilon</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#aa6b7478427361647b80c63b22bcf9a6e" class="m-doc">Abs</a>(</span><span class="m-doc-wrap">T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a4170f41a84b303e11e944a7b5fb69c71" class="m-doc">Lerp</a>(</span><span class="m-doc-wrap">const T a,
+              const T b,
+              const T alpha) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a0bd500e33668fbf6d6b9cdeb4eebd2a2" class="m-doc">Map</a>(</span><span class="m-doc-wrap">const T val,
+              const T srcmin,
+              const T srcmax,
+              const T dstmin,
+              const T dstmax) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a5578ded20ef8f64cb46329c15e43fe0c" class="m-doc">Clamp</a>(</span><span class="m-doc-wrap">const T val,
+              const T min,
+              const T max) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a1b70ccb5c86a9f28b2b0b5ee98ca87b1" class="m-doc">Round</a>(</span><span class="m-doc-wrap">const T val,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#aeb78c53d5b93d089347a198b8101a1b6" class="m-doc">Sqrt</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a9b91c56fdeb52ce8af5833ce9dfd3322" class="m-doc">Exp</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#aaba0d66e92c14b5959bf3f427e534d35" class="m-doc">Log</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a98e759b8eadbb959c756f37918446b17" class="m-doc">Log10</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a35996804ae97dbf3976de5ddc21f59f6" class="m-doc">Log</a>(</span><span class="m-doc-wrap">const T base,
+              const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ad5d35a55dfd422f8297cf37f6f776bff" class="m-doc">Cos</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a7cf6a3cd2c073df258dc4bbe1ccd447e" class="m-doc">Sin</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a2cdcf723158b88607ebf9269a4a54d7f" class="m-doc">Tan</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a23a83fe4d8653e912590f8ff9639bf74" class="m-doc">ArcCos</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#aa3382768c77eee52c57c1c7b0ea8a1f5" class="m-doc">ArcSin</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a11cdf81743dab0e6dc5c66954c698478" class="m-doc">ArcTan</a>(</span><span class="m-doc-wrap">const T val) -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a92147ceeca1f6ef1d2ae17a111da3eda" class="m-doc">ArcTan2</a>(</span><span class="m-doc-wrap">const T y,
+              const T x) -&gt; T</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="a192bc3ce00c0fd8e2e5716bcf11df81d">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a192bc3ce00c0fd8e2e5716bcf11df81d" class="m-doc-self">Sqrt</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad31fb61461d067a820c25831dcce1691">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad31fb61461d067a820c25831dcce1691" class="m-doc-self">Sqrt</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a184aee741d89c1f5d0a00606193aad21">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a184aee741d89c1f5d0a00606193aad21" class="m-doc-self">Exp</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aeb44da239b54fbaeb1f5b4d3252c0d31">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#aeb44da239b54fbaeb1f5b4d3252c0d31" class="m-doc-self">Exp</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a66d6fce72761cc4b269d4284fd2160b9">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a66d6fce72761cc4b269d4284fd2160b9" class="m-doc-self">Log</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="abaf510e13f994d169ea6d30dd6d42aa2">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#abaf510e13f994d169ea6d30dd6d42aa2" class="m-doc-self">Log</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a34762ddcb7025c694984d7cc36918ba2">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a34762ddcb7025c694984d7cc36918ba2" class="m-doc-self">Log10</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="acd729acf9b19ca22adcd39ca09b69e5e">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#acd729acf9b19ca22adcd39ca09b69e5e" class="m-doc-self">Log10</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8b382f6b5882120bcc31d3922e236999">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8b382f6b5882120bcc31d3922e236999" class="m-doc-self">Cos</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a3130572ad70d4c07de6bc780cf233e24">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3130572ad70d4c07de6bc780cf233e24" class="m-doc-self">Cos</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="add1b81d2d027ac77d8fab7eb3e54dc36">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#add1b81d2d027ac77d8fab7eb3e54dc36" class="m-doc-self">Sin</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="adc592767c2969747d7faac11a320f1e5">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#adc592767c2969747d7faac11a320f1e5" class="m-doc-self">Sin</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a4a1a37fb730f4cfb50c1ae2e6fe5f275">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4a1a37fb730f4cfb50c1ae2e6fe5f275" class="m-doc-self">Tan</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8f14b1514df22985c417b64a43dd3d67">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8f14b1514df22985c417b64a43dd3d67" class="m-doc-self">Tan</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a9c1999299e066a6eaf7804365b7a42c3">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9c1999299e066a6eaf7804365b7a42c3" class="m-doc-self">ArcCos</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad680114d16b6b8b93733c260e60a0cf2">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad680114d16b6b8b93733c260e60a0cf2" class="m-doc-self">ArcCos</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a018c1031f7cda4060a648fdc002b29f3">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a018c1031f7cda4060a648fdc002b29f3" class="m-doc-self">ArcSin</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa28d05213bc8abd7328a5946371d6db8">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa28d05213bc8abd7328a5946371d6db8" class="m-doc-self">ArcSin</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ab214697e5df0241ea4bcc26b0d20872c">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab214697e5df0241ea4bcc26b0d20872c" class="m-doc-self">ArcTan</a>(</span><span class="m-doc-wrap">const float val) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa84ce25ee477c46b7de893fc7f6a036e">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa84ce25ee477c46b7de893fc7f6a036e" class="m-doc-self">ArcTan</a>(</span><span class="m-doc-wrap">const long double val) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aca1d5d22bcd3275d1060a192a8158701">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#aca1d5d22bcd3275d1060a192a8158701" class="m-doc-self">ArcTan2</a>(</span><span class="m-doc-wrap">const float y,
+              const float x) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa153f893c9b8552f40374b054f684fa6">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa153f893c9b8552f40374b054f684fa6" class="m-doc-self">ArcTan2</a>(</span><span class="m-doc-wrap">const long double y,
+              const long double x) -&gt; long double</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="aa6b7478427361647b80c63b22bcf9a6e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa6b7478427361647b80c63b22bcf9a6e" class="m-doc-self">Abs</a>(</span><span class="m-doc-wrap">T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>value to convert to absolute value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>the absolute value of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Absolute value</p>
+          </div></section>
+          <section class="m-doc-details" id="a4170f41a84b303e11e944a7b5fb69c71"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4170f41a84b303e11e944a7b5fb69c71" class="m-doc-self">Lerp</a>(</span><span class="m-doc-wrap">const T a,
+              const T b,
+              const T alpha)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">a</td>
+                  <td>the initial value</td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>the target value</td>
+                </tr>
+                <tr>
+                  <td>alpha</td>
+                  <td>interpolation float</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>interpolated value</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs a linear interpolation</p>
+          </div></section>
+          <section class="m-doc-details" id="a0bd500e33668fbf6d6b9cdeb4eebd2a2"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0bd500e33668fbf6d6b9cdeb4eebd2a2" class="m-doc-self">Map</a>(</span><span class="m-doc-wrap">const T val,
+              const T srcmin,
+              const T srcmax,
+              const T dstmin,
+              const T dstmax)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the value to map</td>
+                </tr>
+                <tr>
+                  <td>srcmin</td>
+                  <td>the source minimum</td>
+                </tr>
+                <tr>
+                  <td>srcmax</td>
+                  <td>the source maximum</td>
+                </tr>
+                <tr>
+                  <td>dstmin</td>
+                  <td>the target minimum</td>
+                </tr>
+                <tr>
+                  <td>dstmax</td>
+                  <td>the target maximum</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>mapped value</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Maps a value between a min and a max value</p>
+          </div></section>
+          <section class="m-doc-details" id="a5578ded20ef8f64cb46329c15e43fe0c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5578ded20ef8f64cb46329c15e43fe0c" class="m-doc-self">Clamp</a>(</span><span class="m-doc-wrap">const T val,
+              const T min,
+              const T max)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the value to map</td>
+                </tr>
+                <tr>
+                  <td>min</td>
+                  <td>the minimum</td>
+                </tr>
+                <tr>
+                  <td>max</td>
+                  <td>the maximum</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>clamped value</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Clamps a value between a min and a max value</p>
+          </div></section>
+          <section class="m-doc-details" id="a1b70ccb5c86a9f28b2b0b5ee98ca87b1"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1b70ccb5c86a9f28b2b0b5ee98ca87b1" class="m-doc-self">Round</a>(</span><span class="m-doc-wrap">const T val,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the value to round</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>the number of decimals</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>rounded value</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Rounds a value at a defined precision</p>
+          </div></section>
+          <section class="m-doc-details" id="aeb78c53d5b93d089347a198b8101a1b6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aeb78c53d5b93d089347a198b8101a1b6" class="m-doc-self">Sqrt</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number to calculate square root of</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>square root of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s square root function</p>
+          </div></section>
+          <section class="m-doc-details" id="a9b91c56fdeb52ce8af5833ce9dfd3322"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9b91c56fdeb52ce8af5833ce9dfd3322" class="m-doc-self">Exp</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for e power val</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>exponential of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s exponential function</p>
+          </div></section>
+          <section class="m-doc-details" id="aaba0d66e92c14b5959bf3f427e534d35"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aaba0d66e92c14b5959bf3f427e534d35" class="m-doc-self">Log</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for Ln(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>natural logarithm of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s natural logarithm function</p>
+          </div></section>
+          <section class="m-doc-details" id="a98e759b8eadbb959c756f37918446b17"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a98e759b8eadbb959c756f37918446b17" class="m-doc-self">Log10</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for Log(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>logarithm base 10 of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s logarithm base 10 function</p>
+          </div></section>
+          <section class="m-doc-details" id="a35996804ae97dbf3976de5ddc21f59f6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a35996804ae97dbf3976de5ddc21f59f6" class="m-doc-self">Log</a>(</span><span class="m-doc-wrap">const T base,
+              const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">base</td>
+                  <td>the logarythm base to use</td>
+                </tr>
+                <tr>
+                  <td>val</td>
+                  <td>number for Log(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>logarithm of val in any base</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to calculate log base n</p>
+          </div></section>
+          <section class="m-doc-details" id="ad5d35a55dfd422f8297cf37f6f776bff"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad5d35a55dfd422f8297cf37f6f776bff" class="m-doc-self">Cos</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for cos(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>T the cosine of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s cos function</p>
+          </div></section>
+          <section class="m-doc-details" id="a7cf6a3cd2c073df258dc4bbe1ccd447e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7cf6a3cd2c073df258dc4bbe1ccd447e" class="m-doc-self">Sin</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for sin(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>T the sine of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s sin function</p>
+          </div></section>
+          <section class="m-doc-details" id="a2cdcf723158b88607ebf9269a4a54d7f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2cdcf723158b88607ebf9269a4a54d7f" class="m-doc-self">Tan</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for tan(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>T the tangent of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s tan function</p>
+          </div></section>
+          <section class="m-doc-details" id="a23a83fe4d8653e912590f8ff9639bf74"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a23a83fe4d8653e912590f8ff9639bf74" class="m-doc-self">ArcCos</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for acos(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>T the arc-cosine of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s acos function</p>
+          </div></section>
+          <section class="m-doc-details" id="aa3382768c77eee52c57c1c7b0ea8a1f5"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa3382768c77eee52c57c1c7b0ea8a1f5" class="m-doc-self">ArcSin</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for asin(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>T the arc-sine of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s asin function</p>
+          </div></section>
+          <section class="m-doc-details" id="a11cdf81743dab0e6dc5c66954c698478"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a11cdf81743dab0e6dc5c66954c698478" class="m-doc-self">ArcTan</a>(</span><span class="m-doc-wrap">const T val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>number for atan(val)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>T the arc-tangent of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s atan function</p>
+          </div></section>
+          <section class="m-doc-details" id="a92147ceeca1f6ef1d2ae17a111da3eda"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a92147ceeca1f6ef1d2ae17a111da3eda" class="m-doc-self">ArcTan2</a>(</span><span class="m-doc-wrap">const T y,
+              const T x)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">y</td>
+                  <td>y value for atan2(x, y)</td>
+                </tr>
+                <tr>
+                  <td>x</td>
+                  <td>x value for atan2(x, y)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>T the arc-tangent of (x, y)</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Shortcut to the system&#x27;s atan2 function</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a314a4894fb9d28e96dc2f02323c1d456"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /><a href="#a314a4894fb9d28e96dc2f02323c1d456" class="m-doc-self">RadToDeg</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+<p>Radians to degrees multiplier constant</p>
+          </div></section>
+          <section class="m-doc-details" id="acd8eb88bae413085655b74515d6193c4"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /><a href="#acd8eb88bae413085655b74515d6193c4" class="m-doc-self">DegToRad</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+<p>Degrees to radians multiplier constant</p>
+          </div></section>
+          <section class="m-doc-details" id="a377af3206dc4ec1af5a4eff1949d0b57"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /><a href="#a377af3206dc4ec1af5a4eff1949d0b57" class="m-doc-self">Pi</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+<p>Pi constant</p>
+          </div></section>
+          <section class="m-doc-details" id="a2306d62614751641eaf976c54142d852"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /><a href="#a2306d62614751641eaf976c54142d852" class="m-doc-self">TwoPi</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+<p>2 * Pi constant</p>
+          </div></section>
+          <section class="m-doc-details" id="a95110cee574febf2792b91bc3fce9c72"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static T bpf::<wbr />math::<wbr />Math&lt;T&gt;::<wbr /><a href="#a95110cee574febf2792b91bc3fce9c72" class="m-doc-self">Epsilon</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+<p>Very small value to represent acceptable rounding errors for type T</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

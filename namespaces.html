@@ -27,7 +27,7 @@
             <li><a href="annotated.html">Classes</a></li>
           </ol>
           <ol class="m-col-t-6 m-col-m-none" start="2">
-            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespaces.html" id="m-navbar-current">Namespaces</a></li>
             <li><a href="namespacebpf.html">bpf</a></li>
             <li><a href="files.html">Files</a></li>
             <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
@@ -43,53 +43,51 @@
   <div class="m-container m-container-inflatable">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <h1>
-          BlockProject 3D Framework
-        </h1>
-      </div>
-    </div>
-	<div class="m-row">
-		<div class="m-col-l-10 m-push-l-1">
-			<p><strong>High level C++ Framework</strong></p>
-		</div>
-	</div>
-    <div class="m-row">
-      <div class="m-col-l-10 m-push-l-1">
-        <h2>
-          Links
-        </h2>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Github Group</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D">https://github.com/BlockProject3D</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Github</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework">https://github.com/BlockProject3D/Framework</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Releases</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework/releases">https://github.com/BlockProject3D/Framework/releases</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Wiki</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework/wiki">https://github.com/BlockProject3D/Framework/wiki</a>
+        <h1>Namespaces</h2>
+        <ul class="m-doc">
+          <li class="m-doc-collapsible">
+            <a href="#" onclick="return toggle(this)">namespace</a> <a href="namespacebpf.html" class="m-doc">bpf</a> <span class="m-doc"><span></span></span>
+            <ul class="m-doc">
+              <li>namespace <a href="namespacebpf_1_1____internal__evale.html" class="m-doc">__internal_evale</a> <span class="m-doc"><span></span></span></li>
+              <li>namespace <a href="namespacebpf_1_1__bpf__internal__tp.html" class="m-doc">_bpf_internal_tp</a> <span class="m-doc"><span></span></span></li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">namespace</a> <a href="namespacebpf_1_1collection.html" class="m-doc">collection</a> <span class="m-doc"><span></span></span>
+                <ul class="m-doc">
+                  <li>namespace <a href="namespacebpf_1_1collection_1_1ops.html" class="m-doc">ops</a> <span class="m-doc"></span></li>
+                </ul>
+              </li>
+              <li>namespace <a href="namespacebpf_1_1compression.html" class="m-doc">compression</a> <span class="m-doc"><span></span></span></li>
+              <li>namespace <a href="namespacebpf_1_1io.html" class="m-doc">io</a> <span class="m-doc"><span></span></span></li>
+              <li>namespace <a href="namespacebpf_1_1json.html" class="m-doc">json</a> <span class="m-doc"><span></span></span></li>
+              <li>namespace <a href="namespacebpf_1_1log.html" class="m-doc">log</a> <span class="m-doc"><span></span></span></li>
+              <li class="m-doc-collapsible">
+                <a href="#" onclick="return toggle(this)">namespace</a> <a href="namespacebpf_1_1math.html" class="m-doc">math</a> <span class="m-doc"><span></span></span>
+                <ul class="m-doc">
+                  <li>namespace <a href="namespacebpf_1_1math_1_1__bpf__internal__math.html" class="m-doc">_bpf_internal_math</a> <span class="m-doc"><span></span></span></li>
+                </ul>
+              </li>
+              <li>namespace <a href="namespacebpf_1_1memory.html" class="m-doc">memory</a> <span class="m-doc"><span></span></span></li>
+              <li>namespace <a href="namespacebpf_1_1system.html" class="m-doc">system</a> <span class="m-doc"><span></span></span></li>
+            </ul>
+          </li>
+          <li>namespace <a href="namespace_framework.html" class="m-doc">Framework</a> <span class="m-doc"><span></span></span></li>
+        </ul>
+        <script>
+        function toggle(e) {
+            e.parentElement.className = e.parentElement.className == 'm-doc-collapsible' ?
+                'm-doc-expansible' : 'm-doc-collapsible';
+            return false;
+        }
+        /* Collapse all nodes marked as such. Doing it via JS instead of
+           directly in markup so disabling it doesn't harm usability. The list
+           is somehow regenerated on every iteration and shrinks as I change
+           the classes. It's not documented anywhere and I'm not sure if this
+           is the same across browsers, so I am going backwards in that list to
+           be sure. */
+        var collapsed = document.getElementsByClassName("collapsed");
+        for(var i = collapsed.length - 1; i >= 0; --i)
+            collapsed[i].className = 'm-doc-expansible';
+        </script>
       </div>
     </div>
   </div>
@@ -134,9 +132,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>Copyright (c) 2020, BlockProject 3D.
-		<br />
-		Created with <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>

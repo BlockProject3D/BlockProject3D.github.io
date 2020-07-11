@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::math::Matrix&lt;T, N, N&gt; class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_matrix_8hpp.html">&lt;Base/include/Framework/Math/Matrix.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1math.html">math</a>::<wbr/></span>Matrix&lt;T, N, N&gt; <span class="m-thin">class</span>
+        </h1>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">T</td>
+              <td>the number type</td>
+            </tr>
+            <tr>
+              <td>N</td>
+              <td>order of matrix</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Static square matrix class. Memory layout is based on rows</p>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a> <a href="#a58d332d74f04d4dd2aab546928dd64c6" class="m-doc">Zero</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a> <a href="#a09fbdb6aef4c6bbf30e951a7ce6583bd" class="m-doc">Identity</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a0a852ad93711c1c8e0afe6c1187283c6" class="m-doc">Matrix</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ad81a60f29b1ce29e81e8de65a62e2baf" class="m-doc">Matrix</a>(</span><span class="m-doc-wrap">const T val) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a6a4be980cf6ec6a4c9a0256a5ad5a1ca" class="m-doc">Matrix</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;T&gt;&amp; lst)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ad489e02e7711efd86654f6cfa98c6f63" class="m-doc">Matrix</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a6d085f610254a7e4da464161d688f882" class="m-doc">Matrix</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5e9205ae24ee5bcf73b284dac7545a56" class="m-doc">Order</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> <span class="m-label m-flat m-primary">constexpr</span> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a651b7f328b2129bf4146221f102f4ac0" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; other) -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a17de04a1b091d3ce6585b34b2041bca2" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp;&amp; other) -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a827c51501f5d0444536b59a092c77bc8" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> l,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> c) -&gt; T&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a347a6a1db78c23ff391d25227b552e7a" class="m-doc">operator()</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> l,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> c) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4d52cb89d815b751a4220fea5fd028dc" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">) const -&gt; const T* <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a70b3d72c20a27867acfbb5d813081369" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">) -&gt; T* <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a77672668f85e603eb1bd1ccf84513009" class="m-doc">Inverse</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af5a5a91188513fc070d0164d5246db4c" class="m-doc">GetDeterminant</a>(</span><span class="m-doc-wrap">) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;<a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> P&gt;</div>
+              <span class="m-doc-wrap-bumper">void <a href="#a0f3704917f244e2419df3f4255c98ba4" class="m-doc">GetMinor</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, P, P&gt;&amp; dest,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> row,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> col) const</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae3c7d2a3b8f7627e0496030b68f77c18" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;<a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> P&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad8164119c5429c7dde69e92d52716bb9" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, P&gt;&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, P&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac1f4898a75f1a6b116eb234ab0dc5600" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9afbe157154493b57f1f1e8888b1c26c" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">const T&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a44990a201c74cf312879963a8a6f620e" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, N&gt;&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, N&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a308c808f622e0dcc07cba6d5f5cb309e" class="m-doc">Transpose</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ac5bd116ffc41286ae5edb326ccd7fc6d" class="m-doc">SwapRows</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> rowa,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> rowb)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ab065502f0328cb4f155fbdc9fd461cbc" class="m-doc">SwapColumns</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> cola,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> colb)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a0a852ad93711c1c8e0afe6c1187283c6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0a852ad93711c1c8e0afe6c1187283c6" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs an empty matrix</p>
+          </div></section>
+          <section class="m-doc-details" id="ad81a60f29b1ce29e81e8de65a62e2baf"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad81a60f29b1ce29e81e8de65a62e2baf" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap">const T val) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the value to initialize all cells</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a matrix from a single value</p>
+          </div></section>
+          <section class="m-doc-details" id="a6a4be980cf6ec6a4c9a0256a5ad5a1ca"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6a4be980cf6ec6a4c9a0256a5ad5a1ca" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;T&gt;&amp; lst)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">lst</td>
+                  <td>the list to copy values from</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a matrix from an initializer list</p>
+          </div></section>
+          <section class="m-doc-details" id="ad489e02e7711efd86654f6cfa98c6f63"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad489e02e7711efd86654f6cfa98c6f63" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; other)</span></span>
+            </h3>
+<p>Copy constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a6d085f610254a7e4da464161d688f882"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6d085f610254a7e4da464161d688f882" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a5e9205ae24ee5bcf73b284dac7545a56"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5e9205ae24ee5bcf73b284dac7545a56" class="m-doc-self">Order</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-primary">constexpr</span> <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>unsigned constant</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the order of this matrix</p>
+          </div></section>
+          <section class="m-doc-details" id="a651b7f328b2129bf4146221f102f4ac0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a651b7f328b2129bf4146221f102f4ac0" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; other)</span></span>
+            </h3>
+<p>Copy assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a17de04a1b091d3ce6585b34b2041bca2"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a17de04a1b091d3ce6585b34b2041bca2" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a827c51501f5d0444536b59a092c77bc8"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T&amp; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a827c51501f5d0444536b59a092c77bc8" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> l,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> c)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">l</td>
+                  <td>the row number</td>
+                </tr>
+                <tr>
+                  <td>c</td>
+                  <td>the column number</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>mutable cell value</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Obtains the value of a cell for modification</p>
+          </div></section>
+          <section class="m-doc-details" id="a347a6a1db78c23ff391d25227b552e7a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a347a6a1db78c23ff391d25227b552e7a" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> l,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> c) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">l</td>
+                  <td>the row number</td>
+                </tr>
+                <tr>
+                  <td>c</td>
+                  <td>the column number</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>immutable cell value</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Obtains the value of a cell for reading</p>
+          </div></section>
+          <section class="m-doc-details" id="a4d52cb89d815b751a4220fea5fd028dc"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">const T* bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4d52cb89d815b751a4220fea5fd028dc" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable low-level C array</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a low-level C array, used to transfer to lower-level APIs</p>
+          </div></section>
+          <section class="m-doc-details" id="a70b3d72c20a27867acfbb5d813081369"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T* bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a70b3d72c20a27867acfbb5d813081369" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>mutable low-level C array</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a low-level C array, used to transfer to lower-level APIs</p>
+          </div></section>
+          <section class="m-doc-details" id="a77672668f85e603eb1bd1ccf84513009"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a77672668f85e603eb1bd1ccf84513009" class="m-doc-self">Inverse</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new inversed matrix</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1math_1_1_non_invertible_matrix_exception.html" class="m-doc">NonInvertibleMatrixException</a></td>
+                  <td>if the matrix is not invertible (ie determinant is null)</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Computes the inverse of this matrix</p>
+          </div></section>
+          <section class="m-doc-details" id="af5a5a91188513fc070d0164d5246db4c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af5a5a91188513fc070d0164d5246db4c" class="m-doc-self">GetDeterminant</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the determinant of this matrix</p>
+          </div></section>
+          <section class="m-doc-details" id="a0f3704917f244e2419df3f4255c98ba4"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+                template&lt;<a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> P&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0f3704917f244e2419df3f4255c98ba4" class="m-doc-self">GetMinor</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, P, P&gt;&amp; dest,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> row,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> col) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">P</td>
+                  <td>order of the target minor matrix</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>dest</td>
+                  <td>the destination minor matrix</td>
+                </tr>
+                <tr>
+                  <td>row</td>
+                  <td>the start row</td>
+                </tr>
+                <tr>
+                  <td>col</td>
+                  <td>the start column</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Computes a minor matrix. Used mainly for matrix inversion</p>
+          </div></section>
+          <section class="m-doc-details" id="ae3c7d2a3b8f7627e0496030b68f77c18"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae3c7d2a3b8f7627e0496030b68f77c18" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>matrix to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the two matrices are equal, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two matrices</p>
+          </div></section>
+          <section class="m-doc-details" id="ad8164119c5429c7dde69e92d52716bb9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+                template&lt;<a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> P&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, P&gt; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad8164119c5429c7dde69e92d52716bb9" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, P&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">P</td>
+                  <td>number of columns of the other matrix</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new matrix</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs matrix-matrix multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="ac1f4898a75f1a6b116eb234ab0dc5600"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac1f4898a75f1a6b116eb234ab0dc5600" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new matrix</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs matrix addition</p>
+          </div></section>
+          <section class="m-doc-details" id="a9afbe157154493b57f1f1e8888b1c26c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9afbe157154493b57f1f1e8888b1c26c" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const T&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new matrix</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs matrix-scalar multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="a44990a201c74cf312879963a8a6f620e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, N&gt; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a44990a201c74cf312879963a8a6f620e" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, N&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs matrix-vector multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="a308c808f622e0dcc07cba6d5f5cb309e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, N, N&gt; bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a308c808f622e0dcc07cba6d5f5cb309e" class="m-doc-self">Transpose</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new matrix transpose of this</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the transpose</p>
+          </div></section>
+          <section class="m-doc-details" id="ac5bd116ffc41286ae5edb326ccd7fc6d"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac5bd116ffc41286ae5edb326ccd7fc6d" class="m-doc-self">SwapRows</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> rowa,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> rowb)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">rowa</td>
+                  <td>first row number</td>
+                </tr>
+                <tr>
+                  <td>rowb</td>
+                  <td>second row number</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Swaps two rows of this matrix</p>
+          </div></section>
+          <section class="m-doc-details" id="ab065502f0328cb4f155fbdc9fd461cbc"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab065502f0328cb4f155fbdc9fd461cbc" class="m-doc-self">SwapColumns</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> cola,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> colb)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">cola</td>
+                  <td>first column number</td>
+                </tr>
+                <tr>
+                  <td>colb</td>
+                  <td>second column number</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Swaps two columns of this matrix</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a58d332d74f04d4dd2aab546928dd64c6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              static const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a> bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /><a href="#a58d332d74f04d4dd2aab546928dd64c6" class="m-doc-self">Zero</a>
+            </h3>
+<p>Zero-matrix constant</p>
+          </div></section>
+          <section class="m-doc-details" id="a09fbdb6aef4c6bbf30e951a7ce6583bd"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N&gt;
+              </div>
+              static const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a> bpf::<wbr />math::<wbr />Matrix&lt;T, N, N&gt;&lt;T, N&gt;::<wbr /><a href="#a09fbdb6aef4c6bbf30e951a7ce6583bd" class="m-doc-self">Identity</a>
+            </h3>
+<p>Identity matrix constant</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

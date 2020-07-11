@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::collection::Map class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_map_8hpp.html">&lt;Base/include/Framework/Collection/Map.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename K, typename V, template&lt;typename T&gt; class Greater = <a href="classbpf_1_1collection_1_1ops_1_1_greater.html" class="m-doc">ops::<wbr />Greater</a>, template&lt;typename T&gt; class Less = <a href="classbpf_1_1collection_1_1ops_1_1_less.html" class="m-doc">ops::<wbr />Less</a>&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1collection.html">collection</a>::<wbr/></span>Map <span class="m-thin">class</span>
+        </h1>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">K</td>
+              <td>the key type</td>
+            </tr>
+            <tr>
+              <td>V</td>
+              <td>the value type</td>
+            </tr>
+            <tr>
+              <td>Greater</td>
+              <td>the greater than operator</td>
+            </tr>
+            <tr>
+              <td>Less</td>
+              <td>the less than operator</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>AVL tree based map</p>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt>
+              struct <a href="structbpf_1_1collection_1_1_map_1_1_entry.html" class="m-doc">Entry</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              class <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              struct <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              class <a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a76851c9b51f3b44d96560f28e39f54a9" class="m-doc">Map</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#af58118e9f0833bed50dcf36fd5ade087" class="m-doc">Map</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a3888f5cf35b2af79d9ecf0af3595e29a" class="m-doc">Map</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a1938db8c3f2d51df1fdb400d8777b5cd" class="m-doc">Map</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;<a href="structbpf_1_1collection_1_1_map_1_1_entry.html" class="m-doc">Entry</a>&gt;&amp; entries)</span>
+            </dt>
+            <dd></dd>
+            <dt id="a2c269af051b33e7c8e3b8b1631006a5a">
+              <span class="m-doc-wrap-bumper"><a href="#a2c269af051b33e7c8e3b8b1631006a5a" class="m-doc-self">~Map</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a90b8de9a108be40559503a23e9b5703c" class="m-doc">Add</a>(</span><span class="m-doc-wrap">const K&amp; key,
+              const V&amp; value)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a7b6b6ee3ffce01acd2478d039996481b" class="m-doc">Add</a>(</span><span class="m-doc-wrap">const K&amp; key,
+              V&amp;&amp; value)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#aca7192f3766295635cad97247cc37766" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap">const K&amp; key)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a3933f0a234eecbd4e367231f1cae0e9e" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; pos)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a948730b641b7090b8a2bde04da494cae" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp;&amp; pos)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a57e75e053ad8087cd5bc4fea25f12311" class="m-doc">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; a,
+              const <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; b)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ad39efbb1433edda76072acc99c54601c" class="m-doc">Clear</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;</div>
+              <span class="m-doc-wrap-bumper">void <a href="#a2d2709d80b9e48f865433effecdbe4a5" class="m-doc">Remove</a>(</span><span class="m-doc-wrap">const V&amp; value,
+              bool all = true)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abd8d9549316cafd9ac5bdde0505f6991" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other) -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4eba49bb49cc4f06f2ce3c20b305cace" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other) -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4d74192ee1274ac6e546f9c010a08dd3" class="m-doc">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5705ffd43ebb592a093c539c9db600c5" class="m-doc">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad6a53124ef0de3e92dab72e0e99d112c" class="m-doc">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;int(const <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&amp;node)&gt;&amp; comparator) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a11a594761c55fc6ae2080c9bc5fce79f" class="m-doc">operator[]</a>(</span><span class="m-doc-wrap">const K&amp; key) const -&gt; const V&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a354955be85a1565185be4102bdbd34ac" class="m-doc">FindMin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abf6e06e15483996b93d07f812f526bc6" class="m-doc">FindMax</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac56ed54e1c567f449ab1ee5b7f6a7641" class="m-doc">operator[]</a>(</span><span class="m-doc-wrap">const K&amp; key) -&gt; V&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a10b2d7109c3aefb116bdc2e2f8a2849e" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; other) -&gt; <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af239c60913c803715ee0dda3e376dc57" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a05778cf1f5c31358cdddf3465a2084a0" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; other) const -&gt; <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#add92867f8026c86df16ee6af4629a196" class="m-doc">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; other)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa29b7fceab94c2815ccdfc32a7250f76" class="m-doc">HasKey</a>(</span><span class="m-doc-wrap">const K&amp; key) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7c848c259307c840bec8e50e7c4d14d1" class="m-doc">Size</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#acdea2a127564ed9c2b6ed974bef117e8" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc">end</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aef8889605c9becc93b6be9232ee0d37f" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1bfd97e4486cb118831eeb8598626395" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a76851c9b51f3b44d96560f28e39f54a9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a76851c9b51f3b44d96560f28e39f54a9" class="m-doc-self">Map</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs an empty <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a></p>
+          </div></section>
+          <section class="m-doc-details" id="af58118e9f0833bed50dcf36fd5ade087"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af58118e9f0833bed50dcf36fd5ade087" class="m-doc-self">Map</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; other)</span></span>
+            </h3>
+<p>Copy constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a3888f5cf35b2af79d9ecf0af3595e29a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3888f5cf35b2af79d9ecf0af3595e29a" class="m-doc-self">Map</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a1938db8c3f2d51df1fdb400d8777b5cd"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1938db8c3f2d51df1fdb400d8777b5cd" class="m-doc-self">Map</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;<a href="structbpf_1_1collection_1_1_map_1_1_entry.html" class="m-doc">Entry</a>&gt;&amp; entries)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">entries</td>
+                  <td>the initial list of key-value pairs to add to this new <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a></td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a> from an existing initializer list</p>
+          </div></section>
+          <section class="m-doc-details" id="a90b8de9a108be40559503a23e9b5703c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a90b8de9a108be40559503a23e9b5703c" class="m-doc-self">Add</a>(</span><span class="m-doc-wrap">const K&amp; key,
+              const V&amp; value)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key of the element</td>
+                </tr>
+                <tr>
+                  <td>value</td>
+                  <td>the value to insert</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Adds a new element in this map, replaces if key already exists</p>
+          </div></section>
+          <section class="m-doc-details" id="a7b6b6ee3ffce01acd2478d039996481b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7b6b6ee3ffce01acd2478d039996481b" class="m-doc-self">Add</a>(</span><span class="m-doc-wrap">const K&amp; key,
+              V&amp;&amp; value)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key of the element</td>
+                </tr>
+                <tr>
+                  <td>value</td>
+                  <td>the value to insert</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Adds a new element in this map, replaces if key already exists</p>
+          </div></section>
+          <section class="m-doc-details" id="aca7192f3766295635cad97247cc37766"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aca7192f3766295635cad97247cc37766" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap">const K&amp; key)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key of the element to remove</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes an element from the map</p>
+          </div></section>
+          <section class="m-doc-details" id="a3933f0a234eecbd4e367231f1cae0e9e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3933f0a234eecbd4e367231f1cae0e9e" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; pos)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>iterator of the element to remove</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes an element from the map</p>
+          </div></section>
+          <section class="m-doc-details" id="a948730b641b7090b8a2bde04da494cae"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a948730b641b7090b8a2bde04da494cae" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp;&amp; pos)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pos</td>
+                  <td>iterator of the element to remove</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes an element from the map</p>
+          </div></section>
+          <section class="m-doc-details" id="a57e75e053ad8087cd5bc4fea25f12311"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a57e75e053ad8087cd5bc4fea25f12311" class="m-doc-self">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; a,
+              const <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; b)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">a</td>
+                  <td>first element</td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>second element</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Swap two elements by iterator in the <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a></p>
+          </div></section>
+          <section class="m-doc-details" id="ad39efbb1433edda76072acc99c54601c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad39efbb1433edda76072acc99c54601c" class="m-doc-self">Clear</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Clears the content of this <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a2d2709d80b9e48f865433effecdbe4a5"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+                template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2d2709d80b9e48f865433effecdbe4a5" class="m-doc-self">Remove</a>(</span><span class="m-doc-wrap">const V&amp; value,
+              bool all = true)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Comparator</td>
+                  <td>the comparision operator to use for comparing values</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>value</td>
+                  <td>the value to search for</td>
+                </tr>
+                <tr>
+                  <td>all</td>
+                  <td>wether to remove all occurances or just the first one</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Removes an element by value</p>
+          </div></section>
+          <section class="m-doc-details" id="abd8d9549316cafd9ac5bdde0505f6991"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd8d9549316cafd9ac5bdde0505f6991" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a> to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the two maps are equal, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a> by performing a per-element check</p>
+          </div></section>
+          <section class="m-doc-details" id="a4eba49bb49cc4f06f2ce3c20b305cace"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4eba49bb49cc4f06f2ce3c20b305cace" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a> to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>false if the two maps are equal, true otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a> by performing a per-element check</p>
+          </div></section>
+          <section class="m-doc-details" id="a4d74192ee1274ac6e546f9c010a08dd3"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4d74192ee1274ac6e546f9c010a08dd3" class="m-doc-self">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key of the item to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc">end()</a> if none</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Locate an item by key inside this map</p>
+          </div></section>
+          <section class="m-doc-details" id="a5705ffd43ebb592a093c539c9db600c5"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+                template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5705ffd43ebb592a093c539c9db600c5" class="m-doc-self">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Comparator</td>
+                  <td>comparision operator to use</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>val</td>
+                  <td>the value to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc">end()</a> if none</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Locate an item by performing per-element check</p>
+          </div></section>
+          <section class="m-doc-details" id="ad6a53124ef0de3e92dab72e0e99d112c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad6a53124ef0de3e92dab72e0e99d112c" class="m-doc-self">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;int(const <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&amp;node)&gt;&amp; comparator)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">comparator</td>
+                  <td>the comparision function to use: return Z- for less than, Z+ for greater than and 0 for equal</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc">end()</a> if none</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Locate an item by performing per-element check</p>
+          </div></section>
+          <section class="m-doc-details" id="a11a594761c55fc6ae2080c9bc5fce79f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">const V&amp; bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a11a594761c55fc6ae2080c9bc5fce79f" class="m-doc-self">operator[]</a>(</span><span class="m-doc-wrap">const K&amp; key) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key of the element</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>immutable item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if key is not in this map</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns an element const mode</p>
+          </div></section>
+          <section class="m-doc-details" id="a354955be85a1565185be4102bdbd34ac"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a354955be85a1565185be4102bdbd34ac" class="m-doc-self">FindMin</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>iterator to the minimum element</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the element with the minimum key value</p>
+          </div></section>
+          <section class="m-doc-details" id="abf6e06e15483996b93d07f812f526bc6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abf6e06e15483996b93d07f812f526bc6" class="m-doc-self">FindMax</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>iterator to the maximum element</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the element with the maximum key value</p>
+          </div></section>
+          <section class="m-doc-details" id="ac56ed54e1c567f449ab1ee5b7f6a7641"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">V&amp; bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac56ed54e1c567f449ab1ee5b7f6a7641" class="m-doc-self">operator[]</a>(</span><span class="m-doc-wrap">const K&amp; key)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key of the element</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>mutable item</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if key is not in this map and cannot be created</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns an element non-const mode</p>
+          </div></section>
+          <section class="m-doc-details" id="a10b2d7109c3aefb116bdc2e2f8a2849e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a10b2d7109c3aefb116bdc2e2f8a2849e" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; other)</span></span>
+            </h3>
+<p>Copy assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="af239c60913c803715ee0dda3e376dc57"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af239c60913c803715ee0dda3e376dc57" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a05778cf1f5c31358cdddf3465a2084a0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a05778cf1f5c31358cdddf3465a2084a0" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>map to concatenate with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Create a new <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a> from concatenation of two maps</p>
+          </div></section>
+          <section class="m-doc-details" id="add92867f8026c86df16ee6af4629a196"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#add92867f8026c86df16ee6af4629a196" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>map to append</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Appends the content of a <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a> at the end of this map</p>
+          </div></section>
+          <section class="m-doc-details" id="aa29b7fceab94c2815ccdfc32a7250f76"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa29b7fceab94c2815ccdfc32a7250f76" class="m-doc-self">HasKey</a>(</span><span class="m-doc-wrap">const K&amp; key) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">key</td>
+                  <td>the key to check</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the specified key exists, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Check if a particular key exists</p>
+          </div></section>
+          <section class="m-doc-details" id="a7c848c259307c840bec8e50e7c4d14d1"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7c848c259307c840bec8e50e7c4d14d1" class="m-doc-self">Size</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number of items as unsigned</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the number of items in this map</p>
+          </div></section>
+          <section class="m-doc-details" id="acdea2a127564ed9c2b6ed974bef117e8"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#acdea2a127564ed9c2b6ed974bef117e8" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="ac8c1c847ccada73efaa9e2c46e0df927"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the end of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="aef8889605c9becc93b6be9232ee0d37f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aef8889605c9becc93b6be9232ee0d37f" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a1bfd97e4486cb118831eeb8598626395"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1bfd97e4486cb118831eeb8598626395" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the end of the collection</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

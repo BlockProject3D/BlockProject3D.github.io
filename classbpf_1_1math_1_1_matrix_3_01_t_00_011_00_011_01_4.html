@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>BlockProject 3D</title>
+  <title>bpf::math::Matrix&lt;T, 1, 1&gt; class | BlockProject 3D</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
   <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
   <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
@@ -44,52 +44,67 @@
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
         <h1>
-          BlockProject 3D Framework
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_matrix_8hpp.html">&lt;Base/include/Framework/Math/Matrix.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename T&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1math.html">math</a>::<wbr/></span>Matrix&lt;T, 1, 1&gt; <span class="m-thin">class</span>
         </h1>
-      </div>
-    </div>
-	<div class="m-row">
-		<div class="m-col-l-10 m-push-l-1">
-			<p><strong>High level C++ Framework</strong></p>
-		</div>
-	</div>
-    <div class="m-row">
-      <div class="m-col-l-10 m-push-l-1">
-        <h2>
-          Links
-        </h2>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Github Group</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D">https://github.com/BlockProject3D</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Github</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework">https://github.com/BlockProject3D/Framework</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Releases</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework/releases">https://github.com/BlockProject3D/Framework/releases</a>
-      </div>
-    </div>
-    <div class="m-row">
-      <div class="m-col-s-2 m-push-l-1">
-		<h3>Wiki</h3>
-      </div>
-      <div class="m-col-t-6 m-push-l-1">
-		<a href="https://github.com/BlockProject3D/Framework/wiki">https://github.com/BlockProject3D/Framework/wiki</a>
+        <p><span></span></p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="a1e0ab6f7b8ef61dd350bc709a12f3c3e">
+              <span class="m-doc-wrap-bumper"><a href="#a1e0ab6f7b8ef61dd350bc709a12f3c3e" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a3a2a70e8970372e74c779ce5991dcb18">
+              <span class="m-doc-wrap-bumper"><a href="#a3a2a70e8970372e74c779ce5991dcb18" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;T&gt;&amp; lst)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a91857029e3885fdc9a3d2d2162519825">
+              <span class="m-doc-wrap-bumper"><a href="#a91857029e3885fdc9a3d2d2162519825" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap">const T val) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a37ab7bfa0efaa88b48e444a18e126d32">
+              <span class="m-doc-wrap-bumper"><a href="#a37ab7bfa0efaa88b48e444a18e126d32" class="m-doc-self">Matrix</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, 1, 1&gt;&amp; other)</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="afdc96f24ca4bc79ad22419fb4fa488a3">
+              <span class="m-doc-wrap-bumper">auto <a href="#afdc96f24ca4bc79ad22419fb4fa488a3" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, 1, 1&gt;&amp; other) -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, 1, 1&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad17b972e7b0aa1ceda7b4757a490c5b9">
+              <span class="m-doc-wrap-bumper">auto <a href="#ad17b972e7b0aa1ceda7b4757a490c5b9" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a>,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a>) -&gt; T&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a9b71e9e6e751b3ed10431f42dd60d84b">
+              <span class="m-doc-wrap-bumper">auto <a href="#a9b71e9e6e751b3ed10431f42dd60d84b" class="m-doc-self">operator()</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a>,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a>) const -&gt; T</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8e68314e8dd687e464dddca9c1818e70">
+              <span class="m-doc-wrap-bumper">auto <a href="#a8e68314e8dd687e464dddca9c1818e70" class="m-doc-self">GetDeterminant</a>(</span><span class="m-doc-wrap">) const -&gt; T</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
       </div>
     </div>
   </div>
@@ -134,9 +149,7 @@
   <div class="m-container">
     <div class="m-row">
       <div class="m-col-l-10 m-push-l-1">
-        <p>Copyright (c) 2020, BlockProject 3D.
-		<br />
-		Created with <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
       </div>
     </div>
   </div>

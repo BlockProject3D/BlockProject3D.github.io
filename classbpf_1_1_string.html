@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::String class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span>String <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_string_8hpp.html">&lt;Base/include/Framework/String.hpp&gt;</a></div>
+        </h1>
+        <p><span></span></p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier.html" class="m-doc">Stringifier</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> I&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01collection_1_1_array_3_01_t_00_01_i_01_4_01_4.html" class="m-doc">Stringifier&lt;collection::Array&lt;T, I&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01collection_1_1_array_list_3_01_t_01_4_01_4.html" class="m-doc">Stringifier&lt;collection::ArrayList&lt;T&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename K, typename V, typename HashOp&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01collection_1_1_hash_map_3_01_k_00_01_v_00_01_hash_op_01_4_01_4.html" class="m-doc">Stringifier&lt;collection::HashMap&lt;K, V, HashOp&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01collection_1_1_list_3_01_t_01_4_01_4.html" class="m-doc">Stringifier&lt;collection::List&lt;T&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01collection_1_1_map_3_01_k_00_01_v_00_01_greater_00_01_less_01_4_01_4.html" class="m-doc">Stringifier&lt;collection::Map&lt;K, V, Greater, Less&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01io_1_1_file_01_4.html" class="m-doc">Stringifier&lt;io::File&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01json_1_1_json_01_4.html" class="m-doc">Stringifier&lt;json::Json&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01json_1_1_json_1_1_array_01_4.html" class="m-doc">Stringifier&lt;json::Json::Array&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01json_1_1_json_1_1_object_01_4.html" class="m-doc">Stringifier&lt;json::Json::Object&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01math_1_1_color_01_4.html" class="m-doc">Stringifier&lt;math::Color&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01math_1_1_matrix_3_01_t_01_4_01_4.html" class="m-doc">Stringifier&lt;math::Matrix&lt;T&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> N, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> M&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01math_1_1_matrix_3_01_t_00_01_n_00_01_m_01_4_01_4.html" class="m-doc">Stringifier&lt;math::Matrix&lt;T, N, M&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01math_1_1_quaternion_3_01_t_01_4_01_4.html" class="m-doc">Stringifier&lt;math::Quaternion&lt;T&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T, <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> I&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01math_1_1_vector_3_01_t_00_01_i_01_4_01_4.html" class="m-doc">Stringifier&lt;math::Vector&lt;T, I&gt;&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;&gt;</div>
+              class <a href="classbpf_1_1_string_1_1_stringifier_3_01system_1_1_date_time_01_4.html" class="m-doc">Stringifier&lt;system::DateTime&gt;</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#acd8658939d224e47e283b26bc93e2fb4" class="m-doc">UTF32</a>(</span><span class="m-doc-wrap">const char* utf8char) -&gt; <a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a9e707392af0588f6916922ae35f6f206" class="m-doc">UTF8</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> utf32char) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ac733c484aea6710794f6fd5b9a81b462" class="m-doc">FromUTF16</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a40999fb483f51ccafbcf87b88b7dea8d" class="m-doc">fchar16</a>* str) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#aeb47a67c1a0b16fbcf488d9f4c513817" class="m-doc">FromUTF32</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a>* str) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ad7913c6c08f143a56c8859eec999b877" class="m-doc">Format</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args&amp;&amp; ...) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T, typename... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a37dbc172db9f9c27114268ced71bcf82" class="m-doc">Format</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              T&amp;&amp; t,
+              Args &amp;&amp; ... args) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T, typename std::enable_if&lt;std::is_class&lt;T&gt;::value&gt;::type* = nullptr&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a4fd3fce752a478286dd947abd5633bae" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap">const T&amp; val,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T, typename std::enable_if&lt;std::is_pointer&lt;T&gt;::value&gt;::type* = nullptr&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a654b247328936a80879e099cd9c68e46" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap">T val,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a18dccc2cbcef7478b23464c2642726de" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a9187fdb3933fd9f28536d584f71a222d" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a9bdf7e1815616791acc96c4cdb8c3747" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a76679ce96e53de52c254ef1913ad549a" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#aabc098937c0b497eb43711ad40ba674b" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap">float f,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a959f608f2c077fe6ae869a930fc69fcf" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap">double d,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#abd15ae4079cd8737b71a7905d7da32a5" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap">long double d,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a8a77ec3efa0814fdbec4a679b75c241c" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap">void* ptr,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ae0e6ce44cffbf76665216be7ea555511" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a585dd1c104d05cca2a39fb7e0b8433ce" class="m-doc">int8</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a2bd95791fb6237a2b8245f9764f7a7dd" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a40ac9b77887b542abaeb3fb5c281803a" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a4f402f887604fa9805eaf4aacb659223" class="m-doc">int16</a> i,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ac8aee2c6a57899eba0f2829d4adf5d9f" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a091559d2ef61167f0deb64f99ec4875a" class="m-doc">uint16</a> i,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ac344a1d025e5690f1bc0d80d8cf75ac1" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap">const char* s,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a6dda2d2d94402e525a7d499658602e46" class="m-doc">ValueOf</a>(</span><span class="m-doc-wrap">bool b,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a3914593b3f41fdbaf175e83d2f9c0f9a" class="m-doc">String</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#aabc93dd48d20dbd133f7024344cf2ec6" class="m-doc">String</a>(</span><span class="m-doc-wrap">const char* str)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a45e62e8333edbdbf17f7bb8ed3d9a325" class="m-doc">String</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> c)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ac0ca4dedb841da2e446c66cdf4628e01" class="m-doc">String</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; s)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a520bb2c924dc9f00544ad8d58eb7089b" class="m-doc">String</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;&amp; s) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt id="aa6d03696874b72a6be7a7afbe4e78837">
+              <span class="m-doc-wrap-bumper"><a href="#aa6d03696874b72a6be7a7afbe4e78837" class="m-doc-self">~String</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a9fc4d92240674a2038ea32e8764c4384" class="m-doc">BP_DEPRECATED</a>(</span><span class="m-doc-wrap">&quot;To check for empty string use String. IsEmpty,
+              to create an empty string use litteral \. This &quot; &quot;constant will be removed in a future version.&quot;) static const String Empty</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ab9cbb83285cf595a0b664079d89df554" class="m-doc">AddSingleByte</a>(</span><span class="m-doc-wrap">char byte)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#acddd4b88efc2dd733e66f559abf0ce72" class="m-doc">ByteAt</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> id) const -&gt; char</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a141dd2eb8baa4845c59b482b34b4be70" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af8259a34e6fa7b1378d89726770bd926" class="m-doc">operator+</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> other) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0b246a90db02988f9bf1d0adde8c2313" class="m-doc">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9e50a7080e12538baae1b7250447d9e7" class="m-doc">operator+=</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> other) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a35bb1f1d970f2bbae60f296189101da2" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8e2a2036db85ee7339b9421eadff00fb" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#addbdccf39f86b99813aa782703366242" class="m-doc">IsEmpty</a>(</span><span class="m-doc-wrap">) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a67b752b0501f2d3e31e505243accafaf" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a60167e7c42b45ff6ca40046bd01cb715" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2f0269c8431b6546b05ca4d8e41d9c7a" class="m-doc">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a649f82b7495912061f82d86d6ae18a2a" class="m-doc">operator&gt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aec1bfafbaefe321d8bc8925927749225" class="m-doc">Replace</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; search,
+              const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; repby) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a30c1ac576a8caa2e17d674d8df99de64" class="m-doc">operator[]</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> id) const -&gt; <a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aea9c7f7e77bd0c4b6071ffc7c2de5685" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">) const -&gt; const char*</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a20045322f9415d528c5c3011978f9e78" class="m-doc">ToArray</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;char&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0dbe9721959ff5efa0957ab20f4d6e4d" class="m-doc">ToUTF32</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a>&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad33949aa9b95dd8ed822e2348deba460" class="m-doc">ToUTF16</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="namespacebpf.html#a40999fb483f51ccafbcf87b88b7dea8d" class="m-doc">fchar16</a>&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8a886a5f5d3b93a11475481837c48971" class="m-doc">Len</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a51777bbf280c9bd6a36d3a68d8a3af3b" class="m-doc">Size</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa5741a30179e8d86304145f21533e0ea" class="m-doc">IsNumeric</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad8a9807df297d96f39af7bf37a38e7ae" class="m-doc">ToUpper</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae0a90ba86634e6bde7390c50a1df02bc" class="m-doc">ToLower</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0af6a78c6aa978f6194eae1af28996e9" class="m-doc">Reverse</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0cc91d24dfb2feb3289062393ceea390" class="m-doc">IndexOf</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) const -&gt; <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3e555d049afc031129312481d14910e1" class="m-doc">LastIndexOf</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) const -&gt; <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a42899dca6df1524a72817ba275b27f8e" class="m-doc">IndexOf</a>(</span><span class="m-doc-wrap">char c) const -&gt; <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad32985bf4095f0263762eec8020906ea" class="m-doc">LastIndexOf</a>(</span><span class="m-doc-wrap">char c) const -&gt; <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa3aa5e6a212b6b605f2a4c7243258c72" class="m-doc">IndexOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> c) const -&gt; <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a400f891ccd7ce1216b53645b064e870e" class="m-doc">LastIndexOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> c) const -&gt; <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aef145e200b79619ede9cf8d6bd5af831" class="m-doc">Explode</a>(</span><span class="m-doc-wrap">char c) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad3730eb5a8e0e9d3698ec14f7720d732" class="m-doc">ExplodeIgnore</a>(</span><span class="m-doc-wrap">char c,
+              char ignore) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a82eba57d0224f6324da272233ffd72ba" class="m-doc">Explode</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a521d03114e364932a9e7bd64117d9426" class="m-doc">ExplodeIgnore</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str,
+              const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; ignore) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a434911f8e403b52d589f34e6ea2fe893" class="m-doc">ExplodeOr</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) const -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a740b9c392758967b58d7283ab6724886" class="m-doc">StartsWith</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a77f2b1f2c10868fb581d26485fa73386" class="m-doc">EndsWith</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad02ea9acc75adffa0e14016e8032c97f" class="m-doc">Contains</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6b070b46e7b3b6646678e58be446a0a4" class="m-doc">Contains</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af98fa35e83effb04e089305ac3e657fa" class="m-doc">SubLen</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> begin,
+              const <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> count = -1) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3f5eb85d70b8c574061f3606cbe6b32c" class="m-doc">Sub</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> begin,
+              <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> end) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a510fbd87ee5692246c75c63c5013e3e5" class="m-doc">Sub</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> begin) const -&gt; <a href="classbpf_1_1_string.html" class="m-doc">String</a></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="acd8658939d224e47e283b26bc93e2fb4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#acd8658939d224e47e283b26bc93e2fb4" class="m-doc-self">UTF32</a>(</span><span class="m-doc-wrap">const char* utf8char)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">utf8char</td>
+                  <td>the utf8 null-terminated byte sequence to convert to a single UTF32 character</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>UTF32 code</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a UTF32 character from a single UTF8 code</p>
+          </div></section>
+          <section class="m-doc-details" id="a9e707392af0588f6916922ae35f6f206"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9e707392af0588f6916922ae35f6f206" class="m-doc-self">UTF8</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> utf32char)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">utf32char</td>
+                  <td>the utf32 character to convert to a UTF8 <a href="classbpf_1_1_string.html" class="m-doc">String</a></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>UTF8 code</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a UTF8 high-level <a href="classbpf_1_1_string.html" class="m-doc">String</a> from a single UTF32 code</p>
+          </div></section>
+          <section class="m-doc-details" id="ac733c484aea6710794f6fd5b9a81b462"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac733c484aea6710794f6fd5b9a81b462" class="m-doc-self">FromUTF16</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a40999fb483f51ccafbcf87b88b7dea8d" class="m-doc">fchar16</a>* str)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>array of UTF16 codes with a 0 value at the end</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>High-level string representing the UTF!^16 string given as argument</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_eval_exception.html" class="m-doc">EvalException</a></td>
+                  <td>in case the the array of UTF16 code contains invalid characters</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts an array of UTF16 code to a high-level string</p>
+          </div></section>
+          <section class="m-doc-details" id="aeb47a67c1a0b16fbcf488d9f4c513817"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aeb47a67c1a0b16fbcf488d9f4c513817" class="m-doc-self">FromUTF32</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a>* str)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>array of UTF32 codes with a 0 value at the end</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>High-level string representing the UTF32 string given as argument</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts an array of UTF32 code to a high-level string</p>
+          </div></section>
+          <section class="m-doc-details" id="ad7913c6c08f143a56c8859eec999b877"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad7913c6c08f143a56c8859eec999b877" class="m-doc-self">Format</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args&amp;&amp; ...)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Args</td>
+                  <td>parameter types to format</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>format</td>
+                  <td>the format string</td>
+                </tr>
+                <tr>
+                  <td>...</td>
+                  <td>the actual parameters to format</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new formatted string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Formats a string using a set of parameters and a format Builds a string using the following formating syntax : &#x27;[]&#x27; for no format and [&lt;num chars padding&gt;,&lt;allignment (left / right)&gt;,&lt;characters to serve as padding&gt;]</p>
+          </div></section>
+          <section class="m-doc-details" id="a37dbc172db9f9c27114268ced71bcf82"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a37dbc172db9f9c27114268ced71bcf82" class="m-doc-self">Format</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              T&amp;&amp; t,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>current type</td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td>parameter types to format</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>format</td>
+                  <td>the format string</td>
+                </tr>
+                <tr>
+                  <td>t</td>
+                  <td>current value</td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td>the actual parameters to format</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new formatted string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Formats a string using a set of parameters and a format Builds a string using the following formating syntax : &#x27;[]&#x27; for no format and [&lt;num chars padding&gt;,&lt;allignment (left / right)&gt;,&lt;characters to serve as padding&gt;]</p>
+          </div></section>
+          <section class="m-doc-details" id="a4fd3fce752a478286dd947abd5633bae"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename std::enable_if&lt;std::is_class&lt;T&gt;::value&gt;::type* = nullptr&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4fd3fce752a478286dd947abd5633bae" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap">const T&amp; val,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts any object to it&#x27;s string representation by calling the appropriate <a href="classbpf_1_1_string_1_1_stringifier.html" class="m-doc">Stringifier</a> or the built-in ValueOf if it is a scalar</p>
+          </div></section>
+          <section class="m-doc-details" id="a654b247328936a80879e099cd9c68e46"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, typename std::enable_if&lt;std::is_pointer&lt;T&gt;::value&gt;::type* = nullptr&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a654b247328936a80879e099cd9c68e46" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap">T val,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>value to convert to a string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts any pointer type to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a18dccc2cbcef7478b23464c2642726de"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a18dccc2cbcef7478b23464c2642726de" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a signed integer 32 bits to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a9187fdb3933fd9f28536d584f71a222d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9187fdb3933fd9f28536d584f71a222d" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts an unsigned integer 32 bits to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a9bdf7e1815616791acc96c4cdb8c3747"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9bdf7e1815616791acc96c4cdb8c3747" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts an unsigned integer 64 bits to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a76679ce96e53de52c254ef1913ad549a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a76679ce96e53de52c254ef1913ad549a" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a signed integer 64 bits to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="aabc098937c0b497eb43711ad40ba674b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aabc098937c0b497eb43711ad40ba674b" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap">float f,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">f</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a float to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a959f608f2c077fe6ae869a930fc69fcf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a959f608f2c077fe6ae869a930fc69fcf" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap">double d,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">d</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a double to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="abd15ae4079cd8737b71a7905d7da32a5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd15ae4079cd8737b71a7905d7da32a5" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap">long double d,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">d</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a double to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a8a77ec3efa0814fdbec4a679b75c241c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8a77ec3efa0814fdbec4a679b75c241c" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap">void* ptr,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> prec = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">ptr</td>
+                  <td>value to convert to a string</td>
+                </tr>
+                <tr>
+                  <td>prec</td>
+                  <td>precision for numeric types (0 means max precision)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a raw pointer to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="ae0e6ce44cffbf76665216be7ea555511"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae0e6ce44cffbf76665216be7ea555511" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a585dd1c104d05cca2a39fb7e0b8433ce" class="m-doc">int8</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>value to convert to a string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a signed integer 8 bits to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a2bd95791fb6237a2b8245f9764f7a7dd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2bd95791fb6237a2b8245f9764f7a7dd" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> i,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>value to convert to a string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts an unsigned integer 8 bits to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a40ac9b77887b542abaeb3fb5c281803a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a40ac9b77887b542abaeb3fb5c281803a" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a4f402f887604fa9805eaf4aacb659223" class="m-doc">int16</a> i,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>value to convert to a string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a signed integer 16 bits to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="ac8aee2c6a57899eba0f2829d4adf5d9f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac8aee2c6a57899eba0f2829d4adf5d9f" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a091559d2ef61167f0deb64f99ec4875a" class="m-doc">uint16</a> i,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">i</td>
+                  <td>value to convert to a string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts an unsigned integer 16 bits to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="ac344a1d025e5690f1bc0d80d8cf75ac1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac344a1d025e5690f1bc0d80d8cf75ac1" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap">const char* s,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">s</td>
+                  <td>value to convert to a string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a low-level C string to a high level string</p>
+          </div></section>
+          <section class="m-doc-details" id="a6dda2d2d94402e525a7d499658602e46"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6dda2d2d94402e525a7d499658602e46" class="m-doc-self">ValueOf</a>(</span><span class="m-doc-wrap">bool b,
+              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> = 0)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">b</td>
+                  <td>value to convert to a string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>string representation of val</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts a bool to it&#x27;s string representation</p>
+          </div></section>
+          <section class="m-doc-details" id="a3914593b3f41fdbaf175e83d2f9c0f9a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3914593b3f41fdbaf175e83d2f9c0f9a" class="m-doc-self">String</a>(</span><span class="m-doc-wrap">) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Constructs a new empty string</p>
+          </div></section>
+          <section class="m-doc-details" id="aabc93dd48d20dbd133f7024344cf2ec6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aabc93dd48d20dbd133f7024344cf2ec6" class="m-doc-self">String</a>(</span><span class="m-doc-wrap">const char* str)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>pointer to an array of bytes containing UTF-8 data</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a new string from a low-level null-terminated c-string</p>
+          </div></section>
+          <section class="m-doc-details" id="a45e62e8333edbdbf17f7bb8ed3d9a325"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a45e62e8333edbdbf17f7bb8ed3d9a325" class="m-doc-self">String</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> c)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">c</td>
+                  <td>the UTF32 code to construct the string from</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a new string from a single character</p>
+          </div></section>
+          <section class="m-doc-details" id="ac0ca4dedb841da2e446c66cdf4628e01"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac0ca4dedb841da2e446c66cdf4628e01" class="m-doc-self">String</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; s)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">s</td>
+                  <td>value to copy</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Copy constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a520bb2c924dc9f00544ad8d58eb7089b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a520bb2c924dc9f00544ad8d58eb7089b" class="m-doc-self">String</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;&amp; s) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">s</td>
+                  <td>value to move</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a9fc4d92240674a2038ea32e8764c4384"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9fc4d92240674a2038ea32e8764c4384" class="m-doc-self">BP_DEPRECATED</a>(</span><span class="m-doc-wrap">&quot;To check for empty string use String. IsEmpty,
+              to create an empty string use litteral \. This &quot; &quot;constant will be removed in a future version.&quot;) static const String Empty</span></span>
+            </h3>
+<p>Empty string constant</p>
+          </div></section>
+          <section class="m-doc-details" id="ab9cbb83285cf595a0b664079d89df554"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab9cbb83285cf595a0b664079d89df554" class="m-doc-self">AddSingleByte</a>(</span><span class="m-doc-wrap">char byte)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">byte</td>
+                  <td>the byte to append</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Low-level function to adds a single byte at the end of this string This function ignores wether or not byte is part of a UTF8 code StrLen will be incremented of 1 and UnicodeLen will be recalculated accordingly</p>
+          </div></section>
+          <section class="m-doc-details" id="acddd4b88efc2dd733e66f559abf0ce72"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">char bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#acddd4b88efc2dd733e66f559abf0ce72" class="m-doc-self">ByteAt</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> id) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">id</td>
+                  <td>the index of the byte to return</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>single byte at index id</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>in case the index is out of bounds</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns a byte at a given index</p>
+          </div></section>
+          <section class="m-doc-details" id="a141dd2eb8baa4845c59b482b34b4be70"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a141dd2eb8baa4845c59b482b34b4be70" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>string to append at the end of new string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new string from concatenation of this + other</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Concatenates two strings</p>
+          </div></section>
+          <section class="m-doc-details" id="af8259a34e6fa7b1378d89726770bd926"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af8259a34e6fa7b1378d89726770bd926" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>character to append at the end of new string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new string from concatenation of this + other</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Concatenates a string with a character</p>
+          </div></section>
+          <section class="m-doc-details" id="a0b246a90db02988f9bf1d0adde8c2313"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0b246a90db02988f9bf1d0adde8c2313" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the string to append</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>modified string (this)</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Appends a string at the end of this string</p>
+          </div></section>
+          <section class="m-doc-details" id="a9e50a7080e12538baae1b7250447d9e7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9e50a7080e12538baae1b7250447d9e7" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the UTF32 code to append</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>modified string (this)</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Appends a UTF32 code at the end of this string</p>
+          </div></section>
+          <section class="m-doc-details" id="a35bb1f1d970f2bbae60f296189101da2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a35bb1f1d970f2bbae60f296189101da2" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>string to replace this with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>modified string (this)</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Copy assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a8e2a2036db85ee7339b9421eadff00fb"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8e2a2036db85ee7339b9421eadff00fb" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>string to replace this with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>modified string (this)</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Move assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="addbdccf39f86b99813aa782703366242"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#addbdccf39f86b99813aa782703366242" class="m-doc-self">IsEmpty</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this string is null or 0 bytes long, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Checks if this string is empty</p>
+          </div></section>
+          <section class="m-doc-details" id="a67b752b0501f2d3e31e505243accafaf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a67b752b0501f2d3e31e505243accafaf" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the other string to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if strings are equal, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1_string.html" class="m-doc">String</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a60167e7c42b45ff6ca40046bd01cb715"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a60167e7c42b45ff6ca40046bd01cb715" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the other string to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>false if strings are equal, true otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1_string.html" class="m-doc">String</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a2f0269c8431b6546b05ca4d8e41d9c7a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2f0269c8431b6546b05ca4d8e41d9c7a" class="m-doc-self">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the other string to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is less than other</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1_string.html" class="m-doc">String</a> Equivalent to std::string but supports UTF8 natively</p>
+          </div></section>
+          <section class="m-doc-details" id="a649f82b7495912061f82d86d6ae18a2a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a649f82b7495912061f82d86d6ae18a2a" class="m-doc-self">operator&gt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the other string to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is greater than other</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1_string.html" class="m-doc">String</a> Equivalent to std::string but supports UTF8 natively</p>
+          </div></section>
+          <section class="m-doc-details" id="aec1bfafbaefe321d8bc8925927749225"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aec1bfafbaefe321d8bc8925927749225" class="m-doc-self">Replace</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; search,
+              const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; repby) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">search</td>
+                  <td>the string to search for</td>
+                </tr>
+                <tr>
+                  <td>repby</td>
+                  <td>the replacement string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new modifed string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a new string with all occurenses of search replaced by repby</p>
+          </div></section>
+          <section class="m-doc-details" id="a30c1ac576a8caa2e17d674d8df99de64"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a30c1ac576a8caa2e17d674d8df99de64" class="m-doc-self">operator[]</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> id) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">id</td>
+                  <td>the offset of the character to get</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>UTF32 code</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_index_exception.html" class="m-doc">IndexException</a></td>
+                  <td>if the index is out of bounds</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Returns a character of this string at offset id</p>
+          </div></section>
+          <section class="m-doc-details" id="aea9c7f7e77bd0c4b6071ffc7c2de5685"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const char* bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aea9c7f7e77bd0c4b6071ffc7c2de5685" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>immutable low-level null-terminated c-string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the data of this string</p>
+          </div></section>
+          <section class="m-doc-details" id="a20045322f9415d528c5c3011978f9e78"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;char&gt; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a20045322f9415d528c5c3011978f9e78" class="m-doc-self">ToArray</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>array of bytes</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts this string to an array of byte</p>
+          </div></section>
+          <section class="m-doc-details" id="a0dbe9721959ff5efa0957ab20f4d6e4d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a>&gt; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0dbe9721959ff5efa0957ab20f4d6e4d" class="m-doc-self">ToUTF32</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>array of UTF32 codes</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts this string to an array of UTF32 codes</p>
+          </div></section>
+          <section class="m-doc-details" id="ad33949aa9b95dd8ed822e2348deba460"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="namespacebpf.html#a40999fb483f51ccafbcf87b88b7dea8d" class="m-doc">fchar16</a>&gt; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad33949aa9b95dd8ed822e2348deba460" class="m-doc-self">ToUTF16</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>array of UTF16 codes</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1_eval_exception.html" class="m-doc">EvalException</a></td>
+                  <td>in case the the current string contains non-UTF16 encodable characters</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this string to an array of UTF16 codes</p>
+          </div></section>
+          <section class="m-doc-details" id="a8a886a5f5d3b93a11475481837c48971"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8a886a5f5d3b93a11475481837c48971" class="m-doc-self">Len</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number of unicode character</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the number of characters in this string</p>
+          </div></section>
+          <section class="m-doc-details" id="a51777bbf280c9bd6a36d3a68d8a3af3b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a51777bbf280c9bd6a36d3a68d8a3af3b" class="m-doc-self">Size</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number of bytes in this string following UTF8 standard</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the size in bytes of this string</p>
+          </div></section>
+          <section class="m-doc-details" id="aa5741a30179e8d86304145f21533e0ea"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa5741a30179e8d86304145f21533e0ea" class="m-doc-self">IsNumeric</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+<p>Is this string only composed of numeric chracters</p>
+          </div></section>
+          <section class="m-doc-details" id="ad8a9807df297d96f39af7bf37a38e7ae"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad8a9807df297d96f39af7bf37a38e7ae" class="m-doc-self">ToUpper</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a copy of this string in all upper case WARNING: Unicode is not supported</p>
+          </div></section>
+          <section class="m-doc-details" id="ae0a90ba86634e6bde7390c50a1df02bc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae0a90ba86634e6bde7390c50a1df02bc" class="m-doc-self">ToLower</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a copy of this string in all lower case WARNING: Unicode is not supported</p>
+          </div></section>
+          <section class="m-doc-details" id="a0af6a78c6aa978f6194eae1af28996e9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0af6a78c6aa978f6194eae1af28996e9" class="m-doc-self">Reverse</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a copy of this string but in reversed order</p>
+          </div></section>
+          <section class="m-doc-details" id="a0cc91d24dfb2feb3289062393ceea390"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0cc91d24dfb2feb3289062393ceea390" class="m-doc-self">IndexOf</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>the string to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>index in this string where the first character in str can be found</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the index of the first occurence of str in this string</p>
+          </div></section>
+          <section class="m-doc-details" id="a3e555d049afc031129312481d14910e1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3e555d049afc031129312481d14910e1" class="m-doc-self">LastIndexOf</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>the string to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>index in this string where the first character in str can be found</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the index of the last occurence of str in this string</p>
+          </div></section>
+          <section class="m-doc-details" id="a42899dca6df1524a72817ba275b27f8e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a42899dca6df1524a72817ba275b27f8e" class="m-doc-self">IndexOf</a>(</span><span class="m-doc-wrap">char c) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">c</td>
+                  <td>the character to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>index of character in this string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the index of the first occurence of c in this</p>
+          </div></section>
+          <section class="m-doc-details" id="ad32985bf4095f0263762eec8020906ea"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad32985bf4095f0263762eec8020906ea" class="m-doc-self">LastIndexOf</a>(</span><span class="m-doc-wrap">char c) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">c</td>
+                  <td>the character to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>index of character in this string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the index of the last occurence of c in this</p>
+          </div></section>
+          <section class="m-doc-details" id="aa3aa5e6a212b6b605f2a4c7243258c72"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa3aa5e6a212b6b605f2a4c7243258c72" class="m-doc-self">IndexOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> c) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">c</td>
+                  <td>the UTF32 code to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>index of character in this string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the index of the first occurence of c in this</p>
+          </div></section>
+          <section class="m-doc-details" id="a400f891ccd7ce1216b53645b064e870e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a400f891ccd7ce1216b53645b064e870e" class="m-doc-self">LastIndexOf</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> c) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">c</td>
+                  <td>the UTF32 code to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>index of character in this string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the index of the last occurence of c in this</p>
+          </div></section>
+          <section class="m-doc-details" id="aef145e200b79619ede9cf8d6bd5af831"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aef145e200b79619ede9cf8d6bd5af831" class="m-doc-self">Explode</a>(</span><span class="m-doc-wrap">char c) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">c</td>
+                  <td>the sperator character</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>array of tokens</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Splits this string using a delimiter</p>
+          </div></section>
+          <section class="m-doc-details" id="ad3730eb5a8e0e9d3698ec14f7720d732"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad3730eb5a8e0e9d3698ec14f7720d732" class="m-doc-self">ExplodeIgnore</a>(</span><span class="m-doc-wrap">char c,
+              char ignore) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">c</td>
+                  <td>the seperator character</td>
+                </tr>
+                <tr>
+                  <td>ignore</td>
+                  <td>character to identify escape sequences (all characters between two of this ignore char will be interpreted as a single token)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>array of tokens</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Splits this string using a delimiter</p>
+          </div></section>
+          <section class="m-doc-details" id="a82eba57d0224f6324da272233ffd72ba"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a82eba57d0224f6324da272233ffd72ba" class="m-doc-self">Explode</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>the separator string</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>array of tokens</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Splits this string using a delimiter</p>
+          </div></section>
+          <section class="m-doc-details" id="a521d03114e364932a9e7bd64117d9426"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a521d03114e364932a9e7bd64117d9426" class="m-doc-self">ExplodeIgnore</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str,
+              const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; ignore) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>the separator string</td>
+                </tr>
+                <tr>
+                  <td>ignore</td>
+                  <td>string to identify escape sequences (all characters between two of this ignore string will be interpreted as a single token)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>array of tokens</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Splits this string using a delimiter</p>
+          </div></section>
+          <section class="m-doc-details" id="a434911f8e403b52d589f34e6ea2fe893"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt; bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a434911f8e403b52d589f34e6ea2fe893" class="m-doc-self">ExplodeOr</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>the delimiters each character is treated as a different delimiter</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>array of tokens</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Splits this string using multiple delimiters</p>
+          </div></section>
+          <section class="m-doc-details" id="a740b9c392758967b58d7283ab6724886"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a740b9c392758967b58d7283ab6724886" class="m-doc-self">StartsWith</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the string to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this string starts with other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns true if this string starts with other</p>
+          </div></section>
+          <section class="m-doc-details" id="a77f2b1f2c10868fb581d26485fa73386"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a77f2b1f2c10868fb581d26485fa73386" class="m-doc-self">EndsWith</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the string to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this string end with other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns true if this string ends with other</p>
+          </div></section>
+          <section class="m-doc-details" id="ad02ea9acc75adffa0e14016e8032c97f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad02ea9acc75adffa0e14016e8032c97f" class="m-doc-self">Contains</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the string to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this string contains other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns true if this string contains other</p>
+          </div></section>
+          <section class="m-doc-details" id="a6b070b46e7b3b6646678e58be446a0a4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6b070b46e7b3b6646678e58be446a0a4" class="m-doc-self">Contains</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a03d9c02e76bf5e9d6791499e1dbfe78b" class="m-doc">fchar</a> other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the string to search for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this string contains other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns true if this string contains other</p>
+          </div></section>
+          <section class="m-doc-details" id="af98fa35e83effb04e089305ac3e657fa"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af98fa35e83effb04e089305ac3e657fa" class="m-doc-self">SubLen</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> begin,
+              const <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> count = -1) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">begin</td>
+                  <td>the begin index in characters (inclusive)</td>
+                </tr>
+                <tr>
+                  <td>count</td>
+                  <td>the amount of characters to read</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new string between begin and begin + count</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a substring</p>
+          </div></section>
+          <section class="m-doc-details" id="a3f5eb85d70b8c574061f3606cbe6b32c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3f5eb85d70b8c574061f3606cbe6b32c" class="m-doc-self">Sub</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> begin,
+              <a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> end) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">begin</td>
+                  <td>the begin index in characters (inclusive)</td>
+                </tr>
+                <tr>
+                  <td>end</td>
+                  <td>the end index in characters (exclusive)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new string between begin and end</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a substring</p>
+          </div></section>
+          <section class="m-doc-details" id="a510fbd87ee5692246c75c63c5013e3e5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_string.html" class="m-doc">String</a> bpf::<wbr />String::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a510fbd87ee5692246c75c63c5013e3e5" class="m-doc-self">Sub</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a4a8fb6a1ab68c08ee1a32e9f399c06ab" class="m-doc">fisize</a> begin) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">begin</td>
+                  <td>the begin index in characters (inclusive)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new string starting at begin</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a substring where the end is the end of this string</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

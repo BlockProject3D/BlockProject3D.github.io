@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::log::Logger class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1log.html">log</a>::<wbr/></span>Logger <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_logger_8hpp.html">&lt;Base/include/Framework/Log/Logger.hpp&gt;</a></div>
+        </h1>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Utility to handle message logging</p>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a6b5b73de7a8b99d626d47afeddc7ac38" class="m-doc">Logger</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">String</a> name) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#afe8b1d4c3d420450a5f1549ee2692d50" class="m-doc">Logger</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; other) <span class="m-label m-flat m-danger">deleted</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9a97939aa34d892cee64a0fbeae1907a" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; other) -&gt; <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; <span class="m-label m-flat m-danger">deleted</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a75bd3469da084112636e76f26ed80d4a" class="m-doc">AddHandler</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1memory_1_1_unique_ptr.html" class="m-doc">memory::<wbr />UniquePtr</a>&lt;<a href="classbpf_1_1log_1_1_i_log_adapter.html" class="m-doc">ILogAdapter</a>&gt;&amp;&amp; ptr)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename ... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">void <a href="#af01c36747db7e8e903d0ca4e451bbc39" class="m-doc">Info</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args &amp;&amp; ... args)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename ... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">void <a href="#a9c393fe65852e3b3836a4b995e36554e" class="m-doc">Debug</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args &amp;&amp; ... args)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename ... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">void <a href="#abc3cbfe9476a5b4b6eeafb5f91703f1c" class="m-doc">Warning</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args &amp;&amp; ... args)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename ... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">void <a href="#a7da6b31cfd28f936cc40c6e34f9311e6" class="m-doc">Error</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args &amp;&amp; ... args)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a6b5b73de7a8b99d626d47afeddc7ac38"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6b5b73de7a8b99d626d47afeddc7ac38" class="m-doc-self">Logger</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1_string.html" class="m-doc">String</a> name) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">name</td>
+                  <td>the category name</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a></p>
+          </div></section>
+          <section class="m-doc-details" id="afe8b1d4c3d420450a5f1549ee2692d50"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afe8b1d4c3d420450a5f1549ee2692d50" class="m-doc-self">Logger</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; other) <span class="m-label m-danger">deleted</span></span></span>
+            </h3>
+<p>Explicit deleted copy constructor (MSVC Fix: for some reasons MSVC is unable to identify this class cannot be coppied)</p>
+          </div></section>
+          <section class="m-doc-details" id="a9a97939aa34d892cee64a0fbeae1907a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9a97939aa34d892cee64a0fbeae1907a" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; other) <span class="m-label m-danger">deleted</span></span></span>
+            </h3>
+<p>Explicit deleted copy assignment operator (MSVC Fix: for some reasons MSVC is unable to identify this class cannot be coppied)</p>
+          </div></section>
+          <section class="m-doc-details" id="a75bd3469da084112636e76f26ed80d4a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a75bd3469da084112636e76f26ed80d4a" class="m-doc-self">AddHandler</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1memory_1_1_unique_ptr.html" class="m-doc">memory::<wbr />UniquePtr</a>&lt;<a href="classbpf_1_1log_1_1_i_log_adapter.html" class="m-doc">ILogAdapter</a>&gt;&amp;&amp; ptr)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">ptr</td>
+                  <td>UniquePtr to the new <a href="classbpf_1_1log_1_1_i_log_adapter.html" class="m-doc">ILogAdapter</a></td>
+                </tr>
+              </tbody>
+            </table>
+<p>Adds a new log adapter</p>
+          </div></section>
+          <section class="m-doc-details" id="af01c36747db7e8e903d0ca4e451bbc39"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename ... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af01c36747db7e8e903d0ca4e451bbc39" class="m-doc-self">Info</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Args</td>
+                  <td>the type of arguments</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>format</td>
+                  <td>the format (see <a href="classbpf_1_1_string.html#ad7913c6c08f143a56c8859eec999b877" class="m-doc">bpf::<wbr />String::<wbr />Format</a> for more information)</td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td>the argument values</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Logs an information message</p>
+          </div></section>
+          <section class="m-doc-details" id="a9c393fe65852e3b3836a4b995e36554e"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename ... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9c393fe65852e3b3836a4b995e36554e" class="m-doc-self">Debug</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Args</td>
+                  <td>the type of arguments</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>format</td>
+                  <td>the format (see <a href="classbpf_1_1_string.html#ad7913c6c08f143a56c8859eec999b877" class="m-doc">bpf::<wbr />String::<wbr />Format</a> for more information)</td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td>the argument values</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Logs a debug message</p>
+          </div></section>
+          <section class="m-doc-details" id="abc3cbfe9476a5b4b6eeafb5f91703f1c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename ... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abc3cbfe9476a5b4b6eeafb5f91703f1c" class="m-doc-self">Warning</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Args</td>
+                  <td>the type of arguments</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>format</td>
+                  <td>the format (see <a href="classbpf_1_1_string.html#ad7913c6c08f143a56c8859eec999b877" class="m-doc">bpf::<wbr />String::<wbr />Format</a> for more information)</td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td>the argument values</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Logs a warning message</p>
+          </div></section>
+          <section class="m-doc-details" id="a7da6b31cfd28f936cc40c6e34f9311e6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename ... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7da6b31cfd28f936cc40c6e34f9311e6" class="m-doc-self">Error</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; format,
+              Args &amp;&amp; ... args)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Args</td>
+                  <td>the type of arguments</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>format</td>
+                  <td>the format (see <a href="classbpf_1_1_string.html#ad7913c6c08f143a56c8859eec999b877" class="m-doc">bpf::<wbr />String::<wbr />Format</a> for more information)</td>
+                </tr>
+                <tr>
+                  <td>args</td>
+                  <td>the argument values</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Logs an error message</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

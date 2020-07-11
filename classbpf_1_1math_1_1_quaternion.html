@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::math::Quaternion class | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_quaternion_8hpp.html">&lt;Base/include/Framework/Math/Quaternion.hpp&gt;</a></div>
+          <div class="m-doc-template">template&lt;typename T&gt;</div>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1math.html">math</a>::<wbr/></span>Quaternion <span class="m-thin">class</span>
+        </h1>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">T</td>
+              <td>the number type</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pub-attribs">Public variables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Represents a quaternion</p>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; <a href="#a5004afe2361d09cd45daa5a3d2f66932" class="m-doc">Zero</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              static const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; <a href="#a135f0fde74415d4ba83ccaab7f89f736" class="m-doc">Identity</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a6d6651e3dbd752197fba3c5f7f3f3256" class="m-doc">Lerp</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; q,
+              const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; q1,
+              T t) -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#abb23662f3a53c50f67e33f17ceacb3b6" class="m-doc">Slerp</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; q,
+              const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; q1,
+              T t) -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a88dfa62e0fa9fb037c1805a1e3b81c64" class="m-doc">LookAt</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;&amp; dir,
+              const <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;&amp; forward = <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;::<a href="classbpf_1_1math_1_1_quaternion.html#a9034df3a0b08e014f7576fe794a33334" class="m-doc">Forward</a>,
+              const <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;&amp; up = <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;::<a href="classbpf_1_1math_1_1_quaternion.html#a4c03a7368eb4338ff0aaa373b773a9a6" class="m-doc">Up</a>) -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a1bdb2be45ad485df7cbc655a6246f611" class="m-doc">Quaternion</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a5b533cff05023efee4cbfe3f70440509" class="m-doc">Quaternion</a>(</span><span class="m-doc-wrap">const T w,
+              const T i,
+              const T j,
+              const T k)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ae9b24f46212dc2322bc6b11ce3ac9076" class="m-doc">Quaternion</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; euler) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a11d00183acf232c2dc47f1f976322057" class="m-doc">Quaternion</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; from,
+              const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; to)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#adaabfebaca838dbc3ed763c362973f87" class="m-doc">Quaternion</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; axis,
+              T ang)</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af39843c16d4abab41a7ddb9324d92422" class="m-doc">Rotate</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; v) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4c03a7368eb4338ff0aaa373b773a9a6" class="m-doc">Up</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9034df3a0b08e014f7576fe794a33334" class="m-doc">Forward</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6097be24a05f592f8dd5517b9f7ffd05" class="m-doc">Right</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a48ccbe0a37a5f1754423b47ec474a057" class="m-doc">ToMatrix</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, 4, 4&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aec0f64ccab37b9f85a02d5fd9f1f08c6" class="m-doc">Inverse</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a48aceae9bf6df30dee12b54db7056412" class="m-doc">Norm</a>(</span><span class="m-doc-wrap">) const -&gt; T <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#adfeb0f5725c47f060efd47c1d8cc3f29" class="m-doc">Normalize</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac88745bef3ed00b75b996e075d13dad9" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1fecae533fdb3eda76f197006d592f2b" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0df4e82a42096f419e2c662466cbb1d9" class="m-doc">operator*</a>(</span><span class="m-doc-wrap">const T&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aaf87e40e4cba72b6e9c722daa36a0246" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6b2d23c4f2d6c1db8ba862a286629ea0" class="m-doc">operator-</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const -&gt; <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3893e6cbfd0dc771314a2579a4389ae9" class="m-doc">Dot</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af27452057c6b8099c7c2d88470b400a5" class="m-doc">Angle</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const -&gt; T</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a67efebfe22ac2e096da0ad984a890cb0" class="m-doc">ToEulerAngles</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-attribs">
+          <h2><a href="#pub-attribs">Public variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              T <a href="#a9ca6a6f2a72e7d2094bc723a47fe0819" class="m-doc">I</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              T <a href="#a537e4ed29ab72d406ae731b0e4ce77e1" class="m-doc">J</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              T <a href="#a2597fe153143ff9e15f73fd82c2a10aa" class="m-doc">K</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              T <a href="#ac489e3984206d6f1da229dfd51b01eb2" class="m-doc">W</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a6d6651e3dbd752197fba3c5f7f3f3256"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6d6651e3dbd752197fba3c5f7f3f3256" class="m-doc-self">Lerp</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; q,
+              const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; q1,
+              T t)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">q</td>
+                  <td>first quaternion</td>
+                </tr>
+                <tr>
+                  <td>q1</td>
+                  <td>second quaternion</td>
+                </tr>
+                <tr>
+                  <td>t</td>
+                  <td>interpolation factor</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs linear interpolation between two quaternions</p>
+          </div></section>
+          <section class="m-doc-details" id="abb23662f3a53c50f67e33f17ceacb3b6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abb23662f3a53c50f67e33f17ceacb3b6" class="m-doc-self">Slerp</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; q,
+              const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; q1,
+              T t)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">q</td>
+                  <td>first quaternion</td>
+                </tr>
+                <tr>
+                  <td>q1</td>
+                  <td>second quaternion</td>
+                </tr>
+                <tr>
+                  <td>t</td>
+                  <td>interpolation factor</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs spherical linear interpolation between two quaternions</p>
+          </div></section>
+          <section class="m-doc-details" id="a88dfa62e0fa9fb037c1805a1e3b81c64"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">static <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a88dfa62e0fa9fb037c1805a1e3b81c64" class="m-doc-self">LookAt</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;&amp; dir,
+              const <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;&amp; forward = <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;::<a href="classbpf_1_1math_1_1_quaternion.html#a9034df3a0b08e014f7576fe794a33334" class="m-doc">Forward</a>,
+              const <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;&amp; up = <a href="namespacebpf_1_1math.html#a5b25c6b3fc682c52577a4993fbb99f39" class="m-doc">Vector3</a>&lt;T&gt;::<a href="classbpf_1_1math_1_1_quaternion.html#a4c03a7368eb4338ff0aaa373b773a9a6" class="m-doc">Up</a>)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">dir</td>
+                  <td>the direction to look at</td>
+                </tr>
+                <tr>
+                  <td>forward</td>
+                  <td>the world&#x27;s forward vector</td>
+                </tr>
+                <tr>
+                  <td>up</td>
+                  <td>the world&#x27;s up vector</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes a quaternion to point a vector in a given direction</p>
+          </div></section>
+          <section class="m-doc-details" id="a1bdb2be45ad485df7cbc655a6246f611"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1bdb2be45ad485df7cbc655a6246f611" class="m-doc-self">Quaternion</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs an empty quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="a5b533cff05023efee4cbfe3f70440509"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5b533cff05023efee4cbfe3f70440509" class="m-doc-self">Quaternion</a>(</span><span class="m-doc-wrap">const T w,
+              const T i,
+              const T j,
+              const T k)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">w</td>
+                  <td>real component</td>
+                </tr>
+                <tr>
+                  <td>i</td>
+                  <td>imaginary I component</td>
+                </tr>
+                <tr>
+                  <td>j</td>
+                  <td>imaginary J component</td>
+                </tr>
+                <tr>
+                  <td>k</td>
+                  <td>imaginary K component</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a quaternion from individual components</p>
+          </div></section>
+          <section class="m-doc-details" id="ae9b24f46212dc2322bc6b11ce3ac9076"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae9b24f46212dc2322bc6b11ce3ac9076" class="m-doc-self">Quaternion</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; euler) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">euler</td>
+                  <td>euler angles X = Pitch, Y = Yaw, Z = Roll</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a quaternion from euler angles WARNING : Angles are expressed in radians</p>
+          </div></section>
+          <section class="m-doc-details" id="a11d00183acf232c2dc47f1f976322057"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a11d00183acf232c2dc47f1f976322057" class="m-doc-self">Quaternion</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; from,
+              const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; to)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">from</td>
+                  <td>first vector</td>
+                </tr>
+                <tr>
+                  <td>to</td>
+                  <td>second vector</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a quaternion from the rotation between two vectors</p>
+          </div></section>
+          <section class="m-doc-details" id="adaabfebaca838dbc3ed763c362973f87"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adaabfebaca838dbc3ed763c362973f87" class="m-doc-self">Quaternion</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; axis,
+              T ang)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">axis</td>
+                  <td>the rotation axis</td>
+                </tr>
+                <tr>
+                  <td>ang</td>
+                  <td>the rotation angle</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a quaternion from axis angle WARNING : Angle is expressed in radians</p>
+          </div></section>
+          <section class="m-doc-details" id="af39843c16d4abab41a7ddb9324d92422"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af39843c16d4abab41a7ddb9324d92422" class="m-doc-self">Rotate</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt;&amp; v) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">v</td>
+                  <td>the vector to rotate</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new rotated vector</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Rotates the given vector by this quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="a4c03a7368eb4338ff0aaa373b773a9a6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4c03a7368eb4338ff0aaa373b773a9a6" class="m-doc-self">Up</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>up vector from rotation of <a href="classbpf_1_1math_1_1_vector_3_01_t_00_013_01_4.html#a081136e9203a551ffc8a57f281c11795" class="m-doc">Vector3&lt;T&gt;::<wbr />Up</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes an Up vector by rotating the <a href="namespace_framework.html" class="m-doc">Framework</a>&#x27;s default up vector by this quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="a9034df3a0b08e014f7576fe794a33334"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9034df3a0b08e014f7576fe794a33334" class="m-doc-self">Forward</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>forward vector from rotation of <a href="classbpf_1_1math_1_1_vector_3_01_t_00_013_01_4.html#a1ee1c5fdf7cd5962b7e713dbd65bf300" class="m-doc">Vector3&lt;T&gt;::<wbr />Forward</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes a Forward vector by rotating the <a href="namespace_framework.html" class="m-doc">Framework</a>&#x27;s default forward vector by this quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="a6097be24a05f592f8dd5517b9f7ffd05"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6097be24a05f592f8dd5517b9f7ffd05" class="m-doc-self">Right</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>right vector from rotation of <a href="classbpf_1_1math_1_1_vector_3_01_t_00_013_01_4.html#a14d588964df33d585159524d3487d373" class="m-doc">Vector3&lt;T&gt;::<wbr />Right</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes a Right vector by rotating the <a href="namespace_framework.html" class="m-doc">Framework</a>&#x27;s default right vector by this quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="a48ccbe0a37a5f1754423b47ec474a057"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_matrix.html" class="m-doc">Matrix</a>&lt;T, 4, 4&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a48ccbe0a37a5f1754423b47ec474a057" class="m-doc-self">ToMatrix</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new matrix</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Converts this quaternion to it&#x27;s rotation matrix representation. Result is undefined if this quaternion is not a unit quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="aec0f64ccab37b9f85a02d5fd9f1f08c6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aec0f64ccab37b9f85a02d5fd9f1f08c6" class="m-doc-self">Inverse</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the inverse of this quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="a48aceae9bf6df30dee12b54db7056412"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a48aceae9bf6df30dee12b54db7056412" class="m-doc-self">Norm</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes the norm of this quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="adfeb0f5725c47f060efd47c1d8cc3f29"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adfeb0f5725c47f060efd47c1d8cc3f29" class="m-doc-self">Normalize</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new unit quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Normalizes this quaternion to a unit quaternion</p>
+          </div></section>
+          <section class="m-doc-details" id="ac88745bef3ed00b75b996e075d13dad9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac88745bef3ed00b75b996e075d13dad9" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>quaternion to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the two quaternions are equal, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare two quaternions</p>
+          </div></section>
+          <section class="m-doc-details" id="a1fecae533fdb3eda76f197006d592f2b"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1fecae533fdb3eda76f197006d592f2b" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs quaternion-quaternion multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="a0df4e82a42096f419e2c662466cbb1d9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0df4e82a42096f419e2c662466cbb1d9" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const T&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs quaternion-scalar multiplication</p>
+          </div></section>
+          <section class="m-doc-details" id="aaf87e40e4cba72b6e9c722daa36a0246"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aaf87e40e4cba72b6e9c722daa36a0246" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs quaternion-quaternion addition</p>
+          </div></section>
+          <section class="m-doc-details" id="a6b2d23c4f2d6c1db8ba862a286629ea0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6b2d23c4f2d6c1db8ba862a286629ea0" class="m-doc-self">operator-</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new quaternion</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Performs quaternion-quaternion subtraction</p>
+          </div></section>
+          <section class="m-doc-details" id="a3893e6cbfd0dc771314a2579a4389ae9"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3893e6cbfd0dc771314a2579a4389ae9" class="m-doc-self">Dot</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes a dot product between two quaternions</p>
+          </div></section>
+          <section class="m-doc-details" id="af27452057c6b8099c7c2d88470b400a5"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">T bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af27452057c6b8099c7c2d88470b400a5" class="m-doc-self">Angle</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt;&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>number</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the angle between two quaternions. WARNING : Angle is expressed in radians</p>
+          </div></section>
+          <section class="m-doc-details" id="a67efebfe22ac2e096da0ad984a890cb0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1math_1_1_vector.html" class="m-doc">Vector</a>&lt;T, 3&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a67efebfe22ac2e096da0ad984a890cb0" class="m-doc-self">ToEulerAngles</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>3D vector, X = Pitch, Y = Yaw, Z = Roll</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the euler angles representation of that quaternion. WARNING : Angles are expressed in radians</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a5004afe2361d09cd45daa5a3d2f66932"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /><a href="#a5004afe2361d09cd45daa5a3d2f66932" class="m-doc-self">Zero</a>
+            </h3>
+<p>Zero quaternion constant</p>
+          </div></section>
+          <section class="m-doc-details" id="a135f0fde74415d4ba83ccaab7f89f736"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              static const <a href="classbpf_1_1math_1_1_quaternion.html" class="m-doc">Quaternion</a>&lt;T&gt; bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /><a href="#a135f0fde74415d4ba83ccaab7f89f736" class="m-doc-self">Identity</a>
+            </h3>
+<p>Identity quaternion constant</p>
+          </div></section>
+          <section class="m-doc-details" id="a9ca6a6f2a72e7d2094bc723a47fe0819"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /><a href="#a9ca6a6f2a72e7d2094bc723a47fe0819" class="m-doc-self">I</a>
+            </h3>
+<p>Imaginary I component</p>
+          </div></section>
+          <section class="m-doc-details" id="a537e4ed29ab72d406ae731b0e4ce77e1"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /><a href="#a537e4ed29ab72d406ae731b0e4ce77e1" class="m-doc-self">J</a>
+            </h3>
+<p>Imaginary J component</p>
+          </div></section>
+          <section class="m-doc-details" id="a2597fe153143ff9e15f73fd82c2a10aa"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /><a href="#a2597fe153143ff9e15f73fd82c2a10aa" class="m-doc-self">K</a>
+            </h3>
+<p>Imaginary K component</p>
+          </div></section>
+          <section class="m-doc-details" id="ac489e3984206d6f1da229dfd51b01eb2"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />math::<wbr />Quaternion&lt;T&gt;::<wbr /><a href="#ac489e3984206d6f1da229dfd51b01eb2" class="m-doc-self">W</a>
+            </h3>
+<p>Real component</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
