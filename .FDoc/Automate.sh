@@ -1,4 +1,5 @@
 #!/bin/bash
+pip3 install jinja2
 git clone https://github.com/BlockProject3D/Framework
 
 #Prepare Framework
