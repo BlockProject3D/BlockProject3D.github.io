@@ -20,9 +20,10 @@ git clone https://github.com/mosra/m.css.git
 #mv doxygen.py ./m.css/documentation
 cd m.css/documentation && python3 doxygen.py ../../DoxyfileMCSS && cd ../../
 mv index.html ./html
-mv -r .html/* ../
+mv .html/* ../
 cd ..
 rm -rf Framework
 git config --local user.email "blockproject3d@github.com"
 git config --local user.name "B"
+git add --all
 git commit -am "Update documentation"
