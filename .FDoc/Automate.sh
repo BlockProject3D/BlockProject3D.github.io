@@ -23,7 +23,7 @@ mv index.html ./html
 mv ./html ../
 cd ..
 rm -rf Framework
-git fetch master
+git fetch origin master
 git checkout master
 #git pull origin master
 mv ./html/* ./
