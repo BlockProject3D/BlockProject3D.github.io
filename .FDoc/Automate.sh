@@ -19,9 +19,11 @@ git clone https://github.com/mosra/m.css.git
 #mv base.html ./m.css/documentation/templates/doxygen
 #mv doxygen.py ./m.css/documentation
 cd m.css/documentation && python3 doxygen.py ../../DoxyfileMCSS && cd ../../
+rm -rf m.css
 rm -rf Framework
 mv index.html ./html
 git checkout master
+git pull origin master
 mv ./html/* ../
 cd ..
 git config --local user.email "blockproject3d@github.com"
