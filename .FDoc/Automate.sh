@@ -28,7 +28,7 @@ git checkout master
 #git pull origin master
 mv ./html/* ./
 rmdir ./html
-git config --local user.email "blockproject3d@github.com"
-git config --local user.name "B"
+git config --local user.email "blockproject3d@outlook.com"
+git config --local user.name "BlockProject-3D"
 git add --all
 git commit -am "Update documentation"
