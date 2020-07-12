@@ -23,6 +23,7 @@ mv index.html ./html
 mv ./html/* ../
 cd ..
 rm -rf Framework
+git checkout master
 git config --local user.email "blockproject3d@github.com"
 git config --local user.name "B"
 git add --all

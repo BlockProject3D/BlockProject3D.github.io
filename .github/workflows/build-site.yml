@@ -1,6 +1,8 @@
 name: Build Site
 
-on: [push]
+on:
+  push:
+    branches: [generator]
 
 jobs:
   build:
@@ -8,9 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        repository: 'BlockProject3D/Framework'
-        path: 'Framework'
-    - uses: actions/checkout@v2
+        ref: generator
     - uses: actions/setup-python@v2
     - name: Run auto build
       run: |
