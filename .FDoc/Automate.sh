@@ -23,8 +23,9 @@ mv index.html ./html
 mv ./html ../
 cd ..
 rm -rf Framework
+git fetch master
 git checkout master
-git pull origin master
+#git pull origin master
 mv ./html/* ./
 rmdir ./html
 git config --local user.email "blockproject3d@github.com"
