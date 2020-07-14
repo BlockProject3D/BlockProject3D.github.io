@@ -3,6 +3,7 @@ name: Build Site
 on:
   push:
     branches: [generator]
+  repository_dispatch:
 
 jobs:
   build:
