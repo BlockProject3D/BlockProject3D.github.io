@@ -93,15 +93,23 @@
             </dt>
             <dd><span></span></dd>
             <dt>
-              class <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>
-            </dt>
-            <dd><span></span></dd>
-            <dt>
               struct <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>
             </dt>
             <dd><span></span></dd>
-            <dt>
-              class <a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a>
+            <dt id="a8b6652b1540516ce158962e0ec91bf2f">
+              using <a href="#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc-self">Iterator</a> = <a href="classbpf_1_1collection_1_1_map_iterator.html" class="m-doc">MapIterator</a>&lt;<a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;, <a href="structbpf_1_1collection_1_1_map_1_1_entry.html" class="m-doc">Entry</a>, <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&gt;
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a47cde48057638a242020b50d23945f1a">
+              using <a href="#a47cde48057638a242020b50d23945f1a" class="m-doc-self">CIterator</a> = <a href="classbpf_1_1collection_1_1_map_const_iterator.html" class="m-doc">MapConstIterator</a>&lt;<a href="structbpf_1_1collection_1_1_map_1_1_entry.html" class="m-doc">Entry</a>, <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&gt;
+            </dt>
+            <dd><span></span></dd>
+            <dt id="acdfa57fa4b50bb26aacbb1b6c4fa51e4">
+              using <a href="#acdfa57fa4b50bb26aacbb1b6c4fa51e4" class="m-doc-self">ReverseIterator</a> = <a href="classbpf_1_1collection_1_1_map_reverse_iterator.html" class="m-doc">MapReverseIterator</a>&lt;<a href="structbpf_1_1collection_1_1_map_1_1_entry.html" class="m-doc">Entry</a>, <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&gt;
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a351cae492d0899981e45df8474769514">
+              using <a href="#a351cae492d0899981e45df8474769514" class="m-doc-self">CReverseIterator</a> = <a href="classbpf_1_1collection_1_1_map_const_reverse_iterator.html" class="m-doc">MapConstReverseIterator</a>&lt;<a href="structbpf_1_1collection_1_1_map_1_1_entry.html" class="m-doc">Entry</a>, <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&gt;
             </dt>
             <dd><span></span></dd>
           </dl>
@@ -149,16 +157,16 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a3933f0a234eecbd4e367231f1cae0e9e" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; pos)</span>
+              <span class="m-doc-wrap-bumper">void <a href="#a3933f0a234eecbd4e367231f1cae0e9e" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a>&amp; pos)</span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a948730b641b7090b8a2bde04da494cae" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp;&amp; pos)</span>
+              <span class="m-doc-wrap-bumper">void <a href="#a948730b641b7090b8a2bde04da494cae" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a>&amp;&amp; pos)</span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a57e75e053ad8087cd5bc4fea25f12311" class="m-doc">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; a,
-              const <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; b)</span>
+              <span class="m-doc-wrap-bumper">void <a href="#a57e75e053ad8087cd5bc4fea25f12311" class="m-doc">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a>&amp; a,
+              const <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a>&amp; b)</span>
             </dt>
             <dd></dd>
             <dt>
@@ -172,24 +180,24 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#abd8d9549316cafd9ac5bdde0505f6991" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other) -&gt; bool</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#aac16978728dad471a4f5715cba55d4ee" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a4eba49bb49cc4f06f2ce3c20b305cace" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other) -&gt; bool</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae027f86a3120351a1ff4f870e4186e8e" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a4d74192ee1274ac6e546f9c010a08dd3" class="m-doc">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4d74192ee1274ac6e546f9c010a08dd3" class="m-doc">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key) -&gt; <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
               <div class="m-doc-template">template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a href="#a5705ffd43ebb592a093c539c9db600c5" class="m-doc">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5705ffd43ebb592a093c539c9db600c5" class="m-doc">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val) -&gt; <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ad6a53124ef0de3e92dab72e0e99d112c" class="m-doc">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;int(const <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&amp;node)&gt;&amp; comparator) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad6a53124ef0de3e92dab72e0e99d112c" class="m-doc">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;int(const <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&amp;node)&gt;&amp; comparator) -&gt; <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
@@ -197,11 +205,11 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a354955be85a1565185be4102bdbd34ac" class="m-doc">FindMin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a354955be85a1565185be4102bdbd34ac" class="m-doc">FindMin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#abf6e06e15483996b93d07f812f526bc6" class="m-doc">FindMax</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#abf6e06e15483996b93d07f812f526bc6" class="m-doc">FindMax</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
@@ -233,19 +241,35 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#acdea2a127564ed9c2b6ed974bef117e8" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a22d47aa77ffa596927866f832a04da3b" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map.html#a47cde48057638a242020b50d23945f1a" class="m-doc">CIterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc">end</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#aae6a8351649b9b341b14c70f403cfb87" class="m-doc">end</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map.html#a47cde48057638a242020b50d23945f1a" class="m-doc">CIterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#aef8889605c9becc93b6be9232ee0d37f" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a86246f60722541705b4e3bd1204fbd4e" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a1bfd97e4486cb118831eeb8598626395" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#afac889917c71093f7cdcc1ecfb52e892" class="m-doc">end</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6e3413f2453ca96600af9ed5eeaf6b51" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map.html#a351cae492d0899981e45df8474769514" class="m-doc">CReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a82112601c8ebc2c51f638d7f3cccf1ff" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_map.html#a351cae492d0899981e45df8474769514" class="m-doc">CReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a365a83f15a8cfbe3a32ffe2d9180d368" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map.html#acdfa57fa4b50bb26aacbb1b6c4fa51e4" class="m-doc">ReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a62869784d8a884a052d45b9eafc3301d" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_map.html#acdfa57fa4b50bb26aacbb1b6c4fa51e4" class="m-doc">ReverseIterator</a></span>
             </dt>
             <dd></dd>
           </dl>
@@ -374,7 +398,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3933f0a234eecbd4e367231f1cae0e9e" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; pos)</span></span>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3933f0a234eecbd4e367231f1cae0e9e" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a>&amp; pos)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -383,7 +407,7 @@
               <tbody>
                 <tr>
                   <td style="width: 1%">pos</td>
-                  <td>iterator of the element to remove</td>
+                  <td>iterator of the element to remove, it is undefined behavior to pass a derived <a href="classbpf_1_1collection_1_1_iterator.html" class="m-doc">Iterator</a> type</td>
                 </tr>
               </tbody>
             </table>
@@ -394,7 +418,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a948730b641b7090b8a2bde04da494cae" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp;&amp; pos)</span></span>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a948730b641b7090b8a2bde04da494cae" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a>&amp;&amp; pos)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -403,7 +427,7 @@
               <tbody>
                 <tr>
                   <td style="width: 1%">pos</td>
-                  <td>iterator of the element to remove</td>
+                  <td>iterator of the element to remove, it is undefined behavior to pass a derived <a href="classbpf_1_1collection_1_1_iterator.html" class="m-doc">Iterator</a> type</td>
                 </tr>
               </tbody>
             </table>
@@ -414,8 +438,8 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a57e75e053ad8087cd5bc4fea25f12311" class="m-doc-self">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; a,
-              const <a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; b)</span></span>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a57e75e053ad8087cd5bc4fea25f12311" class="m-doc-self">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a>&amp; a,
+              const <a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a>&amp; b)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -478,12 +502,12 @@
             </table>
 <p>Removes an element by value</p>
           </div></section>
-          <section class="m-doc-details" id="abd8d9549316cafd9ac5bdde0505f6991"><div>
+          <section class="m-doc-details" id="aac16978728dad471a4f5715cba55d4ee"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd8d9549316cafd9ac5bdde0505f6991" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other)</span></span>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aac16978728dad471a4f5715cba55d4ee" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -504,12 +528,12 @@
             </table>
 <p>Compare <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a> by performing a per-element check</p>
           </div></section>
-          <section class="m-doc-details" id="a4eba49bb49cc4f06f2ce3c20b305cace"><div>
+          <section class="m-doc-details" id="ae027f86a3120351a1ff4f870e4186e8e"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4eba49bb49cc4f06f2ce3c20b305cace" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other)</span></span>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae027f86a3120351a1ff4f870e4186e8e" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_map.html" class="m-doc">Map</a>&lt;K, V, Greater, Less&gt;&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -535,7 +559,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4d74192ee1274ac6e546f9c010a08dd3" class="m-doc-self">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4d74192ee1274ac6e546f9c010a08dd3" class="m-doc-self">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -550,7 +574,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#afac889917c71093f7cdcc1ecfb52e892" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -562,7 +586,7 @@
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
                 template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5705ffd43ebb592a093c539c9db600c5" class="m-doc-self">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5705ffd43ebb592a093c539c9db600c5" class="m-doc-self">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -586,7 +610,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#afac889917c71093f7cdcc1ecfb52e892" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -597,7 +621,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad6a53124ef0de3e92dab72e0e99d112c" class="m-doc-self">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;int(const <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&amp;node)&gt;&amp; comparator)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad6a53124ef0de3e92dab72e0e99d112c" class="m-doc-self">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;int(const <a href="structbpf_1_1collection_1_1_map_1_1_node.html" class="m-doc">Node</a>&amp;node)&gt;&amp; comparator)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -612,7 +636,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_map.html#afac889917c71093f7cdcc1ecfb52e892" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -658,7 +682,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a354955be85a1565185be4102bdbd34ac" class="m-doc-self">FindMin</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a354955be85a1565185be4102bdbd34ac" class="m-doc-self">FindMin</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -675,7 +699,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abf6e06e15483996b93d07f812f526bc6" class="m-doc-self">FindMax</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abf6e06e15483996b93d07f812f526bc6" class="m-doc-self">FindMax</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -829,12 +853,12 @@
             </table>
 <p>Returns the number of items in this map</p>
           </div></section>
-          <section class="m-doc-details" id="acdea2a127564ed9c2b6ed974bef117e8"><div>
+          <section class="m-doc-details" id="a22d47aa77ffa596927866f832a04da3b"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#acdea2a127564ed9c2b6ed974bef117e8" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a47cde48057638a242020b50d23945f1a" class="m-doc">CIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a22d47aa77ffa596927866f832a04da3b" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -846,12 +870,12 @@
             </table>
 <p>Returns an iterator to the begining of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="ac8c1c847ccada73efaa9e2c46e0df927"><div>
+          <section class="m-doc-details" id="aae6a8351649b9b341b14c70f403cfb87"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac8c1c847ccada73efaa9e2c46e0df927" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a47cde48057638a242020b50d23945f1a" class="m-doc">CIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aae6a8351649b9b341b14c70f403cfb87" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -863,12 +887,46 @@
             </table>
 <p>Returns an iterator to the end of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="aef8889605c9becc93b6be9232ee0d37f"><div>
+          <section class="m-doc-details" id="a86246f60722541705b4e3bd1204fbd4e"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aef8889605c9becc93b6be9232ee0d37f" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a86246f60722541705b4e3bd1204fbd4e" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="afac889917c71093f7cdcc1ecfb52e892"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a8b6652b1540516ce158962e0ec91bf2f" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afac889917c71093f7cdcc1ecfb52e892" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the end of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a6e3413f2453ca96600af9ed5eeaf6b51"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a351cae492d0899981e45df8474769514" class="m-doc">CReverseIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6e3413f2453ca96600af9ed5eeaf6b51" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -880,12 +938,46 @@
             </table>
 <p>Returns a reverse iterator to the begining of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="a1bfd97e4486cb118831eeb8598626395"><div>
+          <section class="m-doc-details" id="a82112601c8ebc2c51f638d7f3cccf1ff"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1bfd97e4486cb118831eeb8598626395" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#a351cae492d0899981e45df8474769514" class="m-doc">CReverseIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a82112601c8ebc2c51f638d7f3cccf1ff" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the end of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a365a83f15a8cfbe3a32ffe2d9180d368"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#acdfa57fa4b50bb26aacbb1b6c4fa51e4" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a365a83f15a8cfbe3a32ffe2d9180d368" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a62869784d8a884a052d45b9eafc3301d"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, template&lt;typename T&gt; class Greater, template&lt;typename T&gt; class Less&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_map.html#acdfa57fa4b50bb26aacbb1b6c4fa51e4" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />Map&lt;K, V, Greater, Less&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a62869784d8a884a052d45b9eafc3301d" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>

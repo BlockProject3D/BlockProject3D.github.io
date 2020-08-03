@@ -47,7 +47,6 @@
           <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1system.html">system</a>::<wbr/></span>Mutex <span class="m-thin">class</span>
           <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_mutex_8hpp.html">&lt;Base/include/Framework/System/Mutex.hpp&gt;</a></div>
         </h1>
-        <p><span></span></p>
         <div class="m-block m-default">
           <h3>Contents</h3>
           <ul>
@@ -60,30 +59,31 @@
             </li>
           </ul>
         </div>
+<p>Helper to represent a cross-platform <a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a></p>
         <section id="typeless-methods">
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt id="a418c0f70569b993fe96b0757db194cee">
-              <span class="m-doc-wrap-bumper"><a href="#a418c0f70569b993fe96b0757db194cee" class="m-doc-self">Mutex</a>(</span><span class="m-doc-wrap">)</span>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a418c0f70569b993fe96b0757db194cee" class="m-doc">Mutex</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
             <dt id="a8a815c2276d2bec43b3188fb4b6234c6">
               <span class="m-doc-wrap-bumper"><a href="#a8a815c2276d2bec43b3188fb4b6234c6" class="m-doc-self">~Mutex</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
             <dd><span></span></dd>
-            <dt id="ab105790aadbf709b347cea8150a59281">
-              <span class="m-doc-wrap-bumper"><a href="#ab105790aadbf709b347cea8150a59281" class="m-doc-self">Mutex</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#ab105790aadbf709b347cea8150a59281" class="m-doc">Mutex</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
         </section>
         <section id="pub-methods">
           <h2><a href="#pub-methods">Public functions</a></h2>
           <dl class="m-doc">
-            <dt id="a1b2a901dd41227151373adf8032a6d56">
-              <span class="m-doc-wrap-bumper">auto <a href="#a1b2a901dd41227151373adf8032a6d56" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1b2a901dd41227151373adf8032a6d56" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper">void <a href="#a9428cd7a40a2826d61c82bbec961eac0" class="m-doc">Lock</a>(</span><span class="m-doc-wrap">) const</span>
             </dt>
@@ -96,16 +96,71 @@
         </section>
         <section>
           <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a418c0f70569b993fe96b0757db194cee"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />Mutex::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a418c0f70569b993fe96b0757db194cee" class="m-doc-self">Mutex</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%"><a href="classbpf_1_1memory_1_1_memory_exception.html" class="m-doc">memory::<wbr />MemoryException</a></td>
+                  <td>if out of memory</td>
+                </tr>
+                <tr>
+                  <td><a href="classbpf_1_1system_1_1_o_s_exception.html" class="m-doc">OSException</a></td>
+                  <td>in case of system error</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a mutex</p>
+          </div></section>
+          <section class="m-doc-details" id="ab105790aadbf709b347cea8150a59281"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />Mutex::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab105790aadbf709b347cea8150a59281" class="m-doc-self">Mutex</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a1b2a901dd41227151373adf8032a6d56"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp; bpf::<wbr />system::<wbr />Mutex::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1b2a901dd41227151373adf8032a6d56" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
+          </div></section>
           <section class="m-doc-details" id="a9428cd7a40a2826d61c82bbec961eac0"><div>
             <h3>
               <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />Mutex::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9428cd7a40a2826d61c82bbec961eac0" class="m-doc-self">Lock</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%"><a href="classbpf_1_1system_1_1_o_s_exception.html" class="m-doc">OSException</a></td>
+                  <td>in case of system error</td>
+                </tr>
+              </tbody>
+            </table>
 <p>Locks this mutex</p>
           </div></section>
           <section class="m-doc-details" id="aa74e4f07cda6e0bf5f83ea9f3d7863b4"><div>
             <h3>
               <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />Mutex::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa74e4f07cda6e0bf5f83ea9f3d7863b4" class="m-doc-self">Unlock</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%"><a href="classbpf_1_1system_1_1_o_s_exception.html" class="m-doc">OSException</a></td>
+                  <td>in case of system error</td>
+                </tr>
+              </tbody>
+            </table>
 <p>Unlocks this mutex</p>
           </div></section>
         </section>

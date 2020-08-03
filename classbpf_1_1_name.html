@@ -53,13 +53,35 @@
             <li>
               Reference
               <ul>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
                 <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
                 <li><a href="#pub-methods">Public functions</a></li>
               </ul>
             </li>
           </ul>
         </div>
-<p>Utility class to represent a hashed string</p>
+<p>Utility class to represent a hashed string. By default this class uses the register size of the current system to store the hash number</p>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a561b259b7592e79f3a561c5ed2cedb77" class="m-doc">Hash32</a>(</span><span class="m-doc-wrap">const char* str) -&gt; <a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a2e50c5dceb64b75e5ca2521e4b7ddfd5" class="m-doc">Hash32</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) -&gt; <a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a3f721a0f6b199fd35c2c8867dc7ee436" class="m-doc">Hash64</a>(</span><span class="m-doc-wrap">const char* str) -&gt; <a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a0e067d4ad5e982da998d56a3e30bf570" class="m-doc">Hash64</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) -&gt; <a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
         <section id="typeless-methods">
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
@@ -100,6 +122,98 @@
         </section>
         <section>
           <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a561b259b7592e79f3a561c5ed2cedb77"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> bpf::<wbr />Name::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a561b259b7592e79f3a561c5ed2cedb77" class="m-doc-self">Hash32</a>(</span><span class="m-doc-wrap">const char* str) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>string to hash</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>32 bits unsigned</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes 32 bits string hash</p>
+          </div></section>
+          <section class="m-doc-details" id="a2e50c5dceb64b75e5ca2521e4b7ddfd5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> bpf::<wbr />Name::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2e50c5dceb64b75e5ca2521e4b7ddfd5" class="m-doc-self">Hash32</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>high-level string to hash</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>32 bits unsigned</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes 32 bits string hash</p>
+          </div></section>
+          <section class="m-doc-details" id="a3f721a0f6b199fd35c2c8867dc7ee436"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> bpf::<wbr />Name::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3f721a0f6b199fd35c2c8867dc7ee436" class="m-doc-self">Hash64</a>(</span><span class="m-doc-wrap">const char* str) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>string to hash</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>64 bits unsigned</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes 64 bits string hash</p>
+          </div></section>
+          <section class="m-doc-details" id="a0e067d4ad5e982da998d56a3e30bf570"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> bpf::<wbr />Name::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0e067d4ad5e982da998d56a3e30bf570" class="m-doc-self">Hash64</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; str) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">str</td>
+                  <td>high-level string to hash</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>64 bits unsigned</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Computes 64 bits string hash</p>
+          </div></section>
           <section class="m-doc-details" id="a8cd7abec1d914063fd56db35276643e3"><div>
             <h3>
               <span class="m-doc-wrap-bumper"> bpf::<wbr />Name::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8cd7abec1d914063fd56db35276643e3" class="m-doc-self">Name</a>(</span><span class="m-doc-wrap">) <span class="m-label m-success">noexcept</span></span></span>

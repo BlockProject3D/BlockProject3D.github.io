@@ -48,7 +48,17 @@
           <div class="m-doc-template">template&lt;typename T&gt;</div>
           <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1system.html">system</a>::<wbr/></span>TypeExpander <span class="m-thin">union</span>
         </h1>
-        <p><span></span></p>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">T</td>
+              <td>the type to expand</td>
+            </tr>
+          </tbody>
+        </table>
         <div class="m-block m-default">
           <h3>Contents</h3>
           <ul>
@@ -61,35 +71,109 @@
             </li>
           </ul>
         </div>
+<p>Helper union to expand any type into a byte array</p>
         <section id="typeless-methods">
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt id="a4284fef55736cf8789114d2a331c7251">
-              <span class="m-doc-wrap-bumper"><a href="#a4284fef55736cf8789114d2a331c7251" class="m-doc-self">TypeExpander</a>(</span><span class="m-doc-wrap">T d)</span>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a4284fef55736cf8789114d2a331c7251" class="m-doc">TypeExpander</a>(</span><span class="m-doc-wrap">T d)</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a635845b723c8843377b1219d172adc9c">
-              <span class="m-doc-wrap-bumper"><a href="#a635845b723c8843377b1219d172adc9c" class="m-doc-self">TypeExpander</a>(</span><span class="m-doc-wrap">std::initializer_list&lt;<a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a>&gt; d)</span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a635845b723c8843377b1219d172adc9c" class="m-doc">TypeExpander</a>(</span><span class="m-doc-wrap">std::initializer_list&lt;<a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a>&gt; d)</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a6f40fafe62b6c9f6244ddf3ab539b9d4">
-              <span class="m-doc-wrap-bumper"><a href="#a6f40fafe62b6c9f6244ddf3ab539b9d4" class="m-doc-self">TypeExpander</a>(</span><span class="m-doc-wrap">)</span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a6f40fafe62b6c9f6244ddf3ab539b9d4" class="m-doc">TypeExpander</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
         </section>
         <section id="pub-attribs">
           <h2><a href="#pub-attribs">Public variables</a></h2>
           <dl class="m-doc">
-            <dt id="af0b4f98c90ed6b2d01e7c788dfde2ad6">
-              T <a href="#af0b4f98c90ed6b2d01e7c788dfde2ad6" class="m-doc-self">Data</a>
+            <dt>
+              T <a href="#af0b4f98c90ed6b2d01e7c788dfde2ad6" class="m-doc">Data</a>
             </dt>
-            <dd><span></span></dd>
-            <dt id="abb4bba0cca18c2aa0c9ad9a7152e3796">
-              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> <a href="#abb4bba0cca18c2aa0c9ad9a7152e3796" class="m-doc-self">Bytes</a>
+            <dd></dd>
+            <dt>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> <a href="#abb4bba0cca18c2aa0c9ad9a7152e3796" class="m-doc">Bytes</a>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a4284fef55736cf8789114d2a331c7251"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />TypeExpander&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4284fef55736cf8789114d2a331c7251" class="m-doc-self">TypeExpander</a>(</span><span class="m-doc-wrap">T d)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">d</td>
+                  <td>the value to expand</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="unionbpf_1_1system_1_1_type_expander.html" class="m-doc">TypeExpander</a> from a value</p>
+          </div></section>
+          <section class="m-doc-details" id="a635845b723c8843377b1219d172adc9c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />TypeExpander&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a635845b723c8843377b1219d172adc9c" class="m-doc-self">TypeExpander</a>(</span><span class="m-doc-wrap">std::initializer_list&lt;<a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a>&gt; d)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">d</td>
+                  <td>the byte array to copy bytes from</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="unionbpf_1_1system_1_1_type_expander.html" class="m-doc">TypeExpander</a> from a byte array</p>
+          </div></section>
+          <section class="m-doc-details" id="a6f40fafe62b6c9f6244ddf3ab539b9d4"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />TypeExpander&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6f40fafe62b6c9f6244ddf3ab539b9d4" class="m-doc-self">TypeExpander</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs an empty <a href="unionbpf_1_1system_1_1_type_expander.html" class="m-doc">TypeExpander</a></p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="af0b4f98c90ed6b2d01e7c788dfde2ad6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              T bpf::<wbr />system::<wbr />TypeExpander&lt;T&gt;::<wbr /><a href="#af0b4f98c90ed6b2d01e7c788dfde2ad6" class="m-doc-self">Data</a>
+            </h3>
+<p>The value to expand</p>
+          </div></section>
+          <section class="m-doc-details" id="abb4bba0cca18c2aa0c9ad9a7152e3796"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <a href="namespacebpf.html#aef7782228bf3949b91b9d476682f4fd3" class="m-doc">uint8</a> bpf::<wbr />system::<wbr />TypeExpander&lt;T&gt;::<wbr /><a href="#abb4bba0cca18c2aa0c9ad9a7152e3796" class="m-doc-self">Bytes</a>
+            </h3>
+<p>The byte content</p>
+          </div></section>
         </section>
       </div>
     </div>

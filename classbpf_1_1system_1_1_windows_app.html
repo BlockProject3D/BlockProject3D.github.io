@@ -55,6 +55,7 @@
               Reference
               <ul>
                 <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
                 <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
                 <li><a href="#pub-methods">Public functions</a></li>
               </ul>
@@ -70,12 +71,25 @@
             <dd></dd>
           </dl>
         </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt id="ae80121e56fd60f4cda05d67acf41d223">
+              <span class="m-doc-wrap-bumper">static auto <a href="#ae80121e56fd60f4cda05d67acf41d223" class="m-doc-self">GetArguments</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
         <section id="typeless-methods">
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
             <dt id="a93561c302b9f638fd7cd6e8648f65e0d">
               <span class="m-doc-wrap-bumper"><a href="#a93561c302b9f638fd7cd6e8648f65e0d" class="m-doc-self">WindowsApp</a>(</span><span class="m-doc-wrap">void* hinstance,
               bool hasConsole)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad19b8c94decac7a438a123015a7c317d">
+              <span class="m-doc-wrap-bumper"><a href="#ad19b8c94decac7a438a123015a7c317d" class="m-doc-self">~WindowsApp</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
             <dd><span></span></dd>
           </dl>
@@ -88,10 +102,6 @@
               <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> columns) <span class="m-label m-flat m-warning">final</span></span>
             </dt>
             <dd></dd>
-            <dt id="a6d8c306f73481803e90f6bf704f019f5">
-              <span class="m-doc-wrap-bumper">auto <a href="#a6d8c306f73481803e90f6bf704f019f5" class="m-doc-self">GetArguments</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1_string.html" class="m-doc">String</a>&gt;</span>
-            </dt>
-            <dd><span></span></dd>
             <dt>
               <span class="m-doc-wrap-bumper">auto <a href="#a067ad71b5fcaed129ccef2dd5010a891" class="m-doc">GetWorkingDirectory</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1io_1_1_file.html" class="m-doc">io::<wbr />File</a> <span class="m-label m-flat m-warning">final</span></span>
             </dt>
@@ -102,6 +112,10 @@
             <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper">void <a href="#ad723b7a1f4d60b1797dbf408d09cdca0" class="m-doc">DisableErrorDialogs</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">final</span> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ab08f74caf64e4d5d0092d63f8ec7b994" class="m-doc">SetModuleDirectories</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1io_1_1_file.html" class="m-doc">io::<wbr />File</a>&gt;&amp; directories) <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd></dd>
           </dl>
@@ -125,6 +139,15 @@
                 <tr>
                   <td>columns</td>
                   <td>number of columns in the console window</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1system_1_1_o_s_exception.html" class="m-doc">OSException</a></td>
+                  <td>in case of system error</td>
                 </tr>
               </tbody>
             </table>
@@ -172,6 +195,36 @@
               <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />WindowsApp::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad723b7a1f4d60b1797dbf408d09cdca0" class="m-doc-self">DisableErrorDialogs</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">final</span> <span class="m-label m-success">noexcept</span></span></span>
             </h3>
 <p>Disables operating system level dialogs shown when an application crashes. Useful when building command line applications</p>
+          </div></section>
+          <section class="m-doc-details" id="ab08f74caf64e4d5d0092d63f8ec7b994"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />WindowsApp::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab08f74caf64e4d5d0092d63f8ec7b994" class="m-doc-self">SetModuleDirectories</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1io_1_1_file.html" class="m-doc">io::<wbr />File</a>&gt;&amp; directories) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">directories</td>
+                  <td>the new directories to use for resolving dependencies</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1system_1_1_o_s_exception.html" class="m-doc">OSException</a></td>
+                  <td>if multiple directories are given and the system only supports one or if system error</td>
+                </tr>
+                <tr>
+                  <td><a href="classbpf_1_1io_1_1_i_o_exception.html" class="m-doc">io::<wbr />IOException</a></td>
+                  <td>if any of the given paths is not a directory</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Sets the additional module directories for this application</p>
           </div></section>
         </section>
       </div>

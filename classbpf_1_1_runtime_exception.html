@@ -97,11 +97,11 @@
             <dt>
               class <a href="classbpf_1_1system_1_1_module_exception.html" class="m-doc">ModuleException</a> <span class="m-label m-flat m-warning">final</span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
             <dt>
               class <a href="classbpf_1_1system_1_1_o_s_exception.html" class="m-doc">OSException</a> <span class="m-label m-flat m-warning">final</span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
         </section>
         <section id="typeless-methods">
@@ -112,8 +112,12 @@
             </dt>
             <dd><span></span></dd>
             <dt>
-              <span class="m-doc-wrap-bumper"><a href="#aff42de4564c98462dce87399ce57b5f9" class="m-doc">RuntimeException</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; type,
-              const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; message) <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper"><a href="#a0772f0395eb6ccd3133393a254475d2f" class="m-doc">RuntimeException</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; type,
+              const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; message)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a75368ead579751b7ba4f6b663f2b29c0" class="m-doc">RuntimeException</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_runtime_exception.html" class="m-doc">RuntimeException</a>&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
           </dl>
@@ -122,7 +126,11 @@
           <h2><a href="#pub-methods">Public functions</a></h2>
           <dl class="m-doc">
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#afd694fdbb3cc421ee1b585bb45019cba" class="m-doc">Message</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a59edb87aaca5e3aec6250de0b9b0294e" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_runtime_exception.html" class="m-doc">RuntimeException</a>&amp; other) -&gt; <a href="classbpf_1_1_runtime_exception.html" class="m-doc">RuntimeException</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac424787376f6e88c010a2816e2225d92" class="m-doc">Message</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
             <dt>
@@ -130,17 +138,17 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a459393d205f795187078655074b4aa5a" class="m-doc">Print</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-flat m-warning">override</span></span>
+              <span class="m-doc-wrap-bumper">void <a href="#a5ce68c051461efb8ba85cd8b5ad2ab79" class="m-doc">Print</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-flat m-warning">override</span> <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
           </dl>
         </section>
         <section>
           <h2>Function documentation</h2>
-          <section class="m-doc-details" id="aff42de4564c98462dce87399ce57b5f9"><div>
+          <section class="m-doc-details" id="a0772f0395eb6ccd3133393a254475d2f"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> bpf::<wbr />RuntimeException::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aff42de4564c98462dce87399ce57b5f9" class="m-doc-self">RuntimeException</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; type,
-              const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; message) <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />RuntimeException::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0772f0395eb6ccd3133393a254475d2f" class="m-doc-self">RuntimeException</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; type,
+              const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; message)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -159,9 +167,21 @@
             </table>
 <p>Constructs a high-level exception</p>
           </div></section>
-          <section class="m-doc-details" id="afd694fdbb3cc421ee1b585bb45019cba"><div>
+          <section class="m-doc-details" id="a75368ead579751b7ba4f6b663f2b29c0"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; bpf::<wbr />RuntimeException::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afd694fdbb3cc421ee1b585bb45019cba" class="m-doc-self">Message</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />RuntimeException::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a75368ead579751b7ba4f6b663f2b29c0" class="m-doc-self">RuntimeException</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_runtime_exception.html" class="m-doc">RuntimeException</a>&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Copy constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="a59edb87aaca5e3aec6250de0b9b0294e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1_runtime_exception.html" class="m-doc">RuntimeException</a>&amp; bpf::<wbr />RuntimeException::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a59edb87aaca5e3aec6250de0b9b0294e" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_runtime_exception.html" class="m-doc">RuntimeException</a>&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Copy assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="ac424787376f6e88c010a2816e2225d92"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; bpf::<wbr />RuntimeException::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac424787376f6e88c010a2816e2225d92" class="m-doc-self">Message</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
 <p>Returns the exception&#x27;s message</p>
           </div></section>
@@ -171,9 +191,9 @@
             </h3>
 <p>Returns exception type</p>
           </div></section>
-          <section class="m-doc-details" id="a459393d205f795187078655074b4aa5a"><div>
+          <section class="m-doc-details" id="a5ce68c051461efb8ba85cd8b5ad2ab79"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">void bpf::<wbr />RuntimeException::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a459393d205f795187078655074b4aa5a" class="m-doc-self">Print</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">override</span></span></span>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />RuntimeException::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5ce68c051461efb8ba85cd8b5ad2ab79" class="m-doc-self">Print</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-warning">override</span> <span class="m-label m-success">noexcept</span></span></span>
             </h3>
 <p>Print the exception to the console</p>
           </div></section>

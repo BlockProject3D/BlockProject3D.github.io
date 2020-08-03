@@ -85,11 +85,29 @@
           <h2><a href="#pub-types">Public types</a></h2>
           <dl class="m-doc">
             <dt>
-              class <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>
+              struct <a href="structbpf_1_1collection_1_1_hash_map_1_1_entry.html" class="m-doc">Entry</a>
             </dt>
             <dd><span></span></dd>
-            <dt>
-              class <a href="classbpf_1_1collection_1_1_hash_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a>
+            <dt id="a0347e964469dd49b6f61d9d71841a30e">
+              <span class="m-doc-wrap-bumper">enum <a href="#a0347e964469dd49b6f61d9d71841a30e" class="m-doc-self">EntryState</a> { </span><span class="m-doc-wrap"><a href="#a0347e964469dd49b6f61d9d71841a30ea4360afe4e9d0eeedcefaf708382933cd" class="m-doc">ENTRY_STATE_INSTANCE_DELETE</a>,
+              <a href="#a0347e964469dd49b6f61d9d71841a30ea8423630f6ab4cbda4e00d7667c69e9d2" class="m-doc">ENTRY_STATE_NON_EXISTANT</a>,
+              <a href="#a0347e964469dd49b6f61d9d71841a30ea7fa6f5e805c7834f75dc41ad89108649" class="m-doc">ENTRY_STATE_OCCUPIED</a> }</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="abe702d673534df730bab737ea49575a6">
+              using <a href="#abe702d673534df730bab737ea49575a6" class="m-doc-self">Iterator</a> = <a href="classbpf_1_1collection_1_1_hash_map_iterator.html" class="m-doc">HashMapIterator</a>&lt;<a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;, <a href="structbpf_1_1collection_1_1_hash_map_1_1_entry.html" class="m-doc">Entry</a>, Node&gt;
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ae125663e4f23420b6556f9cde2ece9e5">
+              using <a href="#ae125663e4f23420b6556f9cde2ece9e5" class="m-doc-self">CIterator</a> = <a href="classbpf_1_1collection_1_1_hash_map_const_iterator.html" class="m-doc">HashMapConstIterator</a>&lt;<a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;, <a href="structbpf_1_1collection_1_1_hash_map_1_1_entry.html" class="m-doc">Entry</a>, Node&gt;
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa718363bc070dffd6463049198116a07">
+              using <a href="#aa718363bc070dffd6463049198116a07" class="m-doc-self">ReverseIterator</a> = <a href="classbpf_1_1collection_1_1_hash_map_reverse_iterator.html" class="m-doc">HashMapReverseIterator</a>&lt;<a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;, <a href="structbpf_1_1collection_1_1_hash_map_1_1_entry.html" class="m-doc">Entry</a>, Node&gt;
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a14e52a1397b0f6c6fc84bc2022687d3a">
+              using <a href="#a14e52a1397b0f6c6fc84bc2022687d3a" class="m-doc-self">CReverseIterator</a> = <a href="classbpf_1_1collection_1_1_hash_map_const_reverse_iterator.html" class="m-doc">HashMapConstReverseIterator</a>&lt;<a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;, <a href="structbpf_1_1collection_1_1_hash_map_1_1_entry.html" class="m-doc">Entry</a>, Node&gt;
             </dt>
             <dd><span></span></dd>
           </dl>
@@ -110,7 +128,7 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper"><a href="#a10a7b2637762b80fc75ece268512d1e3" class="m-doc">HashMap</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;Entry&gt;&amp; entries)</span>
+              <span class="m-doc-wrap-bumper"><a href="#a10a7b2637762b80fc75ece268512d1e3" class="m-doc">HashMap</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;<a href="structbpf_1_1collection_1_1_hash_map_1_1_entry.html" class="m-doc">Entry</a>&gt;&amp; entries)</span>
             </dt>
             <dd></dd>
             <dt id="a5d76bfd82bec9c870ee0e2d4a65c79c7">
@@ -137,16 +155,16 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a7fb168bce12793287a044cf3d4566297" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; pos)</span>
+              <span class="m-doc-wrap-bumper">void <a href="#a7fb168bce12793287a044cf3d4566297" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a>&amp; pos)</span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#ac5c0b67d94dc8041b1b967b3aad0834b" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp;&amp; pos)</span>
+              <span class="m-doc-wrap-bumper">void <a href="#ac5c0b67d94dc8041b1b967b3aad0834b" class="m-doc">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a>&amp;&amp; pos)</span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">void <a href="#a5b386c332ff6ee00eb88fc694de48bb5" class="m-doc">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; a,
-              const <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; b)</span>
+              <span class="m-doc-wrap-bumper">void <a href="#a5b386c332ff6ee00eb88fc694de48bb5" class="m-doc">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a>&amp; a,
+              const <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a>&amp; b)</span>
             </dt>
             <dd></dd>
             <dt>
@@ -160,24 +178,24 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a4e928b2611fb50459c9bcca86ed05571" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;&amp; other) -&gt; bool</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae1280e9952fdb3034a96880ab6ddbf07" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a65d746b4bf808edffb83f72d6d8eff08" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;&amp; other) -&gt; bool</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa863d230bfb007c7119937fdfd63a3e9" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a6e489974713e28067994006359ca9ea2" class="m-doc">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key) -&gt; <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6e489974713e28067994006359ca9ea2" class="m-doc">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key) -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
               <div class="m-doc-template">template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;</div>
-              <span class="m-doc-wrap-bumper">auto <a href="#a5e916bb07aa430640516bf1d6f12122d" class="m-doc">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val) -&gt; <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5e916bb07aa430640516bf1d6f12122d" class="m-doc">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val) -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a6cac4b8e436aa5f33a2c1cfb17b677cb" class="m-doc">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;bool(<a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a> it)&gt;&amp; comparator) -&gt; <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6cac4b8e436aa5f33a2c1cfb17b677cb" class="m-doc">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;bool(<a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a> it)&gt;&amp; comparator) -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
@@ -213,19 +231,35 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a8e4d6f956f19d6505d0ebe247ef1916b" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a44b4030cd64700c2d2bd808e33fedb84" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#ae125663e4f23420b6556f9cde2ece9e5" class="m-doc">CIterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a6fe56df7376dbf078ef391e67aa6d0ac" class="m-doc">end</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3580836089c80500b5ca1465a33cc811" class="m-doc">end</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#ae125663e4f23420b6556f9cde2ece9e5" class="m-doc">CIterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a668b0c1367c1d60dbf0a3e3d9b675a0e" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_hash_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa93ae43c390fa0064b41f59139a33b8d" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ac2d76755250700cd2660023b958cdb2f" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_hash_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#afc371b2320d09947c883ea959537983d" class="m-doc">end</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1e8ccd83859b17144713715eb1de0104" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#a14e52a1397b0f6c6fc84bc2022687d3a" class="m-doc">CReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7db5cb35504f8aa22b0bbb39382bd8ee" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#a14e52a1397b0f6c6fc84bc2022687d3a" class="m-doc">CReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac8332b7ca30296c504a2f50d52b90c48" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#aa718363bc070dffd6463049198116a07" class="m-doc">ReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3103a218cc4f22df588cc8c4c4386e3c" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_hash_map.html#aa718363bc070dffd6463049198116a07" class="m-doc">ReverseIterator</a></span>
             </dt>
             <dd></dd>
           </dl>
@@ -264,7 +298,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a10a7b2637762b80fc75ece268512d1e3" class="m-doc-self">HashMap</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;Entry&gt;&amp; entries)</span></span>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a10a7b2637762b80fc75ece268512d1e3" class="m-doc-self">HashMap</a>(</span><span class="m-doc-wrap">const std::initializer_list&lt;<a href="structbpf_1_1collection_1_1_hash_map_1_1_entry.html" class="m-doc">Entry</a>&gt;&amp; entries)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -354,7 +388,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7fb168bce12793287a044cf3d4566297" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; pos)</span></span>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7fb168bce12793287a044cf3d4566297" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a>&amp; pos)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -363,7 +397,7 @@
               <tbody>
                 <tr>
                   <td style="width: 1%">pos</td>
-                  <td>iterator of the element to remove</td>
+                  <td>iterator of the element to remove, it is undefined behavior to pass a derived <a href="classbpf_1_1collection_1_1_iterator.html" class="m-doc">Iterator</a> type</td>
                 </tr>
               </tbody>
             </table>
@@ -374,7 +408,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac5c0b67d94dc8041b1b967b3aad0834b" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp;&amp; pos)</span></span>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac5c0b67d94dc8041b1b967b3aad0834b" class="m-doc-self">RemoveAt</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a>&amp;&amp; pos)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -383,7 +417,7 @@
               <tbody>
                 <tr>
                   <td style="width: 1%">pos</td>
-                  <td>iterator of the element to remove</td>
+                  <td>iterator of the element to remove, it is undefined behavior to pass a derived <a href="classbpf_1_1collection_1_1_iterator.html" class="m-doc">Iterator</a> type</td>
                 </tr>
               </tbody>
             </table>
@@ -394,8 +428,8 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5b386c332ff6ee00eb88fc694de48bb5" class="m-doc-self">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; a,
-              const <a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a>&amp; b)</span></span>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5b386c332ff6ee00eb88fc694de48bb5" class="m-doc-self">Swap</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a>&amp; a,
+              const <a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a>&amp; b)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -458,12 +492,12 @@
             </table>
 <p>Removes an element by value</p>
           </div></section>
-          <section class="m-doc-details" id="a4e928b2611fb50459c9bcca86ed05571"><div>
+          <section class="m-doc-details" id="ae1280e9952fdb3034a96880ab6ddbf07"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4e928b2611fb50459c9bcca86ed05571" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;&amp; other)</span></span>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae1280e9952fdb3034a96880ab6ddbf07" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -484,12 +518,12 @@
             </table>
 <p>Compare <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a> by performing a per-element check</p>
           </div></section>
-          <section class="m-doc-details" id="a65d746b4bf808edffb83f72d6d8eff08"><div>
+          <section class="m-doc-details" id="aa863d230bfb007c7119937fdfd63a3e9"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a65d746b4bf808edffb83f72d6d8eff08" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;&amp; other)</span></span>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa863d230bfb007c7119937fdfd63a3e9" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_hash_map.html" class="m-doc">HashMap</a>&lt;K, V, HashOp&gt;&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -515,7 +549,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6e489974713e28067994006359ca9ea2" class="m-doc-self">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6e489974713e28067994006359ca9ea2" class="m-doc-self">FindByKey</a>(</span><span class="m-doc-wrap">const K&amp; key)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -530,7 +564,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_hash_map.html#a6fe56df7376dbf078ef391e67aa6d0ac" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_hash_map.html#afc371b2320d09947c883ea959537983d" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -542,7 +576,7 @@
                 template&lt;typename K, typename V, typename HashOp&gt;
                 template&lt;template&lt;typename&gt; class Comparator = <a href="classbpf_1_1collection_1_1ops_1_1_equal.html" class="m-doc">ops::<wbr />Equal</a>&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5e916bb07aa430640516bf1d6f12122d" class="m-doc-self">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5e916bb07aa430640516bf1d6f12122d" class="m-doc-self">FindByValue</a>(</span><span class="m-doc-wrap">const V&amp; val)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -566,7 +600,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_hash_map.html#a6fe56df7376dbf078ef391e67aa6d0ac" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_hash_map.html#afc371b2320d09947c883ea959537983d" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -577,7 +611,7 @@
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6cac4b8e436aa5f33a2c1cfb17b677cb" class="m-doc-self">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;bool(<a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a> it)&gt;&amp; comparator)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6cac4b8e436aa5f33a2c1cfb17b677cb" class="m-doc-self">Find</a>(</span><span class="m-doc-wrap">const std::function&lt;bool(<a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a> it)&gt;&amp; comparator)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -592,7 +626,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_hash_map.html#a6fe56df7376dbf078ef391e67aa6d0ac" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_hash_map.html#afc371b2320d09947c883ea959537983d" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -775,12 +809,12 @@
             </table>
 <p>Returns the number of items in this map</p>
           </div></section>
-          <section class="m-doc-details" id="a8e4d6f956f19d6505d0ebe247ef1916b"><div>
+          <section class="m-doc-details" id="a44b4030cd64700c2d2bd808e33fedb84"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8e4d6f956f19d6505d0ebe247ef1916b" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#ae125663e4f23420b6556f9cde2ece9e5" class="m-doc">CIterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a44b4030cd64700c2d2bd808e33fedb84" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -792,12 +826,12 @@
             </table>
 <p>Returns an iterator to the begining of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="a6fe56df7376dbf078ef391e67aa6d0ac"><div>
+          <section class="m-doc-details" id="a3580836089c80500b5ca1465a33cc811"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map_1_1_iterator.html" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6fe56df7376dbf078ef391e67aa6d0ac" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#ae125663e4f23420b6556f9cde2ece9e5" class="m-doc">CIterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3580836089c80500b5ca1465a33cc811" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -809,12 +843,46 @@
             </table>
 <p>Returns an iterator to the end of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="a668b0c1367c1d60dbf0a3e3d9b675a0e"><div>
+          <section class="m-doc-details" id="aa93ae43c390fa0064b41f59139a33b8d"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a668b0c1367c1d60dbf0a3e3d9b675a0e" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa93ae43c390fa0064b41f59139a33b8d" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="afc371b2320d09947c883ea959537983d"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, typename HashOp&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#abe702d673534df730bab737ea49575a6" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afc371b2320d09947c883ea959537983d" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the end of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a1e8ccd83859b17144713715eb1de0104"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, typename HashOp&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#a14e52a1397b0f6c6fc84bc2022687d3a" class="m-doc">CReverseIterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1e8ccd83859b17144713715eb1de0104" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -826,12 +894,46 @@
             </table>
 <p>Returns a reverse iterator to the begining of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="ac2d76755250700cd2660023b958cdb2f"><div>
+          <section class="m-doc-details" id="a7db5cb35504f8aa22b0bbb39382bd8ee"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename K, typename V, typename HashOp&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map_1_1_reverse_iterator.html" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac2d76755250700cd2660023b958cdb2f" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#a14e52a1397b0f6c6fc84bc2022687d3a" class="m-doc">CReverseIterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7db5cb35504f8aa22b0bbb39382bd8ee" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the end of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="ac8332b7ca30296c504a2f50d52b90c48"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, typename HashOp&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#aa718363bc070dffd6463049198116a07" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac8332b7ca30296c504a2f50d52b90c48" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a3103a218cc4f22df588cc8c4c4386e3c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename K, typename V, typename HashOp&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_hash_map.html#aa718363bc070dffd6463049198116a07" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />HashMap&lt;K, V, HashOp&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3103a218cc4f22df588cc8c4c4386e3c" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>

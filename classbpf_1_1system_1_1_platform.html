@@ -47,7 +47,6 @@
           <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1system.html">system</a>::<wbr/></span>Platform <span class="m-thin">class</span>
           <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_platform_8hpp.html">&lt;Base/include/Framework/System/Platform.hpp&gt;</a></div>
         </h1>
-        <p><span></span></p>
         <div class="m-block m-default">
           <h3>Contents</h3>
           <ul>
@@ -59,29 +58,30 @@
             </li>
           </ul>
         </div>
+<p>Utility class to represent the current system specs and environment specs. Also provides access to various low-level platform-dependent utilities</p>
         <section id="pub-static-methods">
           <h2><a href="#pub-static-methods">Public static functions</a></h2>
           <dl class="m-doc">
-            <dt id="ab1083604499d730c98dc3daa333d0bd9">
-              <span class="m-doc-wrap-bumper">static auto <a href="#ab1083604499d730c98dc3daa333d0bd9" class="m-doc-self">GetEnvInfo</a>(</span><span class="m-doc-wrap">) -&gt; const <a href="structbpf_1_1system_1_1_env.html" class="m-doc">Env</a>&amp;</span>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ab1083604499d730c98dc3daa333d0bd9" class="m-doc">GetEnvInfo</a>(</span><span class="m-doc-wrap">) -&gt; const <a href="structbpf_1_1system_1_1_env.html" class="m-doc">Env</a>&amp;</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a08f7c79eb399ec618cd0a50672d14a0c">
-              <span class="m-doc-wrap-bumper">static auto <a href="#a08f7c79eb399ec618cd0a50672d14a0c" class="m-doc-self">GetOSInfo</a>(</span><span class="m-doc-wrap">) -&gt; const <a href="structbpf_1_1system_1_1_o_s.html" class="m-doc">OS</a>&amp;</span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a08f7c79eb399ec618cd0a50672d14a0c" class="m-doc">GetOSInfo</a>(</span><span class="m-doc-wrap">) -&gt; const <a href="structbpf_1_1system_1_1_o_s.html" class="m-doc">OS</a>&amp;</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="ace9b97d30295a9db44aece0bad194500">
-              <span class="m-doc-wrap-bumper">static auto <a href="#ace9b97d30295a9db44aece0bad194500" class="m-doc-self">GetCPUInfo</a>(</span><span class="m-doc-wrap">) -&gt; const <a href="structbpf_1_1system_1_1_c_p_u.html" class="m-doc">CPU</a>&amp;</span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ace9b97d30295a9db44aece0bad194500" class="m-doc">GetCPUInfo</a>(</span><span class="m-doc-wrap">) -&gt; const <a href="structbpf_1_1system_1_1_c_p_u.html" class="m-doc">CPU</a>&amp;</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a456302d756cb23a5519adc0006e96bc4">
-              <span class="m-doc-wrap-bumper">static auto <a href="#a456302d756cb23a5519adc0006e96bc4" class="m-doc-self">GetRAMInfo</a>(</span><span class="m-doc-wrap">) -&gt; <a href="structbpf_1_1system_1_1_r_a_m.html" class="m-doc">RAM</a></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a456302d756cb23a5519adc0006e96bc4" class="m-doc">GetRAMInfo</a>(</span><span class="m-doc-wrap">) -&gt; <a href="structbpf_1_1system_1_1_r_a_m.html" class="m-doc">RAM</a></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="ab34118e988c742599e4407518f49d51d">
-              <span class="m-doc-wrap-bumper">static auto <a href="#ab34118e988c742599e4407518f49d51d" class="m-doc-self">GetEndianess</a>(</span><span class="m-doc-wrap">) -&gt; <a href="namespacebpf_1_1system.html#aff606c5e1808e6d29cc01c30d14e6388" class="m-doc">EPlatformEndianess</a></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ab34118e988c742599e4407518f49d51d" class="m-doc">GetEndianess</a>(</span><span class="m-doc-wrap">) -&gt; <a href="namespacebpf_1_1system.html#aff606c5e1808e6d29cc01c30d14e6388" class="m-doc">EPlatformEndianess</a></span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper">static auto <a href="#ade4bd50b998fd9f1ec5023e6b5dcd5d7" class="m-doc">IsRunningAsAdmin</a>(</span><span class="m-doc-wrap">) -&gt; bool</span>
             </dt>
@@ -101,6 +101,76 @@
         </section>
         <section>
           <h2>Function documentation</h2>
+          <section class="m-doc-details" id="ab1083604499d730c98dc3daa333d0bd9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static const <a href="structbpf_1_1system_1_1_env.html" class="m-doc">Env</a>&amp; bpf::<wbr />system::<wbr />Platform::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab1083604499d730c98dc3daa333d0bd9" class="m-doc-self">GetEnvInfo</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="structbpf_1_1system_1_1_env.html" class="m-doc">Env</a> structure reference</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns environment specs</p>
+          </div></section>
+          <section class="m-doc-details" id="a08f7c79eb399ec618cd0a50672d14a0c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static const <a href="structbpf_1_1system_1_1_o_s.html" class="m-doc">OS</a>&amp; bpf::<wbr />system::<wbr />Platform::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a08f7c79eb399ec618cd0a50672d14a0c" class="m-doc-self">GetOSInfo</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="structbpf_1_1system_1_1_o_s.html" class="m-doc">OS</a> structure reference</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns <a href="structbpf_1_1system_1_1_o_s.html" class="m-doc">OS</a> specs</p>
+          </div></section>
+          <section class="m-doc-details" id="ace9b97d30295a9db44aece0bad194500"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static const <a href="structbpf_1_1system_1_1_c_p_u.html" class="m-doc">CPU</a>&amp; bpf::<wbr />system::<wbr />Platform::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ace9b97d30295a9db44aece0bad194500" class="m-doc-self">GetCPUInfo</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="structbpf_1_1system_1_1_c_p_u.html" class="m-doc">CPU</a> structure reference</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns <a href="structbpf_1_1system_1_1_c_p_u.html" class="m-doc">CPU</a> specs</p>
+          </div></section>
+          <section class="m-doc-details" id="a456302d756cb23a5519adc0006e96bc4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="structbpf_1_1system_1_1_r_a_m.html" class="m-doc">RAM</a> bpf::<wbr />system::<wbr />Platform::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a456302d756cb23a5519adc0006e96bc4" class="m-doc-self">GetRAMInfo</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="structbpf_1_1system_1_1_r_a_m.html" class="m-doc">RAM</a> structure reference</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns current <a href="structbpf_1_1system_1_1_r_a_m.html" class="m-doc">RAM</a> specs</p>
+          </div></section>
+          <section class="m-doc-details" id="ab34118e988c742599e4407518f49d51d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static <a href="namespacebpf_1_1system.html#aff606c5e1808e6d29cc01c30d14e6388" class="m-doc">EPlatformEndianess</a> bpf::<wbr />system::<wbr />Platform::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab34118e988c742599e4407518f49d51d" class="m-doc-self">GetEndianess</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>enum value (see EPlatformEndianess)</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the current platform endianess</p>
+          </div></section>
           <section class="m-doc-details" id="ade4bd50b998fd9f1ec5023e6b5dcd5d7"><div>
             <h3>
               <span class="m-doc-wrap-bumper">static bool bpf::<wbr />system::<wbr />Platform::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ade4bd50b998fd9f1ec5023e6b5dcd5d7" class="m-doc-self">IsRunningAsAdmin</a>(</span><span class="m-doc-wrap">)</span></span>
@@ -135,7 +205,7 @@
                 </tr>
               </tbody>
             </table>
-<p>Reverse a buffer byte per byte WARNING : This function modifies the input buffer</p>
+<p>Reverse a buffer byte per byte. WARNING : This function modifies the input buffer</p>
           </div></section>
           <section class="m-doc-details" id="aeee6943e21d38a3a07e8471f9539e8d4"><div>
             <h3>
@@ -162,7 +232,7 @@
                 </tr>
               </tbody>
             </table>
-<p>Reverse a buffer group per group WARNING : This function modifies the input buffer</p>
+<p>Reverse a buffer group per group. WARNING : This function modifies the input buffer</p>
           </div></section>
         </section>
       </div>

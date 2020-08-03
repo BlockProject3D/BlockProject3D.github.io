@@ -122,6 +122,16 @@
             </dt>
             <dd></dd>
             <dt>
+              <div class="m-doc-template">template&lt;typename R, typename U, typename... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3c238aa11fa34be5ab98dc7c9307e10f" class="m-doc">operator-&gt;*</a>(</span><span class="m-doc-wrap">R(U::*)(Args...) fn) const -&gt; std::enable_if&lt;std::is_class&lt;U&gt;::value &amp;&amp; std::is_same&lt;T, U&gt;::value, <a href="classbpf_1_1memory_1_1_raw_member_function.html" class="m-doc">RawMemberFunction</a>&lt;U, R, R(U::*)(Args...)&gt;&gt;::type</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename R, typename U, typename... Args&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4cdbf45e4d8ab80d413bd94fb92aa072" class="m-doc">operator-&gt;*</a>(</span><span class="m-doc-wrap">R(U::*)(Args...) const fn) const -&gt; std::enable_if&lt;std::is_class&lt;U&gt;::value &amp;&amp; std::is_same&lt;T, U&gt;::value, <a href="classbpf_1_1memory_1_1_raw_member_function.html" class="m-doc">RawMemberFunction</a>&lt;U, R, R(U::*)(Args...) const &gt;&gt;::type</span>
+            </dt>
+            <dd></dd>
+            <dt>
               <span class="m-doc-wrap-bumper">auto <a href="#a8802655aee6541978f1547ea68ace2fc" class="m-doc">Raw</a>(</span><span class="m-doc-wrap">) const -&gt; T* <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
@@ -260,6 +270,94 @@
               </tfoot>
             </table>
 <p>Access the wrapped object</p>
+          </div></section>
+          <section class="m-doc-details" id="a3c238aa11fa34be5ab98dc7c9307e10f"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+                template&lt;typename R, typename U, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">std::enable_if&lt;std::is_class&lt;U&gt;::value &amp;&amp; std::is_same&lt;T, U&gt;::value, <a href="classbpf_1_1memory_1_1_raw_member_function.html" class="m-doc">RawMemberFunction</a>&lt;U, R, R(U::*)(Args...)&gt;&gt;::type bpf::<wbr />memory::<wbr />SharedPtr&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3c238aa11fa34be5ab98dc7c9307e10f" class="m-doc-self">operator-&gt;*</a>(</span><span class="m-doc-wrap">R(U::*)(Args...) fn) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">R</td>
+                  <td>the function return type</td>
+                </tr>
+                <tr>
+                  <td>U</td>
+                  <td>the object type which must be the same as T</td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td>the types of the function arguments</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>fn</td>
+                  <td>the function pointer itself</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1memory_1_1_raw_member_function.html" class="m-doc">RawMemberFunction</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Call a pointer to a member function on this smart pointer</p>
+          </div></section>
+          <section class="m-doc-details" id="a4cdbf45e4d8ab80d413bd94fb92aa072"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+                template&lt;typename R, typename U, typename... Args&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">std::enable_if&lt;std::is_class&lt;U&gt;::value &amp;&amp; std::is_same&lt;T, U&gt;::value, <a href="classbpf_1_1memory_1_1_raw_member_function.html" class="m-doc">RawMemberFunction</a>&lt;U, R, R(U::*)(Args...) const &gt;&gt;::type bpf::<wbr />memory::<wbr />SharedPtr&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4cdbf45e4d8ab80d413bd94fb92aa072" class="m-doc-self">operator-&gt;*</a>(</span><span class="m-doc-wrap">R(U::*)(Args...) const fn) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">R</td>
+                  <td>the function return type</td>
+                </tr>
+                <tr>
+                  <td>U</td>
+                  <td>the object type which must be the same as T</td>
+                </tr>
+                <tr>
+                  <td>Args</td>
+                  <td>the types of the function arguments</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>fn</td>
+                  <td>the function pointer itself</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1memory_1_1_raw_member_function.html" class="m-doc">RawMemberFunction</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Call a pointer to a member function on this smart pointer</p>
           </div></section>
           <section class="m-doc-details" id="a8802655aee6541978f1547ea68ace2fc"><div>
             <h3>

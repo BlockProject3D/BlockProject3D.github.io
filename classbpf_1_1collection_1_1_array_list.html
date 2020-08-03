@@ -84,6 +84,14 @@
               using <a href="#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc-self">ReverseIterator</a> = typename <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;::<a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a>
             </dt>
             <dd><span></span></dd>
+            <dt id="a3c8af0c8357e85fba7e509ac1f962c2a">
+              using <a href="#a3c8af0c8357e85fba7e509ac1f962c2a" class="m-doc-self">CIterator</a> = typename <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;::<a href="classbpf_1_1collection_1_1_array_list.html#a3c8af0c8357e85fba7e509ac1f962c2a" class="m-doc">CIterator</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a61ac145cf2c07524fc0ec583363d0996">
+              using <a href="#a61ac145cf2c07524fc0ec583363d0996" class="m-doc-self">CReverseIterator</a> = typename <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">Array</a>&lt;T&gt;::<a href="classbpf_1_1collection_1_1_array_list.html#a61ac145cf2c07524fc0ec583363d0996" class="m-doc">CReverseIterator</a>
+            </dt>
+            <dd><span></span></dd>
           </dl>
         </section>
         <section id="typeless-methods">
@@ -119,11 +127,11 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a8aa5f6ab630db4e0d292bc382d68bf3a" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) -&gt; bool</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a620ec08c8adbc0a567fa50dc667a886d" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#af8e77f88794b3c88062c9f6e027d305f" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) -&gt; bool</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2e323a51bb0e5e54c0b7ac61cf26c064" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
             <dt>
@@ -252,19 +260,35 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#aa01acb0ed7e3ec17408919c90a15d44e" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a13721e00e01d8ec38277b196e5ad2aa7" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a3c8af0c8357e85fba7e509ac1f962c2a" class="m-doc">CIterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc">end</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a721baf0f3f5ca1e2551c0a66ac707f22" class="m-doc">end</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a3c8af0c8357e85fba7e509ac1f962c2a" class="m-doc">CIterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ab7b6c57d7699b480f3f6199df206f8f8" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a35ef6070a01976f1bdee91d73f37755a" class="m-doc">begin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a40599b1725ec06f1c96af8dcca19d59e" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a75b0fa7a7097e4c3361313d0df3bba8c" class="m-doc">end</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0027722986a105ee73cd5d3f721ae235" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a61ac145cf2c07524fc0ec583363d0996" class="m-doc">CReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6d4439c686dc60fcf7a40d8aef932a98" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#a61ac145cf2c07524fc0ec583363d0996" class="m-doc">CReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab1ba14f5505ec207cabc02af3657efa3" class="m-doc">rbegin</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab70780989b66b80cc5227f37c9e3ee09" class="m-doc">rend</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a></span>
             </dt>
             <dd></dd>
           </dl>
@@ -347,12 +371,12 @@
             </h3>
 <p>Move assignment operator</p>
           </div></section>
-          <section class="m-doc-details" id="a8aa5f6ab630db4e0d292bc382d68bf3a"><div>
+          <section class="m-doc-details" id="a620ec08c8adbc0a567fa50dc667a886d"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
-              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8aa5f6ab630db4e0d292bc382d68bf3a" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span></span>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a620ec08c8adbc0a567fa50dc667a886d" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -373,12 +397,12 @@
             </table>
 <p>Compare <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a> by performing a per-element check</p>
           </div></section>
-          <section class="m-doc-details" id="af8e77f88794b3c88062c9f6e027d305f"><div>
+          <section class="m-doc-details" id="a2e323a51bb0e5e54c0b7ac61cf26c064"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
-              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af8e77f88794b3c88062c9f6e027d305f" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other)</span></span>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2e323a51bb0e5e54c0b7ac61cf26c064" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array_list.html" class="m-doc">ArrayList</a>&lt;T&gt;&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -864,7 +888,7 @@
               <tbody>
                 <tr>
                   <td style="width: 1%">pos</td>
-                  <td>item position</td>
+                  <td>item position, it is undefined behavior to pass a derived <a href="classbpf_1_1collection_1_1_iterator.html" class="m-doc">Iterator</a> type</td>
                 </tr>
               </tbody>
             </table>
@@ -884,7 +908,7 @@
               <tbody>
                 <tr>
                   <td style="width: 1%">pos</td>
-                  <td>item position</td>
+                  <td>item position, it is undefined behavior to pass a derived <a href="classbpf_1_1collection_1_1_iterator.html" class="m-doc">Iterator</a> type</td>
                 </tr>
               </tbody>
             </table>
@@ -945,7 +969,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a75b0fa7a7097e4c3361313d0df3bba8c" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -981,7 +1005,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a75b0fa7a7097e4c3361313d0df3bba8c" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -1007,7 +1031,7 @@
               <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc">end()</a> if none</td>
+                  <td>iterator to the found item or <a href="classbpf_1_1collection_1_1_array_list.html#a75b0fa7a7097e4c3361313d0df3bba8c" class="m-doc">end()</a> if none</td>
                 </tr>
               </tfoot>
             </table>
@@ -1095,12 +1119,12 @@
             </table>
 <p>Sorts this collection in place</p>
           </div></section>
-          <section class="m-doc-details" id="aa01acb0ed7e3ec17408919c90a15d44e"><div>
+          <section class="m-doc-details" id="a13721e00e01d8ec38277b196e5ad2aa7"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa01acb0ed7e3ec17408919c90a15d44e" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a3c8af0c8357e85fba7e509ac1f962c2a" class="m-doc">CIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a13721e00e01d8ec38277b196e5ad2aa7" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -1112,12 +1136,12 @@
             </table>
 <p>Returns an iterator to the begining of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="a86c8f3b5b7f48adbd4b0a63e2954830f"><div>
+          <section class="m-doc-details" id="a721baf0f3f5ca1e2551c0a66ac707f22"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a86c8f3b5b7f48adbd4b0a63e2954830f" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a3c8af0c8357e85fba7e509ac1f962c2a" class="m-doc">CIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a721baf0f3f5ca1e2551c0a66ac707f22" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -1129,12 +1153,46 @@
             </table>
 <p>Returns an iterator to the end of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="ab7b6c57d7699b480f3f6199df206f8f8"><div>
+          <section class="m-doc-details" id="a35ef6070a01976f1bdee91d73f37755a"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab7b6c57d7699b480f3f6199df206f8f8" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a35ef6070a01976f1bdee91d73f37755a" class="m-doc-self">begin</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a75b0fa7a7097e4c3361313d0df3bba8c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a1a1eefeeba0cbd6afbb8769b6932ca15" class="m-doc">Iterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a75b0fa7a7097e4c3361313d0df3bba8c" class="m-doc-self">end</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns an iterator to the end of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="a0027722986a105ee73cd5d3f721ae235"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a61ac145cf2c07524fc0ec583363d0996" class="m-doc">CReverseIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0027722986a105ee73cd5d3f721ae235" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
@@ -1146,12 +1204,46 @@
             </table>
 <p>Returns a reverse iterator to the begining of the collection</p>
           </div></section>
-          <section class="m-doc-details" id="a40599b1725ec06f1c96af8dcca19d59e"><div>
+          <section class="m-doc-details" id="a6d4439c686dc60fcf7a40d8aef932a98"><div>
             <h3>
               <div class="m-doc-template">
                 template&lt;typename T&gt;
               </div>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a40599b1725ec06f1c96af8dcca19d59e" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#a61ac145cf2c07524fc0ec583363d0996" class="m-doc">CReverseIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6d4439c686dc60fcf7a40d8aef932a98" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the end of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="ab1ba14f5505ec207cabc02af3657efa3"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab1ba14f5505ec207cabc02af3657efa3" class="m-doc-self">rbegin</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>new iterator</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a reverse iterator to the begining of the collection</p>
+          </div></section>
+          <section class="m-doc-details" id="ab70780989b66b80cc5227f37c9e3ee09"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_array_list.html#afe669b242d25a2b1ac469ab7217bffbf" class="m-doc">ReverseIterator</a> bpf::<wbr />collection::<wbr />ArrayList&lt;T&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab70780989b66b80cc5227f37c9e3ee09" class="m-doc-self">rend</a>(</span><span class="m-doc-wrap">)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>

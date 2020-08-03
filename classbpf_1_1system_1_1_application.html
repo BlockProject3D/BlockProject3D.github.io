@@ -110,6 +110,10 @@
               <span class="m-doc-wrap-bumper">void <a href="#a69bb280e3c1799dad38d798fc5bc67b5" class="m-doc">DisableErrorDialogs</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">pure virtual</span> <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#afb284ccfd2d7cc9e21903afbb4dc4c4d" class="m-doc">SetModuleDirectories</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1io_1_1_file.html" class="m-doc">io::<wbr />File</a>&gt;&amp; directories) <span class="m-label m-flat m-warning">pure virtual</span></span>
+            </dt>
+            <dd></dd>
           </dl>
         </section>
         <section id="pub-attribs">
@@ -177,6 +181,15 @@
                   <td>number of columns in the console window</td>
                 </tr>
               </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1system_1_1_o_s_exception.html" class="m-doc">OSException</a></td>
+                  <td>in case of system error</td>
+                </tr>
+              </tbody>
             </table>
 <p>Allocates a console for this application if it does not already have one. Only useful when the system do not create a console</p>
           </div></section>
@@ -222,6 +235,36 @@
               <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />Application::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a69bb280e3c1799dad38d798fc5bc67b5" class="m-doc-self">DisableErrorDialogs</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">pure virtual</span> <span class="m-label m-success">noexcept</span></span></span>
             </h3>
 <p>Disables operating system level dialogs shown when an application crashes. Useful when building command line applications</p>
+          </div></section>
+          <section class="m-doc-details" id="afb284ccfd2d7cc9e21903afbb4dc4c4d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />Application::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afb284ccfd2d7cc9e21903afbb4dc4c4d" class="m-doc-self">SetModuleDirectories</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1collection_1_1_array.html" class="m-doc">collection::<wbr />Array</a>&lt;<a href="classbpf_1_1io_1_1_file.html" class="m-doc">io::<wbr />File</a>&gt;&amp; directories) <span class="m-label m-warning">pure virtual</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">directories</td>
+                  <td>the new directories to use for resolving dependencies</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1system_1_1_o_s_exception.html" class="m-doc">OSException</a></td>
+                  <td>if multiple directories are given and the system only supports one or if system error</td>
+                </tr>
+                <tr>
+                  <td><a href="classbpf_1_1io_1_1_i_o_exception.html" class="m-doc">io::<wbr />IOException</a></td>
+                  <td>if any of the given paths is not a directory</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Sets the additional module directories for this application</p>
           </div></section>
         </section>
         <section>

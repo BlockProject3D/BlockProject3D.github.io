@@ -47,7 +47,6 @@
           <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1compression.html">compression</a>::<wbr/></span>ZInflater <span class="m-thin">class</span>
           <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_z_inflater_8hpp.html">&lt;Compression/include/Framework/Compression/ZInflater.hpp&gt;</a></div>
         </h1>
-        <p><span></span></p>
         <div class="m-block m-default">
           <h3>Contents</h3>
           <ul>
@@ -60,13 +59,14 @@
             </li>
           </ul>
         </div>
+<p>Represents data de-compression using ZLib</p>
         <section id="typeless-methods">
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt id="a2a45fc0d29e48cfeb6af88060ce52f97">
-              <span class="m-doc-wrap-bumper"><a href="#a2a45fc0d29e48cfeb6af88060ce52f97" class="m-doc-self">ZInflater</a>(</span><span class="m-doc-wrap">)</span>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a2a45fc0d29e48cfeb6af88060ce52f97" class="m-doc">ZInflater</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
             <dt id="aefae222759d526e9ae8347f4b9a582d8">
               <span class="m-doc-wrap-bumper"><a href="#aefae222759d526e9ae8347f4b9a582d8" class="m-doc-self">~ZInflater</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
@@ -76,28 +76,136 @@
         <section id="pub-methods">
           <h2><a href="#pub-methods">Public functions</a></h2>
           <dl class="m-doc">
-            <dt id="a8460ae2e26eb12d8cdb4b61b4be97cec">
-              <span class="m-doc-wrap-bumper">void <a href="#a8460ae2e26eb12d8cdb4b61b4be97cec" class="m-doc-self">SetInput</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp; deflated)</span>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a8460ae2e26eb12d8cdb4b61b4be97cec" class="m-doc">SetInput</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp; deflated)</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="ad3537daf17968a7f1b23d305f5bd8ab1">
-              <span class="m-doc-wrap-bumper">void <a href="#ad3537daf17968a7f1b23d305f5bd8ab1" class="m-doc-self">SetInput</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp;&amp; deflated)</span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ad3537daf17968a7f1b23d305f5bd8ab1" class="m-doc">SetInput</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp;&amp; deflated)</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a9be7dcde9932a71e91c0ce4b9739d3c8">
-              <span class="m-doc-wrap-bumper">auto <a href="#a9be7dcde9932a71e91c0ce4b9739d3c8" class="m-doc-self">GetAdler32</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9be7dcde9932a71e91c0ce4b9739d3c8" class="m-doc">GetAdler32</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="afad7ab2f28e1a7ec94bf5d94bb273238">
-              <span class="m-doc-wrap-bumper">auto <a href="#afad7ab2f28e1a7ec94bf5d94bb273238" class="m-doc-self">Inflate</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp; out) -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#afad7ab2f28e1a7ec94bf5d94bb273238" class="m-doc">Inflate</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp; out) -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a20c10f09778b38c7c2e31e578e22c5b4">
-              <span class="m-doc-wrap-bumper">auto <a href="#a20c10f09778b38c7c2e31e578e22c5b4" class="m-doc-self">Inflate</a>(</span><span class="m-doc-wrap">void* out,
-              const <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> size) -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8db028035167db5ff3ae675d9cc0519c" class="m-doc">Inflate</a>(</span><span class="m-doc-wrap">void* out,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> size) -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a></span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a2a45fc0d29e48cfeb6af88060ce52f97"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />compression::<wbr />ZInflater::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2a45fc0d29e48cfeb6af88060ce52f97" class="m-doc-self">ZInflater</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Constructs a <a href="classbpf_1_1compression_1_1_z_inflater.html" class="m-doc">ZInflater</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a8460ae2e26eb12d8cdb4b61b4be97cec"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />compression::<wbr />ZInflater::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8460ae2e26eb12d8cdb4b61b4be97cec" class="m-doc-self">SetInput</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp; deflated)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">deflated</td>
+                  <td>buffer of data to de-compress</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Sets the input buffer</p>
+          </div></section>
+          <section class="m-doc-details" id="ad3537daf17968a7f1b23d305f5bd8ab1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />compression::<wbr />ZInflater::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad3537daf17968a7f1b23d305f5bd8ab1" class="m-doc-self">SetInput</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp;&amp; deflated)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">deflated</td>
+                  <td>buffer of data to de-compress</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Sets the input buffer</p>
+          </div></section>
+          <section class="m-doc-details" id="a9be7dcde9932a71e91c0ce4b9739d3c8"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> bpf::<wbr />compression::<wbr />ZInflater::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9be7dcde9932a71e91c0ce4b9739d3c8" class="m-doc-self">GetAdler32</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>32 bits unsigned</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the Adler32 checksum value of the compressed data</p>
+          </div></section>
+          <section class="m-doc-details" id="afad7ab2f28e1a7ec94bf5d94bb273238"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr />compression::<wbr />ZInflater::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afad7ab2f28e1a7ec94bf5d94bb273238" class="m-doc-self">Inflate</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_byte_buf.html" class="m-doc">io::<wbr />ByteBuf</a>&amp; out)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">out</td>
+                  <td>output buffer</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>unsigned number of bytes written to output buffer</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Inflates a part of the input buffer into the given output buffer</p>
+          </div></section>
+          <section class="m-doc-details" id="a8db028035167db5ff3ae675d9cc0519c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr />compression::<wbr />ZInflater::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8db028035167db5ff3ae675d9cc0519c" class="m-doc-self">Inflate</a>(</span><span class="m-doc-wrap">void* out,
+              <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> size)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">out</td>
+                  <td>output buffer</td>
+                </tr>
+                <tr>
+                  <td>size</td>
+                  <td>the size of the output buffer</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>unsigned number of bytes written to output buffer</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Deflates a part of the input buffer into the given output buffer</p>
+          </div></section>
         </section>
       </div>
     </div>

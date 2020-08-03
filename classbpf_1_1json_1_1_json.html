@@ -72,15 +72,20 @@
               class <a href="classbpf_1_1json_1_1_json_1_1_object.html" class="m-doc">Object</a>
             </dt>
             <dd></dd>
-            <dt id="a40f19be43f6f3a35200f06bac3ece956">
-              <span class="m-doc-wrap-bumper">enum <a href="#a40f19be43f6f3a35200f06bac3ece956" class="m-doc-self">EType</a> { </span><span class="m-doc-wrap"><a href="#a40f19be43f6f3a35200f06bac3ece956a25f14edcfdfe8a94b8fa533d69fa1ac7" class="m-doc">NUMBER</a>,
+            <dt>
+              class <a href="classbpf_1_1json_1_1_json_1_1_type.html" class="m-doc">Type</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">enum <a href="#a40f19be43f6f3a35200f06bac3ece956" class="m-doc">EType</a> { </span><span class="m-doc-wrap"><a href="#a40f19be43f6f3a35200f06bac3ece956a6f7b5a458fc4af5922bb176771e59762" class="m-doc">DOUBLE</a>,
+              <a href="#a40f19be43f6f3a35200f06bac3ece956aa0788b05901121fb38e9573f46b0cc53" class="m-doc">INTEGER</a>,
               <a href="#a40f19be43f6f3a35200f06bac3ece956a0eef6990847de6f0bd470bd13f48dffe" class="m-doc">BOOLEAN</a>,
               <a href="#a40f19be43f6f3a35200f06bac3ece956a510865e536d7b72172ba5909f31e6dfe" class="m-doc">STRING</a>,
               <a href="#a40f19be43f6f3a35200f06bac3ece956ab952a0d23abbd903bb799e92d65e001c" class="m-doc">ARRAY</a>,
               <a href="#a40f19be43f6f3a35200f06bac3ece956ab9a147346cac379feb27e6a5ffe58709" class="m-doc">OBJECT</a>,
               <a href="#a40f19be43f6f3a35200f06bac3ece956a7e38f7b06c9558e3f580276b8e468f66" class="m-doc">NONE</a> }</span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
         </section>
         <section id="typeless-methods">
@@ -100,6 +105,10 @@
             <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper"><a href="#a242e4ba1ad2cc1d8719280b5d057bf67" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const double val)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a437b92811cc5a6a319b54206c5ba702c" class="m-doc">Json</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> val)</span>
             </dt>
             <dd></dd>
             <dt>
@@ -136,6 +145,10 @@
             <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper"><a href="#a1b04a693b702e2552617b1a845444743" class="m-doc">operator double</a>(</span><span class="m-doc-wrap">) const</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#abbff694a0bd65153fa17f9a8bdd91ba2" class="m-doc">operator int64</a>(</span><span class="m-doc-wrap">) const</span>
             </dt>
             <dd></dd>
             <dt>
@@ -180,6 +193,10 @@
             </dt>
             <dd></dd>
             <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a90ae94fa71ad6147cd362261677f94cf" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> val) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
               <span class="m-doc-wrap-bumper">auto <a href="#a8b3745c64fa85340f28b2237522c8b46" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const bool val) -&gt; <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</span>
             </dt>
             <dd></dd>
@@ -200,11 +217,15 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a72fa93f217bf01ca8e90d9106554dfb4" class="m-doc">Type</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1json_1_1_json.html#a40f19be43f6f3a35200f06bac3ece956" class="m-doc">EType</a> <span class="m-label m-flat m-success">noexcept</span></span>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2afc9a7e3d23f909756ebbb805ac7caa" class="m-doc">Type</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1json_1_1_json_1_1_type.html" class="m-doc">_<wbr />bpf_<wbr />internal_<wbr />json_<wbr />type</a> <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper">auto <a href="#a987729048cd5d6c7d287d5969157bd4e" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">double other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aedbb0a901c6ab906fec6a9284a740773" class="m-doc">operator==</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> other) const -&gt; bool</span>
             </dt>
             <dd></dd>
             <dt>
@@ -220,7 +241,11 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a0f58b78302eb104a8c7bf512a4268ce2" class="m-doc">ToNumber</a>(</span><span class="m-doc-wrap">) const -&gt; double</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#afcfbd5d46e69a9b6ce16164dd4b486b5" class="m-doc">ToDouble</a>(</span><span class="m-doc-wrap">) const -&gt; double</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af4c20f41c86650cc7d68d87414b42d25" class="m-doc">ToInteger</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a></span>
             </dt>
             <dd></dd>
             <dt>
@@ -240,6 +265,62 @@
             </dt>
             <dd></dd>
           </dl>
+        </section>
+        <section>
+          <h2>Enum documentation</h2>
+          <section class="m-doc-details" id="a40f19be43f6f3a35200f06bac3ece956"><div>
+            <h3>
+              enum bpf::<wbr />json::<wbr />Json::<wbr /><a href="#a40f19be43f6f3a35200f06bac3ece956" class="m-doc-self">EType</a>
+            </h3>
+<p>Enumeration to represent the type of a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value</p>
+            <table class="m-table m-fullwidth m-flat m-doc">
+              <thead><tr><th style="width: 1%">Enumerators</th><th></th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><a href="#a40f19be43f6f3a35200f06bac3ece956a6f7b5a458fc4af5922bb176771e59762" class="m-doc-self" id="a40f19be43f6f3a35200f06bac3ece956a6f7b5a458fc4af5922bb176771e59762">DOUBLE</a></td>
+                  <td>
+<p>Indicates a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> number that stores doubles</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a40f19be43f6f3a35200f06bac3ece956aa0788b05901121fb38e9573f46b0cc53" class="m-doc-self" id="a40f19be43f6f3a35200f06bac3ece956aa0788b05901121fb38e9573f46b0cc53">INTEGER</a></td>
+                  <td>
+<p>Indicates a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> number that stores integers</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a40f19be43f6f3a35200f06bac3ece956a0eef6990847de6f0bd470bd13f48dffe" class="m-doc-self" id="a40f19be43f6f3a35200f06bac3ece956a0eef6990847de6f0bd470bd13f48dffe">BOOLEAN</a></td>
+                  <td>
+<p>Indicates a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> boolean</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a40f19be43f6f3a35200f06bac3ece956a510865e536d7b72172ba5909f31e6dfe" class="m-doc-self" id="a40f19be43f6f3a35200f06bac3ece956a510865e536d7b72172ba5909f31e6dfe">STRING</a></td>
+                  <td>
+<p>Indicates a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> string</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a40f19be43f6f3a35200f06bac3ece956ab952a0d23abbd903bb799e92d65e001c" class="m-doc-self" id="a40f19be43f6f3a35200f06bac3ece956ab952a0d23abbd903bb799e92d65e001c">ARRAY</a></td>
+                  <td>
+<p>Indicates a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> array</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a40f19be43f6f3a35200f06bac3ece956ab9a147346cac379feb27e6a5ffe58709" class="m-doc-self" id="a40f19be43f6f3a35200f06bac3ece956ab9a147346cac379feb27e6a5ffe58709">OBJECT</a></td>
+                  <td>
+<p>Indicates a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> object</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a40f19be43f6f3a35200f06bac3ece956a7e38f7b06c9558e3f580276b8e468f66" class="m-doc-self" id="a40f19be43f6f3a35200f06bac3ece956a7e38f7b06c9558e3f580276b8e468f66">NONE</a></td>
+                  <td>
+<p>Indicates <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> null</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
         </section>
         <section>
           <h2>Function documentation</h2>
@@ -264,6 +345,23 @@
           <section class="m-doc-details" id="a242e4ba1ad2cc1d8719280b5d057bf67"><div>
             <h3>
               <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a242e4ba1ad2cc1d8719280b5d057bf67" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const double val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>the number to store</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> number value</p>
+          </div></section>
+          <section class="m-doc-details" id="a437b92811cc5a6a319b54206c5ba702c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a437b92811cc5a6a319b54206c5ba702c" class="m-doc-self">Json</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> val)</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -423,6 +521,29 @@
                 <tr>
                   <th style="width: 1%">Returns</th>
                   <td>double</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a number</p>
+          </div></section>
+          <section class="m-doc-details" id="abbff694a0bd65153fa17f9a8bdd91ba2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abbff694a0bd65153fa17f9a8bdd91ba2" class="m-doc-self">operator int64</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>integer 64 bits</td>
                 </tr>
               </thead>
               <thead>
@@ -610,6 +731,29 @@
             </table>
 <p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to a number</p>
           </div></section>
+          <section class="m-doc-details" id="a90ae94fa71ad6147cd362261677f94cf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a90ae94fa71ad6147cd362261677f94cf" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> val)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">val</td>
+                  <td>new value</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp;</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to a number</p>
+          </div></section>
           <section class="m-doc-details" id="a8b3745c64fa85340f28b2237522c8b46"><div>
             <h3>
               <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a>&amp; bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8b3745c64fa85340f28b2237522c8b46" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const bool val)</span></span>
@@ -725,15 +869,15 @@
             </table>
 <p>Assigns this <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value to an array</p>
           </div></section>
-          <section class="m-doc-details" id="a72fa93f217bf01ca8e90d9106554dfb4"><div>
+          <section class="m-doc-details" id="a2afc9a7e3d23f909756ebbb805ac7caa"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json.html#a40f19be43f6f3a35200f06bac3ece956" class="m-doc">EType</a> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a72fa93f217bf01ca8e90d9106554dfb4" class="m-doc-self">Type</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1json_1_1_json_1_1_type.html" class="m-doc">_<wbr />bpf_<wbr />internal_<wbr />json_<wbr />type</a> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2afc9a7e3d23f909756ebbb805ac7caa" class="m-doc-self">Type</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <tfoot>
                 <tr>
                   <th style="width: 1%">Returns</th>
-                  <td>type enumeration</td>
+                  <td><a href="classbpf_1_1json_1_1_json_1_1_type.html" class="m-doc">Json::<wbr />Type</a> object</td>
                 </tr>
               </tfoot>
             </table>
@@ -742,6 +886,29 @@
           <section class="m-doc-details" id="a987729048cd5d6c7d287d5969157bd4e"><div>
             <h3>
               <span class="m-doc-wrap-bumper">bool bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a987729048cd5d6c7d287d5969157bd4e" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">double other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>value to compare with</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compares a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value with a number</p>
+          </div></section>
+          <section class="m-doc-details" id="aedbb0a901c6ab906fec6a9284a740773"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aedbb0a901c6ab906fec6a9284a740773" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> other) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -831,15 +998,38 @@
             </table>
 <p>Compares a <a href="classbpf_1_1json_1_1_json.html" class="m-doc">Json</a> value with a string</p>
           </div></section>
-          <section class="m-doc-details" id="a0f58b78302eb104a8c7bf512a4268ce2"><div>
+          <section class="m-doc-details" id="afcfbd5d46e69a9b6ce16164dd4b486b5"><div>
             <h3>
-              <span class="m-doc-wrap-bumper">double bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0f58b78302eb104a8c7bf512a4268ce2" class="m-doc-self">ToNumber</a>(</span><span class="m-doc-wrap">) const</span></span>
+              <span class="m-doc-wrap-bumper">double bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afcfbd5d46e69a9b6ce16164dd4b486b5" class="m-doc-self">ToDouble</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
                 <tr>
                   <th style="width: 1%">Returns</th>
                   <td>double</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="classbpf_1_1json_1_1_json_exception.html" class="m-doc">JsonException</a></td>
+                  <td>if the value type is not compatible</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Converts this value to a number</p>
+          </div></section>
+          <section class="m-doc-details" id="af4c20f41c86650cc7d68d87414b42d25"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> bpf::<wbr />json::<wbr />Json::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af4c20f41c86650cc7d68d87414b42d25" class="m-doc-self">ToInteger</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>integer 64 bits</td>
                 </tr>
               </thead>
               <thead>

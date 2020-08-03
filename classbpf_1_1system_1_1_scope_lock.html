@@ -47,7 +47,6 @@
           <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1system.html">system</a>::<wbr/></span>ScopeLock <span class="m-thin">class</span>
           <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_scope_lock_8hpp.html">&lt;Base/include/Framework/System/ScopeLock.hpp&gt;</a></div>
         </h1>
-        <p><span></span></p>
         <div class="m-block m-default">
           <h3>Contents</h3>
           <ul>
@@ -59,18 +58,39 @@
             </li>
           </ul>
         </div>
+<p>Helper to represent a scope based lock using the <a href="namespace_framework.html" class="m-doc">Framework</a> mutex (see <a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>)</p>
         <section id="typeless-methods">
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt id="a83108eba57787b236ef8a704065d54c1">
-              <span class="m-doc-wrap-bumper"><a href="#a83108eba57787b236ef8a704065d54c1" class="m-doc-self">ScopeLock</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp; mutex) <span class="m-label m-flat m-info">explicit</span> </span>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a83108eba57787b236ef8a704065d54c1" class="m-doc">ScopeLock</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp; mutex) <span class="m-label m-flat m-info">explicit</span> </span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
             <dt id="ac13f2e87d15cdbb96e6d71f7f391b6bd">
               <span class="m-doc-wrap-bumper"><a href="#ac13f2e87d15cdbb96e6d71f7f391b6bd" class="m-doc-self">~ScopeLock</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
             <dd><span></span></dd>
           </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a83108eba57787b236ef8a704065d54c1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />ScopeLock::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a83108eba57787b236ef8a704065d54c1" class="m-doc-self">ScopeLock</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_mutex.html" class="m-doc">Mutex</a>&amp; mutex) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">mutex</td>
+                  <td>Reference to a mutex to use for the lock</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a scope lock</p>
+          </div></section>
         </section>
       </div>
     </div>

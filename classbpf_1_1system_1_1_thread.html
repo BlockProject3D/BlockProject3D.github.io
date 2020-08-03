@@ -47,7 +47,6 @@
           <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1system.html">system</a>::<wbr/></span>Thread <span class="m-thin">class</span>
           <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_thread_8hpp.html">&lt;Base/include/Framework/System/Thread.hpp&gt;</a></div>
         </h1>
-        <p><span></span></p>
         <div class="m-block m-default">
           <h3>Contents</h3>
           <ul>
@@ -63,41 +62,42 @@
             </li>
           </ul>
         </div>
+<p>Utility class to represent a cross platform thread</p>
         <section id="pub-types">
           <h2><a href="#pub-types">Public types</a></h2>
           <dl class="m-doc">
-            <dt id="a5a95f72f4c62e4c7fdd8f09d28f77147">
-              <span class="m-doc-wrap-bumper">enum <a href="#a5a95f72f4c62e4c7fdd8f09d28f77147" class="m-doc-self">EState</a> { </span><span class="m-doc-wrap"><a href="#a5a95f72f4c62e4c7fdd8f09d28f77147aa67d1406f0fdb3bcdc2e6d4e05e81d1a" class="m-doc">PENDING</a>,
+            <dt>
+              <span class="m-doc-wrap-bumper">enum <a href="#a5a95f72f4c62e4c7fdd8f09d28f77147" class="m-doc">EState</a> { </span><span class="m-doc-wrap"><a href="#a5a95f72f4c62e4c7fdd8f09d28f77147aa67d1406f0fdb3bcdc2e6d4e05e81d1a" class="m-doc">PENDING</a>,
               <a href="#a5a95f72f4c62e4c7fdd8f09d28f77147abe746c963e5d928708e407c45e0a400b" class="m-doc">RUNNING</a>,
               <a href="#a5a95f72f4c62e4c7fdd8f09d28f77147afae86e07529673a13cf168d7cef2b3a6" class="m-doc">EXITING</a>,
               <a href="#a5a95f72f4c62e4c7fdd8f09d28f77147ac86d411bd496435b6fd3ce2d5f30062d" class="m-doc">STOPPED</a>,
               <a href="#a5a95f72f4c62e4c7fdd8f09d28f77147aa5f6a034a9dd25258ee1dce69e16713b" class="m-doc">FINISHED</a> }</span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
         </section>
         <section id="pub-static-methods">
           <h2><a href="#pub-static-methods">Public static functions</a></h2>
           <dl class="m-doc">
-            <dt id="af8755a452697d17ef650e4b48f76916c">
-              <span class="m-doc-wrap-bumper">static void <a href="#af8755a452697d17ef650e4b48f76916c" class="m-doc-self">Sleep</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> milliseconds)</span>
+            <dt>
+              <span class="m-doc-wrap-bumper">static void <a href="#af8755a452697d17ef650e4b48f76916c" class="m-doc">Sleep</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> milliseconds)</span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
         </section>
         <section id="typeless-methods">
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt id="a2c45d64ef402f7541dd409c7e3a4c014">
-              <span class="m-doc-wrap-bumper"><a href="#a2c45d64ef402f7541dd409c7e3a4c014" class="m-doc-self">Thread</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; name)</span>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a2c45d64ef402f7541dd409c7e3a4c014" class="m-doc">Thread</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; name)</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="ae887a261a197c43590148123c79957bc">
-              <span class="m-doc-wrap-bumper"><a href="#ae887a261a197c43590148123c79957bc" class="m-doc-self">~Thread</a>(</span><span class="m-doc-wrap">)</span>
+            <dd></dd>
+            <dt id="a6411d0e6b221c9fc4f5cbfa151e8c8d8">
+              <span class="m-doc-wrap-bumper"><a href="#a6411d0e6b221c9fc4f5cbfa151e8c8d8" class="m-doc-self">~Thread</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">virtual</span></span>
             </dt>
             <dd><span></span></dd>
             <dt>
-              <span class="m-doc-wrap-bumper"><a href="#ab5f74009e8db8dad77d094f049ecf4f5" class="m-doc">Thread</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;&amp; other)</span>
+              <span class="m-doc-wrap-bumper"><a href="#ae883061b0dcfe8082b696ca070fdcb49" class="m-doc">Thread</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
           </dl>
@@ -106,37 +106,37 @@
           <h2><a href="#pub-methods">Public functions</a></h2>
           <dl class="m-doc">
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#ad3b49093efdc0c5ecc7d9d8097709fa1" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#af525ef33eddb8805bca311914f5ce901" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
             <dd></dd>
-            <dt id="a53961dc68ce9eb8d62a580eb62a469cc">
-              <span class="m-doc-wrap-bumper">void <a href="#a53961dc68ce9eb8d62a580eb62a469cc" class="m-doc-self">Start</a>(</span><span class="m-doc-wrap">)</span>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a53961dc68ce9eb8d62a580eb62a469cc" class="m-doc">Start</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a0be4a38fe482ad8435d491747f1fd225">
-              <span class="m-doc-wrap-bumper">void <a href="#a0be4a38fe482ad8435d491747f1fd225" class="m-doc-self">Kill</a>(</span><span class="m-doc-wrap">bool force = false)</span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a0be4a38fe482ad8435d491747f1fd225" class="m-doc">Kill</a>(</span><span class="m-doc-wrap">bool force = false)</span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="ac11b428e20cce3e9b725c46d7e3542fe">
-              <span class="m-doc-wrap-bumper">void <a href="#ac11b428e20cce3e9b725c46d7e3542fe" class="m-doc-self">Join</a>(</span><span class="m-doc-wrap">)</span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#addcb072446e26fbfcf6a4a0bd336c43e" class="m-doc">Join</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a83c1e16cae5e60401f766d89537c3d6f">
-              <span class="m-doc-wrap-bumper">auto <a href="#a83c1e16cae5e60401f766d89537c3d6f" class="m-doc-self">GetState</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1system_1_1_thread.html#a5a95f72f4c62e4c7fdd8f09d28f77147" class="m-doc">EState</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a83c1e16cae5e60401f766d89537c3d6f" class="m-doc">GetState</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1system_1_1_thread.html#a5a95f72f4c62e4c7fdd8f09d28f77147" class="m-doc">EState</a> <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="abf38f1b510842d9c708c578f5356a702">
-              <span class="m-doc-wrap-bumper">auto <a href="#abf38f1b510842d9c708c578f5356a702" class="m-doc-self">IsRunning</a>(</span><span class="m-doc-wrap">) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abf38f1b510842d9c708c578f5356a702" class="m-doc">IsRunning</a>(</span><span class="m-doc-wrap">) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a8b735df49126d58ab4e6eb3704ee1596">
-              <span class="m-doc-wrap-bumper">auto <a href="#a8b735df49126d58ab4e6eb3704ee1596" class="m-doc-self">GetName</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8b735df49126d58ab4e6eb3704ee1596" class="m-doc">GetName</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a80be6c741b834c44d579cb53d32e8179">
-              <span class="m-doc-wrap-bumper">void <a href="#a80be6c741b834c44d579cb53d32e8179" class="m-doc-self">Run</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">pure virtual</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a80be6c741b834c44d579cb53d32e8179" class="m-doc">Run</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">pure virtual</span></span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
         </section>
         <section id="friends">
@@ -147,21 +147,180 @@
               <a href="classbpf_1_1system_1_1_thread.html#a5a95f72f4c62e4c7fdd8f09d28f77147" class="m-doc">EState</a> state)</span>
             </dt>
             <dd><span></span></dd>
+            <dt id="a042a127f951b080a8431fbf34914225b">
+              <span class="m-doc-wrap-bumper">auto <a href="#a042a127f951b080a8431fbf34914225b" class="m-doc-self">_bpf_internal_special</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp; ptr) -&gt; bool</span>
+            </dt>
+            <dd><span></span></dd>
           </dl>
         </section>
         <section>
-          <h2>Function documentation</h2>
-          <section class="m-doc-details" id="ab5f74009e8db8dad77d094f049ecf4f5"><div>
+          <h2>Enum documentation</h2>
+          <section class="m-doc-details" id="a5a95f72f4c62e4c7fdd8f09d28f77147"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab5f74009e8db8dad77d094f049ecf4f5" class="m-doc-self">Thread</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;&amp; other)</span></span>
+              enum bpf::<wbr />system::<wbr />Thread::<wbr /><a href="#a5a95f72f4c62e4c7fdd8f09d28f77147" class="m-doc-self">EState</a>
             </h3>
-<p>Construct a thread by move semantics Never move a running thread</p>
+<p>Enumeration for thread state</p>
+            <table class="m-table m-fullwidth m-flat m-doc">
+              <thead><tr><th style="width: 1%">Enumerators</th><th></th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><a href="#a5a95f72f4c62e4c7fdd8f09d28f77147aa67d1406f0fdb3bcdc2e6d4e05e81d1a" class="m-doc-self" id="a5a95f72f4c62e4c7fdd8f09d28f77147aa67d1406f0fdb3bcdc2e6d4e05e81d1a">PENDING</a></td>
+                  <td>
+<p>The thread is pending start</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a5a95f72f4c62e4c7fdd8f09d28f77147abe746c963e5d928708e407c45e0a400b" class="m-doc-self" id="a5a95f72f4c62e4c7fdd8f09d28f77147abe746c963e5d928708e407c45e0a400b">RUNNING</a></td>
+                  <td>
+<p>The thread is running</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a5a95f72f4c62e4c7fdd8f09d28f77147afae86e07529673a13cf168d7cef2b3a6" class="m-doc-self" id="a5a95f72f4c62e4c7fdd8f09d28f77147afae86e07529673a13cf168d7cef2b3a6">EXITING</a></td>
+                  <td>
+<p>The thread is marked for shut down</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a5a95f72f4c62e4c7fdd8f09d28f77147ac86d411bd496435b6fd3ce2d5f30062d" class="m-doc-self" id="a5a95f72f4c62e4c7fdd8f09d28f77147ac86d411bd496435b6fd3ce2d5f30062d">STOPPED</a></td>
+                  <td>
+<p>The thread has terminated unexpectedly</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a5a95f72f4c62e4c7fdd8f09d28f77147aa5f6a034a9dd25258ee1dce69e16713b" class="m-doc-self" id="a5a95f72f4c62e4c7fdd8f09d28f77147aa5f6a034a9dd25258ee1dce69e16713b">FINISHED</a></td>
+                  <td>
+<p>The thread has finished</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div></section>
-          <section class="m-doc-details" id="ad3b49093efdc0c5ecc7d9d8097709fa1"><div>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="af8755a452697d17ef650e4b48f76916c"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp; bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad3b49093efdc0c5ecc7d9d8097709fa1" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;&amp; other)</span></span>
+              <span class="m-doc-wrap-bumper">static void bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af8755a452697d17ef650e4b48f76916c" class="m-doc-self">Sleep</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a> milliseconds)</span></span>
             </h3>
-<p>Assigns this thread by move semantics Never move a running thread</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">milliseconds</td>
+                  <td>number of milliseconds to wait</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Yields the current thread for a certain amount of time</p>
+          </div></section>
+          <section class="m-doc-details" id="a2c45d64ef402f7541dd409c7e3a4c014"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2c45d64ef402f7541dd409c7e3a4c014" class="m-doc-self">Thread</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; name)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">name</td>
+                  <td>the thread name</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a></p>
+          </div></section>
+          <section class="m-doc-details" id="ae883061b0dcfe8082b696ca070fdcb49"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae883061b0dcfe8082b696ca070fdcb49" class="m-doc-self">Thread</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
+          <section class="m-doc-details" id="af525ef33eddb8805bca311914f5ce901"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp; bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af525ef33eddb8805bca311914f5ce901" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1system_1_1_thread.html" class="m-doc">Thread</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
+          </div></section>
+          <section class="m-doc-details" id="a53961dc68ce9eb8d62a580eb62a469cc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a53961dc68ce9eb8d62a580eb62a469cc" class="m-doc-self">Start</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Starts the thread</p>
+          </div></section>
+          <section class="m-doc-details" id="a0be4a38fe482ad8435d491747f1fd225"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0be4a38fe482ad8435d491747f1fd225" class="m-doc-self">Kill</a>(</span><span class="m-doc-wrap">bool force = false)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">force</td>
+                  <td>if true a hard kill will be performed and memory may leak, otherwise the thread is marked for shut down</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Kills the thread</p>
+          </div></section>
+          <section class="m-doc-details" id="addcb072446e26fbfcf6a4a0bd336c43e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#addcb072446e26fbfcf6a4a0bd336c43e" class="m-doc-self">Join</a>(</span><span class="m-doc-wrap">) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Joins the thread with the current thread</p>
+          </div></section>
+          <section class="m-doc-details" id="a83c1e16cae5e60401f766d89537c3d6f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1system_1_1_thread.html#a5a95f72f4c62e4c7fdd8f09d28f77147" class="m-doc">EState</a> bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a83c1e16cae5e60401f766d89537c3d6f" class="m-doc-self">GetState</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>copy of the current thread state</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the state</p>
+          </div></section>
+          <section class="m-doc-details" id="abf38f1b510842d9c708c578f5356a702"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abf38f1b510842d9c708c578f5356a702" class="m-doc-self">IsRunning</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this thread is running, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Checks whether this thread is still running</p>
+          </div></section>
+          <section class="m-doc-details" id="a8b735df49126d58ab4e6eb3704ee1596"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp; bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8b735df49126d58ab4e6eb3704ee1596" class="m-doc-self">GetName</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>high-level string</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns the thread name</p>
+          </div></section>
+          <section class="m-doc-details" id="a80be6c741b834c44d579cb53d32e8179"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />Thread::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a80be6c741b834c44d579cb53d32e8179" class="m-doc-self">Run</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">pure virtual</span></span></span>
+            </h3>
+<p>The actual threaded function</p>
           </div></section>
         </section>
       </div>

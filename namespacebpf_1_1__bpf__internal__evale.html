@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>bpf::_bpf_internal_evale namespace | BlockProject 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="logo_white.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BlockProject 3D</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="namespacebpf.html">bpf</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span>_bpf_internal_evale <span class="m-thin">namespace</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_math_eval_8impl_8hpp.html">&lt;Base/include/Framework/MathEval.impl.hpp&gt;</a></div>
+        </h1>
+        <p><span></span></p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#enum-members">Enums</a></li>
+                <li><a href="#func-members">Functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="enum-members">
+          <h2><a href="#enum-members">Enums</a></h2>
+          <dl class="m-doc">
+            <dt id="a993b36f16701460d524b16d672da6684">
+              <span class="m-doc-wrap-bumper">enum <a href="#a993b36f16701460d524b16d672da6684" class="m-doc-self">EEvalExprOperator</a> { </span><span class="m-doc-wrap"><a href="#a993b36f16701460d524b16d672da6684ae395f6bc704b12afbaba1719ffab6e5a" class="m-doc">EVAL_EXPR_ADD</a> = 0,
+              <a href="#a993b36f16701460d524b16d672da6684aee4517df1c73a0b68454d2b1e78f6ae6" class="m-doc">EVAL_EXPR_SUB</a>,
+              <a href="#a993b36f16701460d524b16d672da6684a840486bb1a37f14b470e9701077819e3" class="m-doc">EVAL_EXPR_MUL</a>,
+              <a href="#a993b36f16701460d524b16d672da6684a5d810a28e6c407b7f68e5af9c3da4567" class="m-doc">EVAL_EXPR_DIV</a>,
+              <a href="#a993b36f16701460d524b16d672da6684ab40b28db9658f6571a9b2a39b8d08aeb" class="m-doc">EVAL_EXPR_MOD</a>,
+              <a href="#a993b36f16701460d524b16d672da6684a0083777502c75658e0b4fd65a2f3f7ea" class="m-doc">EVAL_EXPR_NONE</a> }</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="afbc571367085b97200b3ebcb49379437">
+              <span class="m-doc-wrap-bumper">enum <a href="#afbc571367085b97200b3ebcb49379437" class="m-doc-self">EEvalExprCode</a> { </span><span class="m-doc-wrap"><a href="#afbc571367085b97200b3ebcb49379437a9e86cd50ac646c1489cdd12b07929407" class="m-doc">EVAL_EXPR_PARENTHESIS</a> = 0,
+              <a href="#afbc571367085b97200b3ebcb49379437a753e0f27b748c21b94391d0390e3fbc1" class="m-doc">EVAL_EXPR_DIVIDE_ZERO</a>,
+              <a href="#afbc571367085b97200b3ebcb49379437a5e5ad113949f286f15f2770d1106596c" class="m-doc">EVAL_EXPR_MODULO_ZERO</a>,
+              <a href="#afbc571367085b97200b3ebcb49379437a9e367ee8341255f547c13f8899ac43ea" class="m-doc">EVAL_EXPR_SYNTHAX_INCORRECT</a>,
+              <a href="#afbc571367085b97200b3ebcb49379437a804fffa21880c249e437c920eacfa200" class="m-doc">EVAL_EXPR_INVALID_NUMBER</a>,
+              <a href="#afbc571367085b97200b3ebcb49379437a6c37b28dc6c6a0e0d161e9f8c422ba22" class="m-doc">EVAL_EXPR_SUCCESS</a> }</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="func-members">
+          <h2><a href="#func-members">Functions</a></h2>
+          <dl class="m-doc">
+            <dt id="ab19264905a297088ccc3076b555b8d56">
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#ab19264905a297088ccc3076b555b8d56" class="m-doc-self">Operation</a>(</span><span class="m-doc-wrap">char const** expr,
+              T&amp; res,
+              bool parenthesis) -&gt; <a href="namespacebpf_1_1__bpf__internal__evale.html#afbc571367085b97200b3ebcb49379437" class="m-doc">EEvalExprCode</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad201bd6a2ec7d5cbefeec52cfb4c4be9">
+              <span class="m-doc-wrap-bumper">static auto <a href="#ad201bd6a2ec7d5cbefeec52cfb4c4be9" class="m-doc-self">IsOperator</a>(</span><span class="m-doc-wrap">char const expr) -&gt; unsigned char</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a892f551f79e660f1a34f6fd7ec451044">
+              <span class="m-doc-wrap-bumper">static void <a href="#a892f551f79e660f1a34f6fd7ec451044" class="m-doc-self">DeleteSpace</a>(</span><span class="m-doc-wrap">char const** expr)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="abd803bd662e53feec1a5d00e1b675aa5">
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#abd803bd662e53feec1a5d00e1b675aa5" class="m-doc-self">Calc</a>(</span><span class="m-doc-wrap">T const left,
+              T const right,
+              T&amp; res,
+              <a href="namespacebpf_1_1__bpf__internal__evale.html#a993b36f16701460d524b16d672da6684" class="m-doc">EEvalExprOperator</a> const op) -&gt; <a href="namespacebpf_1_1__bpf__internal__evale.html#afbc571367085b97200b3ebcb49379437" class="m-doc">EEvalExprCode</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a2471cbaed591a59f32dfebcf77ba7383">
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2471cbaed591a59f32dfebcf77ba7383" class="m-doc-self">EvalNbr</a>(</span><span class="m-doc-wrap">const char* expr,
+              char** endptr) -&gt; T</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a4486b91978baa2ca518e7e99ea142ff5">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4486b91978baa2ca518e7e99ea142ff5" class="m-doc-self">EvalNbr</a>(</span><span class="m-doc-wrap">char const* expr,
+              char** endptr) -&gt; <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a065aeec58837c6d2240ff5b561796afa">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a065aeec58837c6d2240ff5b561796afa" class="m-doc-self">EvalNbr</a>(</span><span class="m-doc-wrap">char const* expr,
+              char** endptr) -&gt; <a href="namespacebpf.html#ab620e0fb9be4f0fe50830e0480287346" class="m-doc">uint32</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aab6be67ad5243e7b7d9c773605a025b1">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#aab6be67ad5243e7b7d9c773605a025b1" class="m-doc-self">EvalNbr</a>(</span><span class="m-doc-wrap">char const* expr,
+              char** endptr) -&gt; <a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a9e9d331ec349f3a4aff6b87150a3aedc">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9e9d331ec349f3a4aff6b87150a3aedc" class="m-doc-self">EvalNbr</a>(</span><span class="m-doc-wrap">char const* expr,
+              char** endptr) -&gt; <a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a5e3ae2222a8c792ef732ab843e2577e6">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5e3ae2222a8c792ef732ab843e2577e6" class="m-doc-self">EvalNbr</a>(</span><span class="m-doc-wrap">char const* expr,
+              char** endptr) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a500a4b5e8b235eb351ed2aae1891922c">
+              <div class="m-doc-template">template&lt;&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a500a4b5e8b235eb351ed2aae1891922c" class="m-doc-self">EvalNbr</a>(</span><span class="m-doc-wrap">char const* expr,
+              char** endptr) -&gt; double</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a244726f673209b354367048c6d544440">
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#a244726f673209b354367048c6d544440" class="m-doc-self">Number</a>(</span><span class="m-doc-wrap">char const** expr,
+              T&amp; num) -&gt; <a href="namespacebpf_1_1__bpf__internal__evale.html#afbc571367085b97200b3ebcb49379437" class="m-doc">EEvalExprCode</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="adf112872922122e922f68e027d8d2379">
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#adf112872922122e922f68e027d8d2379" class="m-doc-self">Product</a>(</span><span class="m-doc-wrap">char const** expr,
+              T&amp; res) -&gt; <a href="namespacebpf_1_1__bpf__internal__evale.html#afbc571367085b97200b3ebcb49379437" class="m-doc">EEvalExprCode</a></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa8f41cb26b1b71a1a1e080e9b41ebfc6">
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-doc-wrap-bumper">static auto <a href="#aa8f41cb26b1b71a1a1e080e9b41ebfc6" class="m-doc-self">Sum</a>(</span><span class="m-doc-wrap">char const** expr,
+              T&amp; res) -&gt; <a href="namespacebpf_1_1__bpf__internal__evale.html#afbc571367085b97200b3ebcb49379437" class="m-doc">EEvalExprCode</a></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BlockProject 3D. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.13 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

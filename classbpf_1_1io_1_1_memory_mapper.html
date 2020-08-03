@@ -68,6 +68,10 @@
               <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> mode)</span>
             </dt>
             <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a76373acf38819029c450b807cd3c1998" class="m-doc">MemoryMapper</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
             <dt id="ac8111babe0e4b67faafb1532dfa1489b">
               <span class="m-doc-wrap-bumper"><a href="#ac8111babe0e4b67faafb1532dfa1489b" class="m-doc-self">~MemoryMapper</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
@@ -86,8 +90,20 @@
             </dt>
             <dd></dd>
             <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad76f5b39baa205fbcd5d585013916a08" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
               <span class="m-doc-wrap-bumper">void <a href="#a4fbcb2dd5323328a43ea2b3dd093af86" class="m-doc">Map</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> pos,
               <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> size)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a86b3c083a30f29dafac40c9ff879cb7b" class="m-doc">Unmap</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#aa006f7ecb0d6006d1ea4eaf9fc67a0df" class="m-doc">Close</a>(</span><span class="m-doc-wrap">)</span>
             </dt>
             <dd></dd>
             <dt>
@@ -133,6 +149,12 @@
             </table>
 <p>Creates a new <a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a> from the given file and mode</p>
           </div></section>
+          <section class="m-doc-details" id="a76373acf38819029c450b807cd3c1998"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />io::<wbr />MemoryMapper::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a76373acf38819029c450b807cd3c1998" class="m-doc-self">MemoryMapper</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
           <section class="m-doc-details" id="a6e680e8b9e0f2dc9a2107e119ac1f12d"><div>
             <h3>
               <span class="m-doc-wrap-bumper"> bpf::<wbr />io::<wbr />MemoryMapper::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6e680e8b9e0f2dc9a2107e119ac1f12d" class="m-doc-self">MemoryMapper</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a>&amp; other) <span class="m-label m-danger">deleted</span></span></span>
@@ -144,6 +166,12 @@
               <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a> bpf::<wbr />io::<wbr />MemoryMapper::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aec68c6562e6139fd9d4168c3a0185d5f" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a>&amp; other) <span class="m-label m-danger">deleted</span></span></span>
             </h3>
 <p>Cannot copy a <a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a></p>
+          </div></section>
+          <section class="m-doc-details" id="ad76f5b39baa205fbcd5d585013916a08"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a>&amp; bpf::<wbr />io::<wbr />MemoryMapper::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad76f5b39baa205fbcd5d585013916a08" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
           </div></section>
           <section class="m-doc-details" id="a4fbcb2dd5323328a43ea2b3dd093af86"><div>
             <h3>
@@ -175,6 +203,18 @@
               </tbody>
             </table>
 <p>Map or re-map the file in virtual memory</p>
+          </div></section>
+          <section class="m-doc-details" id="a86b3c083a30f29dafac40c9ff879cb7b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />io::<wbr />MemoryMapper::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a86b3c083a30f29dafac40c9ff879cb7b" class="m-doc-self">Unmap</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Unmaps any previous mappings of the file</p>
+          </div></section>
+          <section class="m-doc-details" id="aa006f7ecb0d6006d1ea4eaf9fc67a0df"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />io::<wbr />MemoryMapper::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa006f7ecb0d6006d1ea4eaf9fc67a0df" class="m-doc-self">Close</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+<p>Closes this <a href="classbpf_1_1io_1_1_memory_mapper.html" class="m-doc">MemoryMapper</a></p>
           </div></section>
           <section class="m-doc-details" id="aa2b729eddc8fc0668c01baf622483f69"><div>
             <h3>

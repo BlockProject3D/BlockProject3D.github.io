@@ -47,7 +47,6 @@
           <span class="m-breadcrumb"><a href="namespacebpf.html">bpf</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacebpf_1_1system.html">system</a>::<wbr/></span>TimeSpan <span class="m-thin">class</span>
           <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="_time_span_8hpp.html">&lt;Base/include/Framework/System/TimeSpan.hpp&gt;</a></div>
         </h1>
-        <p><span></span></p>
         <div class="m-block m-default">
           <h3>Contents</h3>
           <ul>
@@ -61,83 +60,395 @@
             </li>
           </ul>
         </div>
+<p>Represents a time span</p>
         <section id="typeless-methods">
           <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
           <dl class="m-doc">
-            <dt id="a49238b4b016d26a48e66965df44cc330">
-              <span class="m-doc-wrap-bumper"><a href="#a49238b4b016d26a48e66965df44cc330" class="m-doc-self">TimeSpan</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> seconds = 0) <span class="m-label m-flat m-info">explicit</span>  <span class="m-label m-flat m-success">noexcept</span></span>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a49238b4b016d26a48e66965df44cc330" class="m-doc">TimeSpan</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> seconds = 0) <span class="m-label m-flat m-info">explicit</span>  <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a16cca46092b9a00617d006885180d2f3">
-              <span class="m-doc-wrap-bumper"><a href="#a16cca46092b9a00617d006885180d2f3" class="m-doc-self">TimeSpan</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> days,
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a16cca46092b9a00617d006885180d2f3" class="m-doc">TimeSpan</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> days,
               <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> hours,
               <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> minutes,
               <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> seconds) <span class="m-label m-flat m-info">explicit</span>  <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
         </section>
         <section id="pub-methods">
           <h2><a href="#pub-methods">Public functions</a></h2>
           <dl class="m-doc">
-            <dt id="aa4985aa3308030f732536706598c9c8b">
-              <span class="m-doc-wrap-bumper">auto <a href="#aa4985aa3308030f732536706598c9c8b" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa4985aa3308030f732536706598c9c8b" class="m-doc">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="afcc2caa7a97638cc227ecc5fc95794cd">
-              <span class="m-doc-wrap-bumper">auto <a href="#afcc2caa7a97638cc227ecc5fc95794cd" class="m-doc-self">operator-</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#afcc2caa7a97638cc227ecc5fc95794cd" class="m-doc">operator-</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a0f36aa1395887ae45f64fa9412333f5e">
-              <span class="m-doc-wrap-bumper">auto <a href="#a0f36aa1395887ae45f64fa9412333f5e" class="m-doc-self">operator&gt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0f36aa1395887ae45f64fa9412333f5e" class="m-doc">operator&gt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="adf67fdc36625ded014f541f4017d5b98">
-              <span class="m-doc-wrap-bumper">auto <a href="#adf67fdc36625ded014f541f4017d5b98" class="m-doc-self">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#adf67fdc36625ded014f541f4017d5b98" class="m-doc">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a4dc777995a4a320542928bdff71c8db2">
-              <span class="m-doc-wrap-bumper">auto <a href="#a4dc777995a4a320542928bdff71c8db2" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1e13bfb7cf1221eb71ff7ed98f3cd873" class="m-doc">operator&lt;=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a089cb3cc6e34ec1db8d984ab157d7d37">
-              <span class="m-doc-wrap-bumper">auto <a href="#a089cb3cc6e34ec1db8d984ab157d7d37" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0735120f48659b4dc483051ba8b73603" class="m-doc">operator&gt;=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a04cc2a6b0bb994f90539a055d0786daf">
-              <span class="m-doc-wrap-bumper">void <a href="#a04cc2a6b0bb994f90539a055d0786daf" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4dc777995a4a320542928bdff71c8db2" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a8459bbc7f119b930e7c72d62a5eafd53">
-              <span class="m-doc-wrap-bumper">void <a href="#a8459bbc7f119b930e7c72d62a5eafd53" class="m-doc-self">operator-=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a089cb3cc6e34ec1db8d984ab157d7d37" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const -&gt; bool <span class="m-label m-flat m-success">noexcept</span></span>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a04cc2a6b0bb994f90539a055d0786daf" class="m-doc">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a8459bbc7f119b930e7c72d62a5eafd53" class="m-doc">operator-=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
           </dl>
         </section>
         <section id="pub-attribs">
           <h2><a href="#pub-attribs">Public variables</a></h2>
           <dl class="m-doc">
-            <dt id="a5820b8ffeb003ac7402b1a18b5d11a9b">
-              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <a href="#a5820b8ffeb003ac7402b1a18b5d11a9b" class="m-doc-self">Days</a>
+            <dt>
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <a href="#a5820b8ffeb003ac7402b1a18b5d11a9b" class="m-doc">Days</a>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a617f0c9b937ab2532704daecfb5a3a43">
-              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <a href="#a617f0c9b937ab2532704daecfb5a3a43" class="m-doc-self">Hours</a>
+            <dd></dd>
+            <dt>
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <a href="#a617f0c9b937ab2532704daecfb5a3a43" class="m-doc">Hours</a>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a694eec206db2c0ae1e6e73c5c7096b0d">
-              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <a href="#a694eec206db2c0ae1e6e73c5c7096b0d" class="m-doc-self">Minutes</a>
+            <dd></dd>
+            <dt>
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <a href="#a694eec206db2c0ae1e6e73c5c7096b0d" class="m-doc">Minutes</a>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a83b0e9f0608b0534d318708704fcf49d">
-              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <a href="#a83b0e9f0608b0534d318708704fcf49d" class="m-doc-self">Seconds</a>
+            <dd></dd>
+            <dt>
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> <a href="#a83b0e9f0608b0534d318708704fcf49d" class="m-doc">Seconds</a>
             </dt>
-            <dd><span></span></dd>
-            <dt id="a14bea06c327937dbf865361bc8323ea0">
-              <a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> <a href="#a14bea06c327937dbf865361bc8323ea0" class="m-doc-self">TotalSeconds</a>
+            <dd></dd>
+            <dt>
+              <a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> <a href="#a14bea06c327937dbf865361bc8323ea0" class="m-doc">TotalSeconds</a>
             </dt>
-            <dd><span></span></dd>
+            <dd></dd>
           </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a49238b4b016d26a48e66965df44cc330"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a49238b4b016d26a48e66965df44cc330" class="m-doc-self">TimeSpan</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> seconds = 0) <span class="m-label m-info">explicit</span>  <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">seconds</td>
+                  <td>number of seconds, use 0 to denote empty <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> from a number of seconds</p>
+          </div></section>
+          <section class="m-doc-details" id="a16cca46092b9a00617d006885180d2f3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a16cca46092b9a00617d006885180d2f3" class="m-doc-self">TimeSpan</a>(</span><span class="m-doc-wrap"><a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> days,
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> hours,
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> minutes,
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> seconds) <span class="m-label m-info">explicit</span>  <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">days</td>
+                  <td>day count</td>
+                </tr>
+                <tr>
+                  <td>hours</td>
+                  <td>hour count</td>
+                </tr>
+                <tr>
+                  <td>minutes</td>
+                  <td>minute count</td>
+                </tr>
+                <tr>
+                  <td>seconds</td>
+                  <td>second count</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Constructs a <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> from individual components</p>
+          </div></section>
+          <section class="m-doc-details" id="aa4985aa3308030f732536706598c9c8b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa4985aa3308030f732536706598c9c8b" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Adds two time spans</p>
+          </div></section>
+          <section class="m-doc-details" id="afcc2caa7a97638cc227ecc5fc95794cd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afcc2caa7a97638cc227ecc5fc95794cd" class="m-doc-self">operator-</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>new <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Subtracts two time spans</p>
+          </div></section>
+          <section class="m-doc-details" id="a0f36aa1395887ae45f64fa9412333f5e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0f36aa1395887ae45f64fa9412333f5e" class="m-doc-self">operator&gt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is greater than other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></p>
+          </div></section>
+          <section class="m-doc-details" id="adf67fdc36625ded014f541f4017d5b98"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adf67fdc36625ded014f541f4017d5b98" class="m-doc-self">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is less than other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a1e13bfb7cf1221eb71ff7ed98f3cd873"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1e13bfb7cf1221eb71ff7ed98f3cd873" class="m-doc-self">operator&lt;=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is less than or equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a0735120f48659b4dc483051ba8b73603"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0735120f48659b4dc483051ba8b73603" class="m-doc-self">operator&gt;=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is less than or equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a4dc777995a4a320542928bdff71c8db2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4dc777995a4a320542928bdff71c8db2" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a089cb3cc6e34ec1db8d984ab157d7d37"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a089cb3cc6e34ec1db8d984ab157d7d37" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) const <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this is not equal to other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a04cc2a6b0bb994f90539a055d0786daf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a04cc2a6b0bb994f90539a055d0786daf" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the other <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> to add</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Adds a <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></p>
+          </div></section>
+          <section class="m-doc-details" id="a8459bbc7f119b930e7c72d62a5eafd53"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />system::<wbr />TimeSpan::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8459bbc7f119b930e7c72d62a5eafd53" class="m-doc-self">operator-=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a>&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>the other <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a> to subtract</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Subtracts a <a href="classbpf_1_1system_1_1_time_span.html" class="m-doc">TimeSpan</a></p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a5820b8ffeb003ac7402b1a18b5d11a9b"><div>
+            <h3>
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> bpf::<wbr />system::<wbr />TimeSpan::<wbr /><a href="#a5820b8ffeb003ac7402b1a18b5d11a9b" class="m-doc-self">Days</a>
+            </h3>
+<p>Day count</p>
+          </div></section>
+          <section class="m-doc-details" id="a617f0c9b937ab2532704daecfb5a3a43"><div>
+            <h3>
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> bpf::<wbr />system::<wbr />TimeSpan::<wbr /><a href="#a617f0c9b937ab2532704daecfb5a3a43" class="m-doc-self">Hours</a>
+            </h3>
+<p>Hour count</p>
+          </div></section>
+          <section class="m-doc-details" id="a694eec206db2c0ae1e6e73c5c7096b0d"><div>
+            <h3>
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> bpf::<wbr />system::<wbr />TimeSpan::<wbr /><a href="#a694eec206db2c0ae1e6e73c5c7096b0d" class="m-doc-self">Minutes</a>
+            </h3>
+<p>Minute count</p>
+          </div></section>
+          <section class="m-doc-details" id="a83b0e9f0608b0534d318708704fcf49d"><div>
+            <h3>
+              <a href="namespacebpf.html#a1f07dc8a48d818df5facf8e8485e40ca" class="m-doc">fint</a> bpf::<wbr />system::<wbr />TimeSpan::<wbr /><a href="#a83b0e9f0608b0534d318708704fcf49d" class="m-doc-self">Seconds</a>
+            </h3>
+<p>Second count</p>
+          </div></section>
+          <section class="m-doc-details" id="a14bea06c327937dbf865361bc8323ea0"><div>
+            <h3>
+              <a href="namespacebpf.html#a17fa79214136aa9161188dd2c6af0a0c" class="m-doc">uint64</a> bpf::<wbr />system::<wbr />TimeSpan::<wbr /><a href="#a14bea06c327937dbf865361bc8323ea0" class="m-doc-self">TotalSeconds</a>
+            </h3>
+<p>Total time contained in this span expressed as a number of seconds</p>
+          </div></section>
         </section>
       </div>
     </div>

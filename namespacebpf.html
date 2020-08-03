@@ -57,6 +57,7 @@
                 <li><a href="#nested-classes">Classes</a></li>
                 <li><a href="#typedef-members">Typedefs</a></li>
                 <li><a href="#func-members">Functions</a></li>
+                <li><a href="#var-members">Variables</a></li>
               </ul>
             </li>
           </ul>
@@ -64,7 +65,7 @@
         <section id="namespaces">
           <h2><a href="#namespaces">Namespaces</a></h2>
           <dl class="m-doc">
-            <dt>namespace <a href="namespacebpf_1_1____internal__evale.html" class="m-doc">__internal_evale</a></dt>
+            <dt>namespace <a href="namespacebpf_1_1__bpf__internal__evale.html" class="m-doc">_bpf_internal_evale</a></dt>
             <dd><span></span></dd>
             <dt>namespace <a href="namespacebpf_1_1__bpf__internal__tp.html" class="m-doc">_bpf_internal_tp</a></dt>
             <dd><span></span></dd>
@@ -95,11 +96,35 @@
             </dt>
             <dd></dd>
             <dt>
+              <div class="m-doc-template">template&lt;typename R, typename... Args&gt;</div>
+              class <a href="classbpf_1_1_delegate_3_01_r_07_args_8_8_8_08_01const_01_4.html" class="m-doc">Delegate&lt;R(Args...) const&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename R, typename... Args&gt;</div>
+              class <a href="classbpf_1_1_delegate_3_01_r_07_args_8_8_8_08_4.html" class="m-doc">Delegate&lt;R(Args...)&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
               class <a href="classbpf_1_1_double.html" class="m-doc">Double</a>
             </dt>
             <dd><span></span></dd>
             <dt>
+              class <a href="classbpf_1_1_dynamic.html" class="m-doc">Dynamic</a>
+            </dt>
+            <dd></dd>
+            <dt>
               class <a href="classbpf_1_1_eval_exception.html" class="m-doc">EvalException</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename R, typename... Args&gt;</div>
+              class <a href="classbpf_1_1_event_3_01_r_07_args_8_8_8_08_01const_01_4.html" class="m-doc">Event&lt;R(Args...) const&gt;</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename R, typename... Args&gt;</div>
+              class <a href="classbpf_1_1_event_3_01_r_07_args_8_8_8_08_4.html" class="m-doc">Event&lt;R(Args...)&gt;</a>
             </dt>
             <dd></dd>
             <dt>
@@ -291,6 +316,31 @@
             <dt>
               <div class="m-doc-template">template&lt;typename T&gt;</div>
               <span class="m-doc-wrap-bumper">auto <a href="#aeda2583073a6fc334a3cdfca7d4384e9" class="m-doc">TypeName</a>(</span><span class="m-doc-wrap">) -&gt; const char* <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa229cbf929ee7cc8d992cbfdf0b61ee2" class="m-doc">TypeIndex</a>(</span><span class="m-doc-wrap">) -&gt; <a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac578e178c4cddad8c9316db29496a43b" class="m-doc">i64</a>(</span><span class="m-doc-wrap">T t) -&gt; <a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="var-members">
+          <h2><a href="#var-members">Variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <div class="m-doc-template">template&lt;typename Fn&gt;</div>
+              class BP_TPL_API <a href="#ab32064d1be9108b8b1c329948493e49e" class="m-doc">Delegate</a>
+            </dt>
+            <dd></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename Fn&gt;</div>
+              class BP_TPL_API <a href="#a209c1c074869667ba65b89909be99efc" class="m-doc">Event</a>
             </dt>
             <dd></dd>
           </dl>
@@ -511,7 +561,89 @@
                 </tr>
               </tfoot>
             </table>
-<p>Returns the cross-platform type name of a given type</p>
+<p>Returns the cross-platform type name of a given type. Defaults to implementation defined typeid</p>
+          </div></section>
+          <section class="m-doc-details" id="aa229cbf929ee7cc8d992cbfdf0b61ee2"><div>
+            <h3>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_type_info_8hpp.html">&lt;Base/include/Framework/TypeInfo.hpp&gt;</a></div>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#ad468b5e9d56d6e919b9671a5d01f7588" class="m-doc">fsize</a> bpf::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa229cbf929ee7cc8d992cbfdf0b61ee2" class="m-doc-self">TypeIndex</a>(</span><span class="m-doc-wrap">) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>type to find hash for</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>unsigned hash code</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Returns a type hash in order to compare two types</p>
+          </div></section>
+          <section class="m-doc-details" id="ac578e178c4cddad8c9316db29496a43b"><div>
+            <h3>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_types_8hpp.html">&lt;Base/include/Framework/Types.hpp&gt;</a></div>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="namespacebpf.html#affc96674da8facce7c59066053073664" class="m-doc">int64</a> bpf::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac578e178c4cddad8c9316db29496a43b" class="m-doc-self">i64</a>(</span><span class="m-doc-wrap">T t)</span></span>
+            </h3>
+            <p><span></span></p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="ab32064d1be9108b8b1c329948493e49e"><div>
+            <h3>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_delegate_8hpp.html">&lt;Base/include/Framework/Delegate.hpp&gt;</a></div>
+              <div class="m-doc-template">
+                template&lt;typename Fn&gt;
+              </div>
+              class BP_TPL_API bpf::<wbr /><a href="#ab32064d1be9108b8b1c329948493e49e" class="m-doc-self">Delegate</a>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Fn</td>
+                  <td>the function signature (using functional-like notation)</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Represents a delegate function</p>
+          </div></section>
+          <section class="m-doc-details" id="a209c1c074869667ba65b89909be99efc"><div>
+            <h3>
+              <div class="m-doc-include m-code m-inverted m-right-m m-text-right"><span class="cp">#include</span> <a class="cpf" href="_event_8hpp.html">&lt;Base/include/Framework/Event.hpp&gt;</a></div>
+              <div class="m-doc-template">
+                template&lt;typename Fn&gt;
+              </div>
+              class BP_TPL_API bpf::<wbr /><a href="#a209c1c074869667ba65b89909be99efc" class="m-doc-self">Event</a>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">Fn</td>
+                  <td>delegate signature (using functional-like notation)</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Represents an event</p>
           </div></section>
         </section>
       </div>

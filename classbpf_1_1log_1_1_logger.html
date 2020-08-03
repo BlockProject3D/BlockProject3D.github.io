@@ -68,6 +68,10 @@
             </dt>
             <dd></dd>
             <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a1064909e161daf92f0740f0e886a7d23" class="m-doc">Logger</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
+            <dt>
               <span class="m-doc-wrap-bumper"><a href="#afe8b1d4c3d420450a5f1549ee2692d50" class="m-doc">Logger</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; other) <span class="m-label m-flat m-danger">deleted</span></span>
             </dt>
             <dd></dd>
@@ -76,6 +80,14 @@
         <section id="pub-methods">
           <h2><a href="#pub-methods">Public functions</a></h2>
           <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#aa82fb42ee3848d534ace85bacfc0de6b" class="m-doc">SetLevel</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf_1_1log.html#a339830679e6fd394a7e908bb0e2d5938" class="m-doc">ELogLevel</a> level)</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a11d47f612da736b322bed221e9298e41" class="m-doc">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp;&amp; other) -&gt; <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper">auto <a href="#a9a97939aa34d892cee64a0fbeae1907a" class="m-doc">operator=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; other) -&gt; <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; <span class="m-label m-flat m-danger">deleted</span></span>
             </dt>
@@ -129,11 +141,40 @@
             </table>
 <p>Constructs a <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a></p>
           </div></section>
+          <section class="m-doc-details" id="a1064909e161daf92f0740f0e886a7d23"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1064909e161daf92f0740f0e886a7d23" class="m-doc-self">Logger</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move constructor</p>
+          </div></section>
           <section class="m-doc-details" id="afe8b1d4c3d420450a5f1549ee2692d50"><div>
             <h3>
               <span class="m-doc-wrap-bumper"> bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afe8b1d4c3d420450a5f1549ee2692d50" class="m-doc-self">Logger</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; other) <span class="m-label m-danger">deleted</span></span></span>
             </h3>
 <p>Explicit deleted copy constructor (MSVC Fix: for some reasons MSVC is unable to identify this class cannot be coppied)</p>
+          </div></section>
+          <section class="m-doc-details" id="aa82fb42ee3848d534ace85bacfc0de6b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa82fb42ee3848d534ace85bacfc0de6b" class="m-doc-self">SetLevel</a>(</span><span class="m-doc-wrap">const <a href="namespacebpf_1_1log.html#a339830679e6fd394a7e908bb0e2d5938" class="m-doc">ELogLevel</a> level)</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">level</td>
+                  <td>the new maximum log level</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Sets the maximum log level. All log messages that are greater than this level are ignored. The default is <a href="namespacebpf_1_1log.html#a339830679e6fd394a7e908bb0e2d5938adc30ec20708ef7b0f641ef78b7880a15" class="m-doc">ELogLevel::<wbr />DEBUG</a> is debug builds and INFO in release builds</p>
+          </div></section>
+          <section class="m-doc-details" id="a11d47f612da736b322bed221e9298e41"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp; bpf::<wbr />log::<wbr />Logger::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a11d47f612da736b322bed221e9298e41" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classbpf_1_1log_1_1_logger.html" class="m-doc">Logger</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+<p>Move assignment operator</p>
           </div></section>
           <section class="m-doc-details" id="a9a97939aa34d892cee64a0fbeae1907a"><div>
             <h3>
