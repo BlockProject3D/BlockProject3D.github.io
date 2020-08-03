@@ -13,7 +13,6 @@ cp .FDoc/index.html Framework
 cp .FDoc/Doxyfile .FDoc/DoxyfileMCSS Framework
 cp .FDoc/logo.png .FDoc/logo_white.ico Framework
 cd Framework
-git checkout DocUpdate #Warning remove after release 3.0
 git clone https://github.com/mosra/m.css.git
 
 #mv base.html ./m.css/documentation/templates/doxygen
