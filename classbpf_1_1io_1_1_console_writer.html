@@ -209,21 +209,12 @@
                   <td>the size in bytes of the buffer</td>
                 </tr>
               </tbody>
-              <thead>
+              <tfoot>
                 <tr>
                   <th>Returns</th>
-                  <td>number of bytes written</td>
+                  <td>number of bytes written, 0 if no bytes could be written</td>
                 </tr>
-              </thead>
-              <thead>
-                <tr><th colspan="2">Exceptions</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="classbpf_1_1io_1_1_i_o_exception.html" class="m-doc">IOException</a></td>
-                  <td>in case of system error</td>
-                </tr>
-              </tbody>
+              </tfoot>
             </table>
 <p>This function performs a low level write to console On Windows it expects bufsize to be a multiple of 2 and expects buf to contain UTF-16 code points On Linux it expects buf to contain UTF-8 bytes (last UTF-8 code can be cut)</p>
           </div></section>
