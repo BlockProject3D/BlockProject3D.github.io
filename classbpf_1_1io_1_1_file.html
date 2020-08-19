@@ -105,7 +105,7 @@
             </dt>
             <dd></dd>
             <dt>
-              <span class="m-doc-wrap-bumper">auto <a href="#a76009e62e10d722049bbf8c8dd8b6299" class="m-doc">ListFiles</a>(</span><span class="m-doc-wrap">) -&gt; <a href="classbpf_1_1collection_1_1_list.html" class="m-doc">collection::<wbr />List</a>&lt;<a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a>&gt;</span>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac06e160551c4b9b4d76ee6a6733731ee" class="m-doc">ListFiles</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classbpf_1_1collection_1_1_list.html" class="m-doc">collection::<wbr />List</a>&lt;<a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a>&gt;</span>
             </dt>
             <dd></dd>
             <dt>
@@ -151,6 +151,14 @@
             <dd></dd>
             <dt>
               <span class="m-doc-wrap-bumper">auto <a href="#a064a86fe5b8a726d0a8217b93a7b5af2" class="m-doc">Extension</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="classbpf_1_1_string.html" class="m-doc">String</a>&amp;</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a822f86f07720faf9893b416e7986c30f" class="m-doc">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a>&amp; other) const -&gt; bool</span>
+            </dt>
+            <dd></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#adf20c55b60ef27afaa0192d27ed41d6a" class="m-doc">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a>&amp; other) const -&gt; bool</span>
             </dt>
             <dd></dd>
           </dl>
@@ -305,9 +313,9 @@
             </table>
 <p>Marks this file as hidden to the current platform</p>
           </div></section>
-          <section class="m-doc-details" id="a76009e62e10d722049bbf8c8dd8b6299"><div>
+          <section class="m-doc-details" id="ac06e160551c4b9b4d76ee6a6733731ee"><div>
             <h3>
-              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_list.html" class="m-doc">collection::<wbr />List</a>&lt;<a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a>&gt; bpf::<wbr />io::<wbr />File::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a76009e62e10d722049bbf8c8dd8b6299" class="m-doc-self">ListFiles</a>(</span><span class="m-doc-wrap">)</span></span>
+              <span class="m-doc-wrap-bumper"><a href="classbpf_1_1collection_1_1_list.html" class="m-doc">collection::<wbr />List</a>&lt;<a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a>&gt; bpf::<wbr />io::<wbr />File::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac06e160551c4b9b4d76ee6a6733731ee" class="m-doc-self">ListFiles</a>(</span><span class="m-doc-wrap">) const</span></span>
             </h3>
             <table class="m-table m-fullwidth m-flat">
               <thead>
@@ -531,6 +539,52 @@
               </tfoot>
             </table>
 <p>Returns the file&#x27;s extension</p>
+          </div></section>
+          <section class="m-doc-details" id="a822f86f07720faf9893b416e7986c30f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />io::<wbr />File::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a822f86f07720faf9893b416e7986c30f" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this equals other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a></p>
+          </div></section>
+          <section class="m-doc-details" id="adf20c55b60ef27afaa0192d27ed41d6a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool bpf::<wbr />io::<wbr />File::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adf20c55b60ef27afaa0192d27ed41d6a" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a>&amp; other) const</span></span>
+            </h3>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>operand</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if this does not equal other, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Compare <a href="classbpf_1_1io_1_1_file.html" class="m-doc">File</a></p>
           </div></section>
         </section>
       </div>
